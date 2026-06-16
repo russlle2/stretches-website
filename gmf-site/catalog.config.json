@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "group": "heavyweight-tees",
+      "role": "hero",
+      "parentSkuFormat": "GMF-TEE-[DROP]",
+      "variantAxes": ["color", "size"],
+      "material": "100% cotton, 250–300 GSM heavyweight jersey",
+      "price": 40
+    },
+    {
+      "group": "premium-hoodies",
+      "role": "secondary",
+      "parentSkuFormat": "GMF-HDY-[DROP]",
+      "variantAxes": ["color", "size"],
+      "material": "400–460 GSM fleece, brushed interior",
+      "price": 80
+    },
+    {
+      "group": "sweatpants",
+      "role": "outfit-completion",
+      "parentSkuFormat": "GMF-SWT-[DROP]",
+      "variantAxes": ["color", "size"],
+      "material": "380–420 GSM fleece",
+      "price": 65
+    },
+    {
+      "group": "hats",
+      "role": "add-on",
+      "parentSkuFormat": "GMF-HAT-[DROP]",
+      "variantAxes": ["color"],
+      "material": "Wool blend or structured cotton twill",
+      "price": 35
+    },
+    {
+      "group": "stickers",
+      "role": "entry",
+      "parentSkuFormat": "GMF-STK-[DROP]",
+      "variantAxes": ["pack-size"],
+      "material": "Vinyl",
+      "price": 5
+    },
+    {
+      "group": "bundles",
+      "role": "AOV-driver",
+      "parentSkuFormat": "GMF-BND-[DROP]",
+      "variantAxes": ["bundle composition", "size"],
+      "material": "Derived",
+      "price": 120
+    }
+  ]
+}

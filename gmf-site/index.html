@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMF STRETCH | Official Website & Merch</title>
+  <meta name="description" content="Official website of Joshua Miller, aka GMF Stretch. Stream 'Aint No Sunshine', watch music videos, and shop GETTIN' MONEY FOREVER merch." />
+  <meta name="keywords" content="GMF Stretch, Joshua Miller, Aint No Sunshine, Gettin Money Forever, Rap, Hip Hop, Florida, Merch" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#10b981',
+              dark: '#0a0a0a',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #050505; color: #ffffff; }
+    .bg-grit { background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); }
+    .hero-bg {
+      background: linear-gradient(to bottom, rgba(10,10,10,0.3), rgba(10,10,10,1)),
+        url('https://images.unsplash.com/photo-1493225457124-a1a2a5f0f0c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    }
+    .cart-modal { transition: opacity 0.3s ease, visibility 0.3s ease; }
+  </style>
+</head>
+<body class="bg-grit antialiased selection:bg-brand-green selection:text-black">
+
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/10">
+    <a href="#home" class="font-display font-bold text-2xl tracking-widest text-white uppercase">
+      GMF <span class="text-brand-green">STRETCH</span>
+    </a>
+    <div class="hidden md:flex gap-8 font-semibold text-sm tracking-wide">
+      <a href="#music" class="hover:text-brand-green transition">MUSIC</a>
+      <a href="#videos" class="hover:text-brand-green transition">VIDEOS</a>
+      <a href="#merch" class="hover:text-brand-green transition">STORE</a>
+      <a href="#about" class="hover:text-brand-green transition">ABOUT</a>
+      <a href="shop.html" class="hover:text-brand-green transition">FULL SHOP</a>
+    </div>
+    <button onclick="toggleCart()" class="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-brand-green transition">
+      CART (<span id="cart-count">0</span>)
+    </button>
+  </nav>
+
+  <header id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+    <h2 class="text-brand-green font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md">Gettin' Money Forever</h2>
+    <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter mb-6 drop-shadow-xl">GMF STRETCH</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-light">
+      Stream the new single <strong>"AINT NO SUNSHINE"</strong> out now.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#music" class="bg-brand-green text-black font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white transition transform hover:scale-105">Listen Now</a>
+      <a href="#merch" class="bg-transparent border-2 border-white text-white font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white hover:text-black transition transform hover:scale-105">Shop Merch</a>
+    </div>
+  </header>
+
+  <section id="music" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-4">Latest Audio</h2>
+      <div class="w-24 h-1 bg-brand-green mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-white/5 p-8 rounded-lg border border-white/10">
+        <h3 id="featured-track-title" class="text-2xl font-bold mb-2">Aint No Sunshine</h3>
+        <p id="featured-track-date" class="text-brand-green mb-6 text-sm font-semibold uppercase tracking-wider">Released Jan 18, 2026 • GETTIN' MONEY FOREVER Productions</p>
+        <p id="featured-track-desc" class="text-gray-400 mb-8 leading-relaxed">
+          Featuring composition and lyrics by Joshua Miller (GMF Stretch) and engineering by Aaron Hertz. Stream the breakout track defining the Southside sound.
+        </p>
+        <iframe id="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div>
+        <h4 class="font-display text-2xl uppercase mb-6 border-b border-white/10 pb-4">Top Tracks</h4>
+        <ul id="tracks-list" class="space-y-4">
+          <li class="flex justify-between items-center p-4 bg-white/5 hover:bg-white/10 transition cursor-pointer">
+            <span class="font-bold">1. Get Em' Gone (feat. D MAN JR)</span>
+            <span class="text-brand-green text-sm">▶ Stream</span>
+          </li>
+          <li class="flex justify-between items-center p-4 bg-white/5 hover:bg-white/10 transition cursor-pointer">
+            <span class="font-bold">2. Big Smoke</span>
+            <span class="text-brand-green text-sm">▶ Stream</span>
+          </li>
+          <li class="flex justify-between items-center p-4 bg-white/5 hover:bg-white/10 transition cursor-pointer">
+            <span class="font-bold">3. Interstate</span>
+            <span class="text-brand-green text-sm">▶ Stream</span>
+          </li>
+          <li class="flex justify-between items-center p-4 bg-white/5 hover:bg-white/10 transition cursor-pointer">
+            <span class="font-bold">4. Like I Left Sum</span>
+            <span class="text-brand-green text-sm">▶ Stream</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="py-24 bg-black px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-4">Visuals</h2>
+        <div class="w-24 h-1 bg-brand-green mx-auto"></div>
+      </div>
+      <div id="videos-grid" class="grid md:grid-cols-2 gap-8">
+        <div class="aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Aint+No+Sunshine+music+video" title="GMF Stretch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Get+Em+Gone" title="GMF Stretch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="merch" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+      <div>
+        <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-4">Official Merch</h2>
+        <div class="w-24 h-1 bg-brand-green"></div>
+      </div>
+      <p class="text-gray-400 mt-4 md:mt-0 uppercase tracking-widest text-sm">Gettin' Money Forever Apparel</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="group bg-white/5 border border-white/10 rounded-lg overflow-hidden relative transition hover:border-brand-green">
+        <div class="aspect-square bg-gray-800 relative overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="GMF Core Logo Tee" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase font-bold mb-1">GMF Core Logo Tee</h3>
+          <p class="text-gray-400 mb-4">$30.00 USD</p>
+          <button onclick="addToCart('GMF Core Logo Tee', 30, 'gmf-core-logo-tee', 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')" class="w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">Add to Cart</button>
+        </div>
+      </div>
+      <div class="group bg-white/5 border border-white/10 rounded-lg overflow-hidden relative transition hover:border-brand-green">
+        <div class="aspect-square bg-gray-800 relative overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Aint No Sunshine Hoodie" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase font-bold mb-1">Aint No Sunshine Hoodie</h3>
+          <p class="text-gray-400 mb-4">$60.00 USD</p>
+          <button onclick="addToCart('Aint No Sunshine Hoodie', 60, 'aint-no-sunshine-hoodie', 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')" class="w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">Add to Cart</button>
+        </div>
+      </div>
+      <div class="group bg-white/5 border border-white/10 rounded-lg overflow-hidden relative transition hover:border-brand-green">
+        <div class="aspect-square bg-gray-800 relative overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Southside Tour Tee" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase font-bold mb-1">Southside Tour Tee</h3>
+          <p class="text-gray-400 mb-4">$35.00 USD</p>
+          <button onclick="addToCart('Southside Tour Tee', 35, 'southside-tour-tee', 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')" class="w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="shop.html" class="inline-block border border-brand-green text-brand-green font-display font-bold px-8 py-3 uppercase tracking-wider hover:bg-brand-green hover:text-black transition">View Full Collection</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-black px-6 md:px-12 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-5xl font-bold uppercase mb-8">About Joshua Miller</h2>
+      <p class="text-xl text-gray-300 leading-relaxed mb-6">
+        Known to the streets and the industry as <strong class="text-white">GMF Stretch</strong>, Joshua Miller is a rising force in the rap scene. Representing the authentic sound of the Southside, his music delivers raw lyricism, undeniable grit, and heavy beats.
+      </p>
+      <p class="text-lg text-gray-400 leading-relaxed mb-12">
+        Under his own imprint, <strong>GETTIN' MONEY FOREVER Productions LLC</strong>, Stretch released his highly acclaimed track <em>"Aint No Sunshine"</em> in early 2026, solidifying his spot. Between high-energy records like <em>"Get Em' Gone"</em> and <em>"Big Smoke"</em>, and a rapidly growing streetwear line, GMF Stretch is building an empire.
+      </p>
+      <div class="flex justify-center gap-6 mb-16">
+        <a id="social-instagram" href="https://instagram.com/gmfstretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">IG</a>
+        <a id="social-tiktok" href="https://tiktok.com/@gmfstretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">TK</a>
+        <a id="social-youtube" href="https://www.youtube.com/results?search_query=GMF+Stretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">YT</a>
+      </div>
+
+      <div class="max-w-md mx-auto mb-12">
+        <h3 class="font-display text-xl uppercase mb-4">Stay in the Loop</h3>
+        <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3">
+          <input type="email" name="email" required placeholder="your@email.com" class="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded text-white placeholder-gray-500 focus:border-brand-green focus:outline-none" />
+          <button type="submit" class="bg-brand-green text-black font-bold px-6 py-3 uppercase tracking-wider hover:bg-white transition">Subscribe</button>
+        </form>
+        <p class="form-status"></p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-sm uppercase tracking-wider">
+        <a id="link-spotify" href="https://open.spotify.com/search/GMF%20Stretch" target="_blank" rel="noopener" class="text-brand-green hover:text-white transition">Spotify</a>
+        <a id="link-apple" href="https://music.apple.com/us/search?term=GMF%20Stretch" target="_blank" rel="noopener" class="text-brand-green hover:text-white transition">Apple Music</a>
+        <a id="link-ytmusic" href="https://music.youtube.com/search?q=GMF+Stretch" target="_blank" rel="noopener" class="text-brand-green hover:text-white transition">YouTube Music</a>
+        <a href="booking.html" class="text-brand-green hover:text-white transition">Booking</a>
+        <a href="contact.html" class="text-brand-green hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black py-12 px-6 border-t border-white/5 text-center">
+    <h2 class="font-display font-bold text-2xl tracking-widest text-white/50 uppercase mb-4">
+      GMF <span class="text-brand-green/50">STRETCH</span>
+    </h2>
+    <p class="text-gray-600 text-sm mb-2">Booking & Management: <a href="mailto:booking@gmfstretch.com" class="text-gray-400 hover:text-brand-green">booking@gmfstretch.com</a></p>
+    <p class="text-gray-600 text-sm">&copy; 2026 GETTIN' MONEY FOREVER Productions LLC. All rights reserved.</p>
+  </footer>
+
+  <div id="cart-modal" class="cart-modal invisible opacity-0 fixed inset-0 z-[100] flex justify-end bg-black/80 backdrop-blur-sm">
+    <div class="w-full max-w-md bg-zinc-900 h-full p-6 shadow-2xl border-l border-white/10 flex flex-col">
+      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+        <h2 class="font-display text-2xl uppercase font-bold">Your Cart</h2>
+        <button onclick="toggleCart()" class="text-gray-400 hover:text-white text-2xl">&times;</button>
+      </div>
+      <div id="cart-items" class="flex-1 overflow-y-auto space-y-4">
+        <p class="text-gray-500 text-center mt-10">Your cart is currently empty.</p>
+      </div>
+      <div class="pt-6 border-t border-white/10 mt-auto">
+        <div class="flex justify-between items-center mb-6">
+          <span class="text-lg text-gray-400">Total</span>
+          <span id="cart-total" class="font-bold text-2xl text-brand-green">$0.00</span>
+        </div>
+        <button onclick="checkout()" class="w-full bg-brand-green text-black py-4 font-bold uppercase tracking-wider hover:bg-white transition text-lg">Checkout Securely</button>
+        <p class="text-xs text-gray-500 text-center mt-3">Powered by Stripe · Orders saved to Supabase</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/site-config.js"></script>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/media.js"></script>
+  <script src="scripts/stretch-cart.js"></script>
+  <script src="scripts/forms.js"></script>
+</body>
+</html>

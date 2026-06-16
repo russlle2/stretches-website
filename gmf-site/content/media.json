@@ -1,0 +1,92 @@
+{
+  "artist": {
+    "name": "GMF STRETCH",
+    "legalName": "Joshua Miller",
+    "label": "GETTIN' MONEY FOREVER Productions LLC",
+    "location": "Southside / Florida"
+  },
+  "hero": {
+    "eyebrow": "Gettin' Money Forever",
+    "headline": "GMF STRETCH",
+    "tagline": "Stream the new single \"AINT NO SUNSHINE\" out now.",
+    "backgroundImage": "https://images.unsplash.com/photo-1493225457124-a1a2a5f0f0c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    "featuredTrack": {
+      "title": "Aint No Sunshine",
+      "released": "2026-01-18",
+      "spotifyTrackId": "4cOdK2wGLETKBW3PvgPWqT",
+      "description": "Featuring composition and lyrics by Joshua Miller (GMF Stretch) and engineering by Aaron Hertz. The breakout track defining the Southside sound."
+    }
+  },
+  "tracks": [
+    {
+      "title": "Aint No Sunshine",
+      "spotifyTrackId": "4cOdK2wGLETKBW3PvgPWqT",
+      "released": "2026-01-18",
+      "featured": true
+    },
+    {
+      "title": "Get Em' Gone (feat. D MAN JR)",
+      "spotifySearch": "GMF Stretch Get Em Gone",
+      "rank": 1
+    },
+    {
+      "title": "Big Smoke",
+      "spotifySearch": "GMF Stretch Big Smoke",
+      "rank": 2
+    },
+    {
+      "title": "Interstate",
+      "spotifySearch": "GMF Stretch Interstate",
+      "rank": 3
+    },
+    {
+      "title": "Like I Left Sum",
+      "spotifySearch": "GMF Stretch Like I Left Sum",
+      "rank": 4
+    }
+  ],
+  "videos": [
+    {
+      "id": "aint-no-sunshine-search",
+      "title": "Aint No Sunshine",
+      "embedUrl": "https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Aint+No+Sunshine+music+video",
+      "thumbnail": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
+      "type": "search"
+    },
+    {
+      "id": "get-em-gone-search",
+      "title": "Get Em' Gone",
+      "embedUrl": "https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Get+Em+Gone",
+      "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
+      "type": "search"
+    }
+  ],
+  "social": {
+    "instagram": "https://instagram.com/gmfstretch",
+    "tiktok": "https://tiktok.com/@gmfstretch",
+    "youtube": "https://www.youtube.com/results?search_query=GMF+Stretch+official",
+    "spotify": "https://open.spotify.com/search/GMF%20Stretch",
+    "appleMusic": "https://music.apple.com/us/search?term=GMF%20Stretch",
+    "youtubeMusic": "https://music.youtube.com/search?q=GMF+Stretch"
+  },
+  "merch": [
+    {
+      "slug": "gmf-core-logo-tee",
+      "name": "GMF Core Logo Tee",
+      "price": 30,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "slug": "aint-no-sunshine-hoodie",
+      "name": "Aint No Sunshine Hoodie",
+      "price": 60,
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "slug": "southside-tour-tee",
+      "name": "Southside Tour Tee",
+      "price": 35,
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    }
+  ]
+}

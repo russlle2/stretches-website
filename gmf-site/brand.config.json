@@ -1,0 +1,36 @@
+{
+  "name": "GMF STRETCH",
+  "shorthand": "GMF",
+  "legalName": "GETTIN' MONEY FOREVER PRODUCTIONS LLC",
+  "mission": "Build an empire through music, merch, and the authentic Southside sound.",
+  "tagline": "GETTIN' MONEY FOREVER.",
+  "secondaryTaglines": [
+    "Aint No Sunshine Out Now.",
+    "Southside Sound.",
+    "Built Different."
+  ],
+  "voice": "Raw, confident, street-smart, premium, never corny",
+  "colors": {
+    "background": "#050505",
+    "surface": "#0a0a0a",
+    "surfaceRaised": "#151515",
+    "primaryText": "#ffffff",
+    "secondaryText": "#a7a7a7",
+    "brandGreen": "#10b981",
+    "goldAccent": "#D6B25E",
+    "border": "#2B2B2B",
+    "error": "#D96B6B",
+    "success": "#79C98C"
+  },
+  "fonts": {
+    "display": "Oswald, sans-serif",
+    "body": "Inter, sans-serif"
+  },
+  "socialHandles": {
+    "instagram": "gmfstretch",
+    "tiktok": "gmfstretch",
+    "youtube": "GMF Stretch"
+  },
+  "supportEmail": "booking@gmfstretch.com",
+  "bookingEmail": "booking@gmfstretch.com"
+}

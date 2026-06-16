@@ -1,0 +1,70 @@
+{
+  "route": "/",
+  "template": "home",
+  "seo": {
+    "title": "GMF STRETCH | Jacksonville Streetwear",
+    "description": "GMF STRETCH delivers heavyweight tees, premium streetwear, and limited drops rooted in Jacksonville loyalty, hustle, and legacy."
+  },
+  "sections": [
+    {
+      "component": "AnnouncementBar",
+      "props": {
+        "text": "Preview build on yourbusiness.dailyclarity.org — live checkout coming soon.",
+        "variant": "warning"
+      }
+    },
+    {
+      "component": "HeroBanner",
+      "props": {
+        "eyebrow": "Jacksonville‑born streetwear",
+        "headline": "GETTIN MONEY FOREVER.",
+        "body": "Heavyweight fits, limited drops, and a brand built on loyalty, focus, and forward motion.",
+        "primaryCta": {
+          "label": "Shop the Drop",
+          "href": "/shop/tees"
+        },
+        "secondaryCta": {
+          "label": "View the Archive",
+          "href": "/archive"
+        },
+        "media": {
+          "image": "assets/home-hero.png",
+          "alt": "Nighttime Jacksonville streetwear editorial featuring GMF STRETCH apparel."
+        }
+      }
+    },
+    {
+      "component": "CollectionStrip",
+      "props": {
+        "heading": "Shop by Category",
+        "items": [
+          { "label": "Tees", "href": "/shop/tees" },
+          { "label": "Hoodies", "href": "/shop?category=hoodies" },
+          { "label": "Hats", "href": "/shop?category=hats" },
+          { "label": "Bundles", "href": "/shop?category=bundles" }
+        ]
+      }
+    },
+    {
+      "component": "FeaturedProducts",
+      "props": {
+        "heading": "Current Drop",
+        "source": "featured-tees"
+      }
+    },
+    {
+      "component": "WatchThenShop",
+      "props": {
+        "heading": "Watch Then Shop",
+        "source": "music-preview"
+      }
+    },
+    {
+      "component": "FaqAccordion",
+      "props": {
+        "heading": "Need to Know",
+        "source": "faq-home-short"
+      }
+    }
+  ]
+}

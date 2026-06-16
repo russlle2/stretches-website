@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | GMF STRETCH</title>
+  <meta name="description" content="Book GMF Str3tch for performances, appearances or collaborations. Submit your inquiry and we will get back to you." />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div class="announcement-bar">Free U.S. shipping on orders over $100</div>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">GMF STRETCH</a>
+      <nav class="nav-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="music.html">Music</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Booking & Collaborations</h1>
+    <p>Interested in booking GMF Str3tch for a performance, appearance, collaboration or interview? Fill out the form below and our team will respond promptly with availability and pricing.</p>
+    <form id="booking-form" style="display:flex; flex-direction:column; gap: var(--space-4); max-width:600px;">
+      <div>
+        <label for="name" style="display:block; margin-bottom:var(--space-2);">Your Name*</label>
+        <input id="name" name="name" type="text" required style="width:100%; padding:var(--space-3); border-radius:var(--radius-card); border:1px solid var(--color-border); background-color:var(--color-surface); color:var(--color-text-primary);" />
+      </div>
+      <div>
+        <label for="email" style="display:block; margin-bottom:var(--space-2);">Email Address*</label>
+        <input id="email" name="email" type="email" required style="width:100%; padding:var(--space-3); border-radius:var(--radius-card); border:1px solid var(--color-border); background-color:var(--color-surface); color:var(--color-text-primary);" />
+      </div>
+      <div>
+        <label for="eventdate" style="display:block; margin-bottom:var(--space-2);">Event Date</label>
+        <input id="eventdate" name="eventDate" type="date" style="width:100%; padding:var(--space-3); border-radius:var(--radius-card); border:1px solid var(--color-border); background-color:var(--color-surface); color:var(--color-text-primary);" />
+      </div>
+      <div>
+        <label for="message" style="display:block; margin-bottom:var(--space-2);">Details / Message*</label>
+        <textarea id="message" name="message" required rows="5" style="width:100%; padding:var(--space-3); border-radius:var(--radius-card); border:1px solid var(--color-border); background-color:var(--color-surface); color:var(--color-text-primary);"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:fit-content;">Submit Inquiry</button>
+      <p class="form-status"></p>
+    </form>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>GMF STRETCH</h4>
+          <p>Loyalty over everything. Built in Jacksonville.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="returns-policy.html">Returns Policy</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p>Follow us on social for drops, music and community.</p>
+          <p><a href="https://instagram.com/" target="_blank">Instagram</a> / <a href="https://twitter.com/" target="_blank">Twitter</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GMF STRETCH. All rights reserved.</span>
+        <span>A division of GETTIN MONEY FOREVER PRODUCTIONS LLC</span>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/site-config.js"></script>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/forms.js"></script>
+</body>
+</html>

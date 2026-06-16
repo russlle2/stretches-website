@@ -1,0 +1,20 @@
+{
+  "routes": [
+    { "path": "/", "type": "public" },
+    { "path": "/shop", "type": "public" },
+    { "path": "/shop/tees", "type": "public" },
+    { "path": "/product/[slug]", "type": "public" },
+    { "path": "/collections/[slug]", "type": "public" },
+    { "path": "/archive", "type": "public" },
+    { "path": "/cart", "type": "public" },
+    { "path": "/checkout-stub", "type": "public" },
+    { "path": "/about", "type": "public" },
+    { "path": "/music", "type": "public" },
+    { "path": "/booking", "type": "public" },
+    { "path": "/contact", "type": "public" },
+    { "path": "/faq", "type": "public" },
+    { "path": "/size-guide", "type": "public" },
+    { "path": "/shipping-policy", "type": "public" },
+    { "path": "/returns-policy", "type": "public" }
+  ]
+}

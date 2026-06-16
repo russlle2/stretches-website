@@ -1,0 +1,68 @@
+{
+  "productGroupID": "GMF-TEE-FS",
+  "slug": "fake-smiles-heavyweight-tee",
+  "type": "productGroup",
+  "name": "Fake Smiles Heavyweight Tee",
+  "brand": "GMF STRETCH",
+  "category": "tees",
+  "collection": "fake-smiles",
+  "missionTag": "Loyalty over everything.",
+  "description": "Premium heavyweight tee from the Fake Smiles drop. Built for everyday wear with a structured oversized fit and Jacksonville‑bred attitude.",
+  "priceRange": {
+    "min": 40,
+    "max": 40,
+    "currency": "USD"
+  },
+  "material": "100% cotton heavyweight jersey",
+  "fit": "oversized",
+  "gsm": 275,
+  "care": [
+    "Machine wash cold",
+    "Wash inside out",
+    "Hang dry recommended"
+  ],
+  "sizeGuide": {
+    "sizes": ["S", "M", "L", "XL", "2XL", "3XL"],
+    "fitNote": "Relaxed oversized fit. Size down for a closer silhouette."
+  },
+  "images": [
+    "assets/fake-smiles-black-front.png",
+    "assets/fake-smiles-black-back.png",
+    "assets/fake-smiles-black-detail.png"
+  ],
+  "variants": [
+    {
+      "sku": "GMF-TEE-FS-BLK-S",
+      "color": "Black",
+      "size": "S",
+      "price": 40,
+      "inventoryStatus": "in_stock",
+      "featuredImage": "assets/fake-smiles-black-front.png"
+    },
+    {
+      "sku": "GMF-TEE-FS-BLK-M",
+      "color": "Black",
+      "size": "M",
+      "price": 40,
+      "inventoryStatus": "in_stock",
+      "featuredImage": "assets/fake-smiles-black-front.png"
+    },
+    {
+      "sku": "GMF-TEE-FS-BLK-L",
+      "color": "Black",
+      "size": "L",
+      "price": 40,
+      "inventoryStatus": "sold_out",
+      "featuredImage": "assets/fake-smiles-black-front.png"
+    }
+  ],
+  "trustBadges": [
+    "Official GMF STRETCH Product",
+    "Fast U.S. Shipping",
+    "Secure Checkout in Live Version"
+  ],
+  "seo": {
+    "title": "Fake Smiles Heavyweight Tee | GMF STRETCH",
+    "description": "Premium heavyweight streetwear tee from GMF STRETCH. Oversized fit, limited drop, Jacksonville‑born brand energy."
+  }
+}

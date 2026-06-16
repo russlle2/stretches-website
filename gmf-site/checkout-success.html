@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed | GMF STRETCH</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">GMF <span style="color:#10b981">STRETCH</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container" style="text-align:center; padding: var(--space-9) 0;">
+    <h1>Order Confirmed</h1>
+    <p>Thank you for supporting GMF Stretch. Your payment was processed securely via Stripe.</p>
+    <p id="session-info" style="color: var(--color-text-secondary); font-size: 0.9rem;"></p>
+    <a href="index.html" class="btn btn-primary" style="margin-top: var(--space-6);">Back to Home</a>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get('session_id');
+    if (sessionId) {
+      document.getElementById('session-info').textContent = `Reference: ${sessionId}`;
+    }
+    localStorage.removeItem('gmf_cart');
+  </script>
+</body>
+</html>

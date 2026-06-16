@@ -1,0 +1,17 @@
+{
+  "name": "stretches-website",
+  "version": "1.0.0",
+  "description": "Official GMF STRETCH website — music, merch, and live integrations",
+  "private": true,
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "node scripts/build-config.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^19.0.0"
+  }
+}

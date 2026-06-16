@@ -1,0 +1,15 @@
+{
+  "checkoutEnabled": true,
+  "currency": "USD",
+  "freeShippingThreshold": 100,
+  "handlingTime": "2–5 business days",
+  "returnsWindow": "14 days",
+  "stripeProducts": {
+    "gmf-core-logo-tee": { "price": 30, "name": "GMF Core Logo Tee" },
+    "aint-no-sunshine-hoodie": { "price": 60, "name": "Aint No Sunshine Hoodie" },
+    "southside-tour-tee": { "price": 35, "name": "Southside Tour Tee" },
+    "fake-smiles-heavyweight-tee": { "price": 40, "name": "Fake Smiles Heavyweight Tee" },
+    "loyalty-hoodie": { "price": 65, "name": "Loyalty Heavy Hoodie" },
+    "signature-dad-hat": { "price": 30, "name": "Signature Dad Hat" }
+  }
+}
