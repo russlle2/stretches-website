@@ -1,7 +1,7 @@
 // Auto-generated at build time — do not edit manually
 window.SITE_CONFIG = {
   "stripePublishableKey": "",
-  "checkoutEnabled": false,
-  "siteUrl": "",
+  "checkoutEnabled": true,
+  "siteUrl": "https://gmfstretch-test.netlify.app",
   "bookingEmail": "booking@gmfstretch.com"
 };

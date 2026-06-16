@@ -21,10 +21,10 @@ exports.handler = async (event) => {
     }
 
     const { error } = await supabase.from('contact_messages').insert({
-      name,
-      email,
-      subject: subject || null,
+      visitor_name: name,
+      visitor_email: email,
       message,
+      slug: subject || 'gmf-stretch-website',
     });
 
     if (error) throw error;
