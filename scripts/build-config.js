@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const publishableKey = process.env.STRIPE_PUBLISHABLE_KEY || '';
-const checkoutEnabled = Boolean(process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PUBLISHABLE_KEY);
+const checkoutEnabled = Boolean(process.env.STRIPE_SECRET_KEY);
 
 const config = {
   stripePublishableKey: publishableKey,

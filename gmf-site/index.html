@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GMF STRETCH | Official Website & Merch</title>
-  <meta name="description" content="Official website of Joshua Miller, aka GMF Stretch. Stream 'Aint No Sunshine', watch music videos, and shop GETTIN' MONEY FOREVER merch." />
-  <meta name="keywords" content="GMF Stretch, Joshua Miller, Aint No Sunshine, Gettin Money Forever, Rap, Hip Hop, Florida, Merch" />
+  <meta name="description" content="Official website of Joshua Miller, aka GMF Stretch. Watch 'No Restin', stream on Spotify, and shop GETTIN' MONEY FOREVER merch." />
+  <meta name="keywords" content="GMF Stretch, GMF Str3tch, Joshua Miller, No Restin, Gettin Money Forever, Rap, Hip Hop, Florida, Merch" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
@@ -59,8 +59,8 @@
   <header id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
     <h2 class="text-brand-green font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md">Gettin' Money Forever</h2>
     <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter mb-6 drop-shadow-xl">GMF STRETCH</h1>
-    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-light">
-      Stream the new single <strong>"AINT NO SUNSHINE"</strong> out now.
+    <p id="hero-tagline" class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-light">
+      Watch the official video for <strong>"No Restin"</strong> — out now.
     </p>
     <div class="flex flex-col sm:flex-row gap-4">
       <a href="#music" class="bg-brand-green text-black font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white transition transform hover:scale-105">Listen Now</a>
@@ -75,12 +75,15 @@
     </div>
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="bg-white/5 p-8 rounded-lg border border-white/10">
-        <h3 id="featured-track-title" class="text-2xl font-bold mb-2">Aint No Sunshine</h3>
-        <p id="featured-track-date" class="text-brand-green mb-6 text-sm font-semibold uppercase tracking-wider">Released Jan 18, 2026 • GETTIN' MONEY FOREVER Productions</p>
-        <p id="featured-track-desc" class="text-gray-400 mb-8 leading-relaxed">
-          Featuring composition and lyrics by Joshua Miller (GMF Stretch) and engineering by Aaron Hertz. Stream the breakout track defining the Southside sound.
+        <h3 id="featured-track-title" class="text-2xl font-bold mb-2">No Restin</h3>
+        <p id="featured-track-date" class="text-brand-green mb-6 text-sm font-semibold uppercase tracking-wider">Official Music Video #ShotBy @3039Media • GETTIN' MONEY FOREVER Productions</p>
+        <p id="featured-track-desc" class="text-gray-400 mb-6 leading-relaxed">
+          Official music video from GMF Str3tch. Stream the full catalog on Spotify.
         </p>
-        <iframe id="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="aspect-video w-full mb-6 rounded-lg overflow-hidden border border-white/10">
+          <iframe id="featured-youtube-embed" width="100%" height="100%" src="https://www.youtube.com/embed/3gNG8Iy7Pzo" title="No Restin Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <iframe id="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/artist/7JhhCQz1w8HYAFMyCZAu6R?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
       <div>
         <h4 class="font-display text-2xl uppercase mb-6 border-b border-white/10 pb-4">Top Tracks</h4>
@@ -114,10 +117,10 @@
       </div>
       <div id="videos-grid" class="grid md:grid-cols-2 gap-8">
         <div class="aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Aint+No+Sunshine+music+video" title="GMF Stretch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3gNG8Iy7Pzo" title="No Restin Official Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Get+Em+Gone" title="GMF Stretch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=user_uploads&list=GMF_Str3tch" title="GMF Str3tch YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -178,9 +181,9 @@
         Under his own imprint, <strong>GETTIN' MONEY FOREVER Productions LLC</strong>, Stretch released his highly acclaimed track <em>"Aint No Sunshine"</em> in early 2026, solidifying his spot. Between high-energy records like <em>"Get Em' Gone"</em> and <em>"Big Smoke"</em>, and a rapidly growing streetwear line, GMF Stretch is building an empire.
       </p>
       <div class="flex justify-center gap-6 mb-16">
-        <a id="social-instagram" href="https://instagram.com/gmfstretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">IG</a>
-        <a id="social-tiktok" href="https://tiktok.com/@gmfstretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">TK</a>
-        <a id="social-youtube" href="https://www.youtube.com/results?search_query=GMF+Stretch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">YT</a>
+        <a id="social-instagram" href="https://www.instagram.com/gmf_str3tch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">IG</a>
+        <a id="social-tiktok" href="https://www.tiktok.com/@gmf_str3tch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">TK</a>
+        <a id="social-youtube" href="https://www.youtube.com/@GMF_Str3tch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">YT</a>
       </div>
 
       <div class="max-w-md mx-auto mb-12">

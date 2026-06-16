@@ -8,66 +8,72 @@
   "hero": {
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF STRETCH",
-    "tagline": "Stream the new single \"AINT NO SUNSHINE\" out now.",
-    "backgroundImage": "https://images.unsplash.com/photo-1493225457124-a1a2a5f0f0c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    "tagline": "Watch the official video for \"No Restin\" — out now.",
+    "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
+    "featuredVideo": {
+      "youtubeId": "3gNG8Iy7Pzo",
+      "title": "No Restin",
+      "subtitle": "Official Music Video #ShotBy @3039Media",
+      "embedUrl": "https://www.youtube.com/embed/3gNG8Iy7Pzo",
+      "thumbnail": "https://i.ytimg.com/vi/3gNG8Iy7Pzo/hqdefault.jpg"
+    },
     "featuredTrack": {
-      "title": "Aint No Sunshine",
-      "released": "2026-01-18",
-      "spotifyTrackId": "4cOdK2wGLETKBW3PvgPWqT",
-      "description": "Featuring composition and lyrics by Joshua Miller (GMF Stretch) and engineering by Aaron Hertz. The breakout track defining the Southside sound."
+      "title": "No Restin",
+      "spotifyArtistId": "7JhhCQz1w8HYAFMyCZAu6R",
+      "description": "Official music video from GMF Str3tch. Stream the full catalog on Spotify."
     }
   },
   "tracks": [
     {
-      "title": "Aint No Sunshine",
-      "spotifyTrackId": "4cOdK2wGLETKBW3PvgPWqT",
-      "released": "2026-01-18",
+      "title": "No Restin",
+      "youtubeId": "3gNG8Iy7Pzo",
       "featured": true
     },
     {
       "title": "Get Em' Gone (feat. D MAN JR)",
-      "spotifySearch": "GMF Stretch Get Em Gone",
+      "spotifySearch": "GMF Str3tch Get Em Gone",
       "rank": 1
     },
     {
       "title": "Big Smoke",
-      "spotifySearch": "GMF Stretch Big Smoke",
+      "spotifySearch": "GMF Str3tch Big Smoke",
       "rank": 2
     },
     {
       "title": "Interstate",
-      "spotifySearch": "GMF Stretch Interstate",
+      "spotifySearch": "GMF Str3tch Interstate",
       "rank": 3
     },
     {
       "title": "Like I Left Sum",
-      "spotifySearch": "GMF Stretch Like I Left Sum",
+      "spotifySearch": "GMF Str3tch Like I Left Sum",
       "rank": 4
     }
   ],
   "videos": [
     {
-      "id": "aint-no-sunshine-search",
-      "title": "Aint No Sunshine",
-      "embedUrl": "https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Aint+No+Sunshine+music+video",
-      "thumbnail": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
-      "type": "search"
+      "id": "3gNG8Iy7Pzo",
+      "title": "No Restin (Official Music Video)",
+      "embedUrl": "https://www.youtube.com/embed/3gNG8Iy7Pzo",
+      "thumbnail": "https://i.ytimg.com/vi/3gNG8Iy7Pzo/hqdefault.jpg",
+      "type": "video"
     },
     {
-      "id": "get-em-gone-search",
-      "title": "Get Em' Gone",
-      "embedUrl": "https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Get+Em+Gone",
-      "thumbnail": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80",
-      "type": "search"
+      "id": "channel-gmf-str3tch",
+      "title": "More from GMF Str3tch",
+      "embedUrl": "https://www.youtube.com/embed?listType=user_uploads&list=GMF_Str3tch",
+      "thumbnail": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
+      "type": "channel",
+      "channelUrl": "https://www.youtube.com/@GMF_Str3tch"
     }
   ],
   "social": {
-    "instagram": "https://instagram.com/gmfstretch",
-    "tiktok": "https://tiktok.com/@gmfstretch",
-    "youtube": "https://www.youtube.com/results?search_query=GMF+Stretch+official",
-    "spotify": "https://open.spotify.com/search/GMF%20Stretch",
-    "appleMusic": "https://music.apple.com/us/search?term=GMF%20Stretch",
-    "youtubeMusic": "https://music.youtube.com/search?q=GMF+Stretch"
+    "instagram": "https://www.instagram.com/gmf_str3tch",
+    "tiktok": "https://www.tiktok.com/@gmf_str3tch",
+    "youtube": "https://www.youtube.com/@GMF_Str3tch",
+    "spotify": "https://open.spotify.com/artist/7JhhCQz1w8HYAFMyCZAu6R",
+    "appleMusic": "https://music.apple.com/us/search?term=GMF%20Str3tch",
+    "youtubeMusic": "https://music.youtube.com/search?q=GMF+Str3tch"
   },
   "merch": [
     {

@@ -24,20 +24,24 @@ function renderVideos(videos) {
   const grid = document.getElementById('videos-grid');
   if (!grid || !videos.length) return;
 
-  grid.innerHTML = videos.slice(0, 4).map((video) => `
-    <div class="video-card aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
-      <iframe
-        width="100%"
-        height="100%"
-        src="${video.embedUrl}"
-        title="${escapeHtml(video.title)}"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </div>
-  `).join('');
+  grid.innerHTML = videos.slice(0, 4).map((video) => {
+    if (video.type === 'channel' && video.channelUrl) {
+      return `
+        <a href="${video.channelUrl}" target="_blank" rel="noopener"
+           class="video-card aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl block relative group">
+          <img src="${video.thumbnail}" alt="${escapeHtml(video.title)}" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+            <span class="font-display text-xl uppercase text-brand-green">▶ ${escapeHtml(video.title)}</span>
+          </div>
+        </a>`;
+    }
+    return `
+      <div class="video-card aspect-video w-full bg-gray-900 border border-white/10 rounded-lg overflow-hidden shadow-2xl">
+        <iframe width="100%" height="100%" src="${video.embedUrl}" title="${escapeHtml(video.title)}"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen loading="lazy"></iframe>
+      </div>`;
+  }).join('');
 }
 
 function renderTracks(tracks) {
@@ -48,18 +52,16 @@ function renderTracks(tracks) {
   if (!topTracks.length) return;
 
   list.innerHTML = topTracks.map((track, i) => {
-    const spotifyUrl = track.spotifyTrackId
-      ? `https://open.spotify.com/track/${track.spotifyTrackId}`
-      : track.spotifySearch
-        ? `https://open.spotify.com/search/${encodeURIComponent(track.spotifySearch)}`
-        : '#';
+    let url = '#';
+    if (track.youtubeId) url = `https://www.youtube.com/watch?v=${track.youtubeId}`;
+    else if (track.spotifyTrackId) url = `https://open.spotify.com/track/${track.spotifyTrackId}`;
+    else if (track.spotifySearch) url = `https://open.spotify.com/search/${encodeURIComponent(track.spotifySearch)}`;
     return `
       <li class="track-item flex justify-between items-center p-4 bg-white/5 hover:bg-white/10 transition cursor-pointer"
-          onclick="window.open('${spotifyUrl}', '_blank')">
+          onclick="window.open('${url}', '_blank')">
         <span class="font-bold">${track.rank || i + 1}. ${escapeHtml(track.title)}</span>
-        <span class="text-brand-green text-sm">▶ Stream</span>
-      </li>
-    `;
+        <span class="text-brand-green text-sm">▶ Play</span>
+      </li>`;
   }).join('');
 }
 
@@ -71,19 +73,31 @@ function applyHero(hero) {
     }
   }
 
-  const featured = hero.featuredTrack;
-  if (!featured) return;
+  const taglineEl = document.getElementById('hero-tagline');
+  if (taglineEl && hero.tagline) taglineEl.innerHTML = hero.tagline;
+
+  const featured = hero.featuredTrack || {};
+  const video = hero.featuredVideo || {};
 
   const titleEl = document.getElementById('featured-track-title');
   const descEl = document.getElementById('featured-track-desc');
   const dateEl = document.getElementById('featured-track-date');
-  const embedEl = document.getElementById('spotify-embed');
+  const spotifyEl = document.getElementById('spotify-embed');
+  const youtubeEl = document.getElementById('featured-youtube-embed');
 
-  if (titleEl) titleEl.textContent = featured.title;
+  if (titleEl) titleEl.textContent = featured.title || video.title || 'No Restin';
   if (descEl) descEl.textContent = featured.description || '';
-  if (dateEl) dateEl.textContent = `Released ${featured.released} • GETTIN' MONEY FOREVER Productions`;
-  if (embedEl && featured.spotifyTrackId) {
-    embedEl.src = `https://open.spotify.com/embed/track/${featured.spotifyTrackId}?utm_source=generator&theme=0`;
+  if (dateEl) {
+    dateEl.textContent = video.subtitle
+      ? `${video.subtitle} • GETTIN' MONEY FOREVER Productions`
+      : "GETTIN' MONEY FOREVER Productions";
+  }
+  if (spotifyEl && featured.spotifyArtistId) {
+    spotifyEl.src = `https://open.spotify.com/embed/artist/${featured.spotifyArtistId}?utm_source=generator&theme=0`;
+    spotifyEl.height = '352';
+  }
+  if (youtubeEl && video.embedUrl) {
+    youtubeEl.src = video.embedUrl;
   }
 }
 
