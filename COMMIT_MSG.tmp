@@ -1,5 +1,0 @@
-﻿Move STRIPE_PRICE_MAP from env var to bundled JSON file.
-
-The 55-entry price map exceeds AWS Lambda's 4KB env var limit, breaking deploys.
-Load it from netlify/functions/_shared/stripe-price-map.json instead, with
-the env var as a fallback.
