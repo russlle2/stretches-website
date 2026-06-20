@@ -23,11 +23,12 @@ fs.mkdirSync(MOCKUP_DIR, { recursive: true });
 // Print zones expressed in normalized 0..1 coordinates inside the 1024x1024
 // Pollinations templates. Hand-tuned to match where each garment's print area
 // actually sits in the source photos.
+// Tuned for the Vertex/Imagen 4 base templates in gmf-site/assets/templates/.
+// All coordinates are normalized 0..1 of the 1024x1024 base photo.
 const PRINT_ZONE = {
-  tee:    { cx: 0.50, cy: 0.50, w: 0.38, h: 0.48 },
-  // Place on left thigh, above the inseam, so it doesn't get cut by the V
-  shorts: { cx: 0.32, cy: 0.50, w: 0.22, h: 0.24 },
-  hat:    { cx: 0.50, cy: 0.42, w: 0.40, h: 0.22 },
+  tee:    { cx: 0.50, cy: 0.48, w: 0.40, h: 0.46 }, // chest, center-front
+  shorts: { cx: 0.30, cy: 0.55, w: 0.22, h: 0.22 }, // left thigh, above hem
+  hat:    { cx: 0.50, cy: 0.42, w: 0.38, h: 0.22 }, // front panel, above brim
 };
 
 async function getTemplateSize(garment) {
