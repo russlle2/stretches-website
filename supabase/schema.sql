@@ -1,4 +1,4 @@
--- GMF STRETCH website — Supabase schema
+-- GMF Productions website — Supabase schema
 -- Run in Supabase SQL Editor: https://supabase.com/dashboard
 
 create extension if not exists "uuid-ossp";

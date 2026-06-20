@@ -40,7 +40,7 @@ async function main() {
     console.log('updateSite failed:', e.message);
     // Create new site in team
     result = await api('POST', '/accounts/christopherlake96/sites', {
-      name: 'gmf-stretch',
+      name: 'gmf-productions',
       ...payload,
     });
     console.log('Created new site:', result.name, result.ssl_url || result.url);

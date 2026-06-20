@@ -29,7 +29,7 @@ async function setSiteEnv(siteId, key, value) {
 }
 
 async function main() {
-  const siteName = 'gmfstretch-test';
+  const siteName = 'gmfproductions-test';
   const sites = await api('GET', '/sites');
   let site = sites.find((s) => s.name === siteName);
 
@@ -65,7 +65,7 @@ async function main() {
     STRIPE_PRICE_MAP: process.env.STRIPE_PRICE_MAP,
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY,
-    BOOKING_EMAIL: process.env.BOOKING_EMAIL || 'booking@gmfstretch.com',
+    BOOKING_EMAIL: process.env.BOOKING_EMAIL || 'booking@gmfproductions.com',
     SITE_URL: siteUrl,
     NODE_VERSION: '20',
   };

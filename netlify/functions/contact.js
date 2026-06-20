@@ -24,7 +24,7 @@ exports.handler = async (event) => {
       visitor_name: name,
       visitor_email: email,
       message,
-      slug: subject || 'gmf-stretch-website',
+      slug: subject || 'gmf-productions-website',
     });
 
     if (error) throw error;

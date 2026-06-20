@@ -8,7 +8,7 @@ window.PRODUCTS = {
     "slug": "time-is-money-tee",
     "type": "productGroup",
     "name": "Time Is Money Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -92,7 +92,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "time-is-money",
@@ -103,7 +103,7 @@ window.PRODUCTS = {
     "slug": "time-is-money-shorts",
     "type": "productGroup",
     "name": "Time Is Money Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -187,7 +187,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "time-is-money",
@@ -198,14 +198,14 @@ window.PRODUCTS = {
     "slug": "time-is-money-hat",
     "type": "productGroup",
     "name": "Time Is Money Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Blue drip alarm-clock graphic — every second is currency. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -231,13 +231,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-TIMEISMONEY-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/time-is-money-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "time-is-money",
@@ -248,7 +248,7 @@ window.PRODUCTS = {
     "slug": "money-bag-black-tee",
     "type": "productGroup",
     "name": "Money Bag — Black Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -332,7 +332,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-black",
@@ -343,7 +343,7 @@ window.PRODUCTS = {
     "slug": "money-bag-black-shorts",
     "type": "productGroup",
     "name": "Money Bag — Black Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -427,7 +427,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-black",
@@ -438,7 +438,7 @@ window.PRODUCTS = {
     "slug": "money-bag-gold-tee",
     "type": "productGroup",
     "name": "Money Bag — Gold Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -522,7 +522,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-gold",
@@ -533,7 +533,7 @@ window.PRODUCTS = {
     "slug": "money-bag-gold-shorts",
     "type": "productGroup",
     "name": "Money Bag — Gold Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -617,7 +617,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-gold",
@@ -628,7 +628,7 @@ window.PRODUCTS = {
     "slug": "money-bag-violet-tee",
     "type": "productGroup",
     "name": "Money Bag — Violet Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -712,7 +712,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-violet",
@@ -723,7 +723,7 @@ window.PRODUCTS = {
     "slug": "money-bag-violet-shorts",
     "type": "productGroup",
     "name": "Money Bag — Violet Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -807,7 +807,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "money-bag-violet",
@@ -818,7 +818,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-black-tee",
     "type": "productGroup",
     "name": "GMF Wave Mark — Black Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -902,7 +902,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-black",
@@ -913,7 +913,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-black-shorts",
     "type": "productGroup",
     "name": "GMF Wave Mark — Black Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -997,7 +997,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-black",
@@ -1008,14 +1008,14 @@ window.PRODUCTS = {
     "slug": "gmf-wave-black-hat",
     "type": "productGroup",
     "name": "GMF Wave Mark — Black Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Signature GMF wave logo, classic black ink. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -1041,13 +1041,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFWAVEBLACK-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-wave-black-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-black",
@@ -1058,7 +1058,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-outline-tee",
     "type": "productGroup",
     "name": "GMF Wave Mark — Outline Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1142,7 +1142,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-outline",
@@ -1153,7 +1153,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-outline-shorts",
     "type": "productGroup",
     "name": "GMF Wave Mark — Outline Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1237,7 +1237,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-outline",
@@ -1248,14 +1248,14 @@ window.PRODUCTS = {
     "slug": "gmf-wave-outline-hat",
     "type": "productGroup",
     "name": "GMF Wave Mark — Outline Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "GMF wave logo, outline edition. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -1281,13 +1281,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFWAVEOUTLINE-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-wave-outline-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-outline",
@@ -1298,7 +1298,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-pink-tee",
     "type": "productGroup",
     "name": "GMF Wave Mark — Pink Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1382,7 +1382,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-pink",
@@ -1393,7 +1393,7 @@ window.PRODUCTS = {
     "slug": "gmf-wave-pink-shorts",
     "type": "productGroup",
     "name": "GMF Wave Mark — Pink Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1477,7 +1477,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-pink",
@@ -1488,14 +1488,14 @@ window.PRODUCTS = {
     "slug": "gmf-wave-pink-hat",
     "type": "productGroup",
     "name": "GMF Wave Mark — Pink Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "GMF wave logo, hot-pink heat-print. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -1521,13 +1521,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFWAVEPINK-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-wave-pink-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-wave-pink",
@@ -1538,7 +1538,7 @@ window.PRODUCTS = {
     "slug": "gmf-graffiti-pink-tee",
     "type": "productGroup",
     "name": "GMF Graffiti Tag Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1622,7 +1622,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-graffiti-pink",
@@ -1633,7 +1633,7 @@ window.PRODUCTS = {
     "slug": "gmf-graffiti-pink-shorts",
     "type": "productGroup",
     "name": "GMF Graffiti Tag Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1717,7 +1717,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-graffiti-pink",
@@ -1728,7 +1728,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-groovy-pink-tee",
     "type": "productGroup",
     "name": "Gettin Money Forever — Groovy Pink Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1812,7 +1812,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-groovy-pink",
@@ -1823,7 +1823,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-groovy-pink-shorts",
     "type": "productGroup",
     "name": "Gettin Money Forever — Groovy Pink Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -1907,7 +1907,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-groovy-pink",
@@ -1918,7 +1918,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-groovy-purple-tee",
     "type": "productGroup",
     "name": "Gettin Money Forever — Groovy Purple Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2002,7 +2002,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-groovy-purple",
@@ -2013,7 +2013,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-groovy-purple-shorts",
     "type": "productGroup",
     "name": "Gettin Money Forever — Groovy Purple Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2097,7 +2097,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-groovy-purple",
@@ -2108,7 +2108,7 @@ window.PRODUCTS = {
     "slug": "gmf-astronaut-bigger-goals-tee",
     "type": "productGroup",
     "name": "Bigger Your Goals — Astronaut Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2192,7 +2192,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-astronaut-bigger-goals",
@@ -2203,7 +2203,7 @@ window.PRODUCTS = {
     "slug": "gmf-904-gold-tee",
     "type": "productGroup",
     "name": "GMF 904 — Gold Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2287,7 +2287,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-gold",
@@ -2298,7 +2298,7 @@ window.PRODUCTS = {
     "slug": "gmf-904-gold-shorts",
     "type": "productGroup",
     "name": "GMF 904 — Gold Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2382,7 +2382,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-gold",
@@ -2393,14 +2393,14 @@ window.PRODUCTS = {
     "slug": "gmf-904-gold-hat",
     "type": "productGroup",
     "name": "GMF 904 — Gold Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Jacksonville crest in metallic gold + blue. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -2426,13 +2426,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMF904GOLD-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-904-gold-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-gold",
@@ -2443,7 +2443,7 @@ window.PRODUCTS = {
     "slug": "gmf-904-chrome-tee",
     "type": "productGroup",
     "name": "GMF 904 — Chrome Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2527,7 +2527,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-chrome",
@@ -2538,7 +2538,7 @@ window.PRODUCTS = {
     "slug": "gmf-904-chrome-shorts",
     "type": "productGroup",
     "name": "GMF 904 — Chrome Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2622,7 +2622,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-chrome",
@@ -2633,14 +2633,14 @@ window.PRODUCTS = {
     "slug": "gmf-904-chrome-hat",
     "type": "productGroup",
     "name": "GMF 904 — Chrome Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Jacksonville crest in raw chrome finish. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -2666,13 +2666,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMF904CHROME-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-904-chrome-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-904-chrome",
@@ -2683,7 +2683,7 @@ window.PRODUCTS = {
     "slug": "gmf-cassette-fire-tee",
     "type": "productGroup",
     "name": "Tape On Fire Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2767,7 +2767,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-cassette-fire",
@@ -2778,7 +2778,7 @@ window.PRODUCTS = {
     "slug": "game-over-tee",
     "type": "productGroup",
     "name": "Game Over Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2862,7 +2862,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "game-over",
@@ -2873,7 +2873,7 @@ window.PRODUCTS = {
     "slug": "gmf-angel-black-tee",
     "type": "productGroup",
     "name": "GMF Angel — Black Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -2957,7 +2957,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-black",
@@ -2968,7 +2968,7 @@ window.PRODUCTS = {
     "slug": "gmf-angel-black-shorts",
     "type": "productGroup",
     "name": "GMF Angel — Black Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3052,7 +3052,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-black",
@@ -3063,14 +3063,14 @@ window.PRODUCTS = {
     "slug": "gmf-angel-black-hat",
     "type": "productGroup",
     "name": "GMF Angel — Black Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Winged angel mascot, classic black. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -3096,13 +3096,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFANGELBLACK-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-angel-black-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-black",
@@ -3113,7 +3113,7 @@ window.PRODUCTS = {
     "slug": "gmf-angel-navy-tee",
     "type": "productGroup",
     "name": "GMF Angel — Navy Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3197,7 +3197,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-navy",
@@ -3208,7 +3208,7 @@ window.PRODUCTS = {
     "slug": "gmf-angel-navy-shorts",
     "type": "productGroup",
     "name": "GMF Angel — Navy Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3292,7 +3292,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-navy",
@@ -3303,14 +3303,14 @@ window.PRODUCTS = {
     "slug": "gmf-angel-navy-hat",
     "type": "productGroup",
     "name": "GMF Angel — Navy Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Winged angel mascot, deep navy edition. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -3336,13 +3336,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFANGELNAVY-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-angel-navy-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-angel-navy",
@@ -3353,7 +3353,7 @@ window.PRODUCTS = {
     "slug": "faith-over-fear-tee",
     "type": "productGroup",
     "name": "Faith Over Fear Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3437,7 +3437,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "faith-over-fear",
@@ -3448,7 +3448,7 @@ window.PRODUCTS = {
     "slug": "faith-over-fear-shorts",
     "type": "productGroup",
     "name": "Faith Over Fear Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3532,7 +3532,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "faith-over-fear",
@@ -3543,7 +3543,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-drip-tee",
     "type": "productGroup",
     "name": "Gettin Money Forever — Drip Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3627,7 +3627,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-drip",
@@ -3638,7 +3638,7 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-drip-shorts",
     "type": "productGroup",
     "name": "Gettin Money Forever — Drip Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3722,7 +3722,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-drip",
@@ -3733,14 +3733,14 @@ window.PRODUCTS = {
     "slug": "gettin-money-forever-drip-hat",
     "type": "productGroup",
     "name": "Gettin Money Forever — Drip Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Hand-drawn drippy 'Gettin Money Forever' with falling star. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -3766,13 +3766,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GETTINMONEYFOREVERDRIP-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gettin-money-forever-drip-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gettin-money-forever-drip",
@@ -3783,7 +3783,7 @@ window.PRODUCTS = {
     "slug": "get-money-franklin-blue-tee",
     "type": "productGroup",
     "name": "Get Money — Franklin Blue Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3867,7 +3867,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "get-money-franklin-blue",
@@ -3878,7 +3878,7 @@ window.PRODUCTS = {
     "slug": "get-money-franklin-tee",
     "type": "productGroup",
     "name": "Get Money — Franklin Classic Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -3962,7 +3962,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "get-money-franklin",
@@ -3973,7 +3973,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-grayscale-tee",
     "type": "productGroup",
     "name": "GMF Crown — Grayscale Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4057,7 +4057,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-grayscale",
@@ -4068,7 +4068,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-grayscale-shorts",
     "type": "productGroup",
     "name": "GMF Crown — Grayscale Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4152,7 +4152,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-grayscale",
@@ -4163,14 +4163,14 @@ window.PRODUCTS = {
     "slug": "gmf-crown-grayscale-hat",
     "type": "productGroup",
     "name": "GMF Crown — Grayscale Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Crowned GMF emblem inside a spiked star. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -4196,13 +4196,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFCROWNGRAYSCALE-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-crown-grayscale-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-grayscale",
@@ -4213,7 +4213,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-white-tee",
     "type": "productGroup",
     "name": "GMF Crown — White Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4297,7 +4297,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-white",
@@ -4308,7 +4308,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-white-shorts",
     "type": "productGroup",
     "name": "GMF Crown — White Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4392,7 +4392,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-white",
@@ -4403,14 +4403,14 @@ window.PRODUCTS = {
     "slug": "gmf-crown-white-hat",
     "type": "productGroup",
     "name": "GMF Crown — White Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Crowned GMF emblem in clean white linework. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -4436,13 +4436,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFCROWNWHITE-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-crown-white-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-white",
@@ -4453,7 +4453,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-blue-tee",
     "type": "productGroup",
     "name": "GMF Crown — Royal Blue Tee",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "tees",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4537,7 +4537,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-blue",
@@ -4548,7 +4548,7 @@ window.PRODUCTS = {
     "slug": "gmf-crown-blue-shorts",
     "type": "productGroup",
     "name": "GMF Crown — Royal Blue Shorts",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "shorts",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
@@ -4632,7 +4632,7 @@ window.PRODUCTS = {
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-blue",
@@ -4643,14 +4643,14 @@ window.PRODUCTS = {
     "slug": "gmf-crown-blue-hat",
     "type": "productGroup",
     "name": "GMF Crown — Royal Blue Hat",
-    "brand": "GMF STRETCH",
+    "brand": "GMF Productions",
     "category": "hats",
     "collection": "gmf-productions",
     "missionTag": "Gettin Money Forever.",
     "description": "Crowned GMF emblem with royal-blue fill and silver border. Printed on a heavyweight black hat from the GMF Productions catalog.",
     "priceRange": {
-      "min": 19.99,
-      "max": 19.99,
+      "min": 25,
+      "max": 25,
       "currency": "USD"
     },
     "material": "6-panel structured cotton twill",
@@ -4676,13 +4676,13 @@ window.PRODUCTS = {
         "sku": "GMF-HAT-GMFCROWNBLUE-OS",
         "size": "OS",
         "color": "Black",
-        "price": 19.99,
+        "price": 25,
         "inventoryStatus": "in_stock",
         "featuredImage": "assets/mockups/gmf-crown-blue-hat.jpg"
       }
     ],
     "trustBadges": [
-      "Official GMF STRETCH Product",
+      "Official GMF Productions Product",
       "Print-on-demand from Jacksonville, FL"
     ],
     "design": "gmf-crown-blue",

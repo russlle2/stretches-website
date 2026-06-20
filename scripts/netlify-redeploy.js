@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env' });
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-const siteUrl = 'https://gmfstretch-test.netlify.app';
+const siteUrl = 'https://gmfproductions-test.netlify.app';
 const webhookSecret = process.argv[2] || process.env.STRIPE_WEBHOOK_SECRET;
 
 const deployEnv = `STRIPE_SECRET_KEY=${process.env.STRIPE_SECRET_KEY}
@@ -11,7 +11,7 @@ STRIPE_PRICE_MAP=${process.env.STRIPE_PRICE_MAP}
 STRIPE_WEBHOOK_SECRET=${webhookSecret}
 SUPABASE_URL=https://psxmvaushwsboogfnyqi.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=${process.env.SUPABASE_SERVICE_ROLE_KEY}
-BOOKING_EMAIL=booking@gmfstretch.com
+BOOKING_EMAIL=booking@gmfproductions.com
 SITE_URL=${siteUrl}
 NODE_VERSION=20
 `;

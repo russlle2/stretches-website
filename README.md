@@ -1,6 +1,6 @@
-# Stretches Website
+# GMF Productions Website
 
-Official website for **GMF STRETCH** (Joshua Miller) — music, merch, and live integrations powered by Stripe, Supabase, and Netlify.
+Official website for **GMF Productions** (Joshua Miller) — music, merch, and live integrations powered by Stripe, Supabase, and Netlify.
 
 ## Stack
 
@@ -21,7 +21,7 @@ npm run dev            # netlify dev — functions + site at :8888
 
 ## Deploy to Netlify
 
-1. Push this repo to GitHub (`stretches-website`)
+1. Push this repo to GitHub
 2. [Connect the repo in Netlify](https://app.netlify.com)
 3. Add environment variables from `.env.example` in **Site settings → Environment variables**
 4. Run `supabase/schema.sql` in your Supabase SQL editor

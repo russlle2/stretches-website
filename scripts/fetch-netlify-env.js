@@ -14,7 +14,7 @@ async function main() {
     SUPABASE_SERVICE_ROLE_KEY: get('SUPABASE_SERVICE_ROLE_KEY'),
     STRIPE_SECRET_KEY: get('STRIPE_SECRET_KEY'),
     STRIPE_WEBHOOK_SECRET: get('STRIPE_WEBHOOK_SECRET'),
-    BOOKING_EMAIL: 'booking@gmfstretch.com',
+    BOOKING_EMAIL: 'booking@gmfproductions.com',
     YOUTUBE_CHANNEL_HANDLE: 'GMF_Str3tch',
   };
 

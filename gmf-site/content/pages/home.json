@@ -2,8 +2,8 @@
   "route": "/",
   "template": "home",
   "seo": {
-    "title": "GMF STRETCH | Jacksonville Streetwear",
-    "description": "GMF STRETCH delivers heavyweight tees, premium streetwear, and limited drops rooted in Jacksonville loyalty, hustle, and legacy."
+    "title": "GMF Productions | Jacksonville Streetwear",
+    "description": "GMF Productions delivers heavyweight tees, premium streetwear, and limited drops rooted in Jacksonville loyalty, hustle, and legacy."
   },
   "sections": [
     {
@@ -29,7 +29,7 @@
         },
         "media": {
           "image": "assets/home-hero.png",
-          "alt": "Nighttime Jacksonville streetwear editorial featuring GMF STRETCH apparel."
+          "alt": "Nighttime Jacksonville streetwear editorial featuring GMF Productions apparel."
         }
       }
     },

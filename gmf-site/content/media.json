@@ -1,13 +1,13 @@
 {
   "artist": {
-    "name": "GMF STRETCH",
+    "name": "GMF Productions",
     "legalName": "Joshua Miller",
     "label": "GETTIN' MONEY FOREVER Productions LLC",
     "location": "Southside / Florida"
   },
   "hero": {
     "eyebrow": "Gettin' Money Forever",
-    "headline": "GMF STRETCH",
+    "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
     "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
     "featuredVideo": {
@@ -20,7 +20,7 @@
     "featuredTrack": {
       "title": "No Restin",
       "spotifyArtistId": "7JhhCQz1w8HYAFMyCZAu6R",
-      "description": "Official music video from GMF Str3tch. Stream the full catalog on Spotify."
+      "description": "Official music video from GMF Productions. Stream the full catalog on Spotify."
     }
   },
   "tracks": [
@@ -31,22 +31,22 @@
     },
     {
       "title": "Get Em' Gone (feat. D MAN JR)",
-      "spotifySearch": "GMF Str3tch Get Em Gone",
+      "spotifySearch": "GMF Productions Get Em Gone",
       "rank": 1
     },
     {
       "title": "Big Smoke",
-      "spotifySearch": "GMF Str3tch Big Smoke",
+      "spotifySearch": "GMF Productions Big Smoke",
       "rank": 2
     },
     {
       "title": "Interstate",
-      "spotifySearch": "GMF Str3tch Interstate",
+      "spotifySearch": "GMF Productions Interstate",
       "rank": 3
     },
     {
       "title": "Like I Left Sum",
-      "spotifySearch": "GMF Str3tch Like I Left Sum",
+      "spotifySearch": "GMF Productions Like I Left Sum",
       "rank": 4
     }
   ],
@@ -60,7 +60,7 @@
     },
     {
       "id": "channel-gmf-str3tch",
-      "title": "More from GMF Str3tch",
+      "title": "More from GMF Productions",
       "embedUrl": "https://www.youtube.com/embed?listType=user_uploads&list=GMF_Str3tch",
       "thumbnail": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
       "type": "channel",

@@ -1,7 +1,7 @@
 {
-  "name": "stretches-website",
+  "name": "gmf-productions-website",
   "version": "1.0.0",
-  "description": "Official GMF STRETCH website — music, merch, and live integrations",
+  "description": "Official GMF Productions website — music, merch, and live integrations",
   "private": true,
   "scripts": {
     "dev": "netlify dev",

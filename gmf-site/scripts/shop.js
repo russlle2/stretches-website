@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'all', label: 'All' },
     { id: 'tees', label: 'Tees · $25' },
     { id: 'shorts', label: 'Shorts · $35' },
-    { id: 'hats', label: 'Hats · $19.99' },
+    { id: 'hats', label: 'Hats · $25' },
   ];
 
   let activeCat = 'all';

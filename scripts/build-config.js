@@ -8,7 +8,7 @@ const config = {
   stripePublishableKey: publishableKey,
   checkoutEnabled,
   siteUrl: process.env.SITE_URL || '',
-  bookingEmail: process.env.BOOKING_EMAIL || 'booking@gmfstretch.com',
+  bookingEmail: process.env.BOOKING_EMAIL || 'booking@gmfproductions.com',
 };
 
 const outPath = path.join(__dirname, '../gmf-site/scripts/site-config.js');

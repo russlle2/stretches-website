@@ -37,8 +37,8 @@ const GARMENT_META = {
   hat: {
     label: 'Hat',
     category: 'hats',
-    price: 19.99,
-    unitAmount: 1999,
+    price: 25,
+    unitAmount: 2500,
     material: '6-panel structured cotton twill',
     fit: 'One size, snapback adjustable',
     gsm: null,
@@ -73,7 +73,7 @@ for (const d of manifest.designs) {
       slug,
       type: 'productGroup',
       name: `${d.name} ${meta.label}`,
-      brand: 'GMF STRETCH',
+      brand: 'GMF Productions',
       category: meta.category,
       collection: 'gmf-productions',
       missionTag: 'Gettin Money Forever.',
@@ -91,7 +91,7 @@ for (const d of manifest.designs) {
       images: [image, `assets/designs/${d.slug}.png`],
       variants,
       trustBadges: [
-        'Official GMF STRETCH Product',
+        'Official GMF Productions Product',
         'Print-on-demand from Jacksonville, FL',
       ],
       design: d.slug,

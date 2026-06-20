@@ -113,7 +113,7 @@ exports.handler = async (event) => {
       automatic_tax: { enabled: false },
       allow_promotion_codes: true,
       metadata: {
-        source: 'gmf-stretch-website',
+        source: 'gmf-productions-website',
         skus: items.map((i) => i.sku || i.slug || '').join(','),
       },
     });

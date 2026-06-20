@@ -3,7 +3,7 @@ require('dotenv').config({ path: '.env' });
 
 const token = process.env.NETLIFY_AUTH_TOKEN;
 const siteId = '3dc1a9b2-b054-4801-a9c1-6b9ab6a5e35a';
-const siteUrl = 'https://gmfstretch-test.netlify.app';
+const siteUrl = 'https://gmfproductions-test.netlify.app';
 const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
 
 async function api(method, path, body) {
@@ -37,7 +37,7 @@ async function main() {
     STRIPE_PRICE_MAP: process.env.STRIPE_PRICE_MAP,
     SUPABASE_URL: process.env.SUPABASE_URL,
     SUPABASE_SERVICE_ROLE_KEY: process.env.SUPABASE_SERVICE_ROLE_KEY,
-    BOOKING_EMAIL: process.env.BOOKING_EMAIL || 'booking@gmfstretch.com',
+    BOOKING_EMAIL: process.env.BOOKING_EMAIL || 'booking@gmfproductions.com',
     SITE_URL: siteUrl,
     NODE_VERSION: '20',
   };

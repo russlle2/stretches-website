@@ -7,14 +7,14 @@ const FALLBACK_MEDIA = {
     {
       id: 'search-aint-no-sunshine',
       title: 'Aint No Sunshine',
-      embedUrl: 'https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Aint+No+Sunshine+music+video',
+      embedUrl: 'https://www.youtube.com/embed?listType=search&list=GMF+Productions+Aint+No+Sunshine+music+video',
       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
       type: 'search',
     },
     {
       id: 'search-get-em-gone',
       title: "Get Em' Gone",
-      embedUrl: 'https://www.youtube.com/embed?listType=search&list=GMF+Stretch+Get+Em+Gone',
+      embedUrl: 'https://www.youtube.com/embed?listType=search&list=GMF+Productions+Get+Em+Gone',
       thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg',
       type: 'search',
     },
@@ -91,7 +91,7 @@ exports.handler = async (event) => {
     if (apiKey && channelId) {
       videos = await fetchYouTubeChannelVideos(apiKey, channelId);
     } else if (apiKey) {
-      videos = await searchYouTubeVideos(apiKey, 'GMF Stretch OR GMF Str3tch music video');
+      videos = await searchYouTubeVideos(apiKey, 'GMF Productions OR GMF Productions music video');
     }
 
     return json(200, {

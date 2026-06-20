@@ -1,4 +1,4 @@
-// stretch-cart.js — cart modal + Stripe checkout for homepage merch section
+// gmf-cart.js — cart modal + Stripe checkout for homepage merch section
 let cart = [];
 
 const cartCountEl = () => document.getElementById('cart-count');
