@@ -1,9 +1,33 @@
 const Stripe = require('stripe');
+const path = require('path');
+const fs = require('fs');
 const { json } = require('./_shared/supabase');
 
 const stripe = process.env.STRIPE_SECRET_KEY
   ? new Stripe(process.env.STRIPE_SECRET_KEY)
   : null;
+
+// Load the SKU -> Stripe price ID map bundled with the function. Falls back to
+// the STRIPE_PRICE_MAP env var if the file is missing for any reason.
+function loadPriceMap() {
+  const candidates = [
+    path.join(__dirname, '_shared', 'stripe-price-map.json'),
+    path.join(__dirname, '..', '..', 'scripts', 'stripe-price-map.json'),
+  ];
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(p)) {
+        return JSON.parse(fs.readFileSync(p, 'utf8'));
+      }
+    } catch (_e) { /* keep trying */ }
+  }
+  try {
+    return JSON.parse(process.env.STRIPE_PRICE_MAP || '{}');
+  } catch (_e) {
+    return {};
+  }
+}
+const PRICE_MAP = loadPriceMap();
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') {
@@ -24,7 +48,7 @@ exports.handler = async (event) => {
       return json(400, { error: 'Cart is empty' });
     }
 
-    const priceMap = JSON.parse(process.env.STRIPE_PRICE_MAP || '{}');
+    const priceMap = PRICE_MAP;
     const siteUrl = process.env.SITE_URL || process.env.URL || 'http://localhost:8888';
 
     // Each variant SKU looks like GMF-TEE-TIMEISMONEY-S; the price map is keyed

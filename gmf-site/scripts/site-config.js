@@ -2,6 +2,6 @@
 window.SITE_CONFIG = {
   "stripePublishableKey": "",
   "checkoutEnabled": true,
-  "siteUrl": "https://gmfstretch-test.netlify.app",
+  "siteUrl": "https://gmfproductions-dailyclarity.netlify.app",
   "bookingEmail": "booking@gmfstretch.com"
 };
