@@ -8,3 +8,5 @@ Thumbs.db
 .cursor/
 scripts/tmp-*.json
 tmp-thumbs/
+COMMIT_MSG.tmp
+*.tmp
