@@ -1,0 +1,987 @@
+[
+  {
+    "sku": "GMF-TEE-TIMEISMONEY",
+    "slug": "time-is-money-tee",
+    "name": "Time Is Money Tee",
+    "description": "Blue drip alarm-clock graphic — every second is currency.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "time-is-money",
+    "image": "assets/mockups/time-is-money-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-TIMEISMONEY",
+    "slug": "time-is-money-shorts",
+    "name": "Time Is Money Shorts",
+    "description": "Blue drip alarm-clock graphic — every second is currency.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "time-is-money",
+    "image": "assets/mockups/time-is-money-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-TIMEISMONEY",
+    "slug": "time-is-money-hat",
+    "name": "Time Is Money Hat",
+    "description": "Blue drip alarm-clock graphic — every second is currency.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "time-is-money",
+    "image": "assets/mockups/time-is-money-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-MONEYBAGBLACK",
+    "slug": "money-bag-black-tee",
+    "name": "Money Bag — Black Tee",
+    "description": "Drippy money-bag mascot with chains and peace signs.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "money-bag-black",
+    "image": "assets/mockups/money-bag-black-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-MONEYBAGBLACK",
+    "slug": "money-bag-black-shorts",
+    "name": "Money Bag — Black Shorts",
+    "description": "Drippy money-bag mascot with chains and peace signs.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "money-bag-black",
+    "image": "assets/mockups/money-bag-black-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-MONEYBAGGOLD",
+    "slug": "money-bag-gold-tee",
+    "name": "Money Bag — Gold Tee",
+    "description": "Money-bag mascot, gold-chain colorway.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "money-bag-gold",
+    "image": "assets/mockups/money-bag-gold-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-MONEYBAGGOLD",
+    "slug": "money-bag-gold-shorts",
+    "name": "Money Bag — Gold Shorts",
+    "description": "Money-bag mascot, gold-chain colorway.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "money-bag-gold",
+    "image": "assets/mockups/money-bag-gold-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-MONEYBAGVIOLET",
+    "slug": "money-bag-violet-tee",
+    "name": "Money Bag — Violet Tee",
+    "description": "Money-bag mascot, violet colorway.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "money-bag-violet",
+    "image": "assets/mockups/money-bag-violet-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-MONEYBAGVIOLET",
+    "slug": "money-bag-violet-shorts",
+    "name": "Money Bag — Violet Shorts",
+    "description": "Money-bag mascot, violet colorway.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "money-bag-violet",
+    "image": "assets/mockups/money-bag-violet-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFWAVEBLACK",
+    "slug": "gmf-wave-black-tee",
+    "name": "GMF Wave Mark — Black Tee",
+    "description": "Signature GMF wave logo, classic black ink.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-wave-black",
+    "image": "assets/mockups/gmf-wave-black-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFWAVEBLACK",
+    "slug": "gmf-wave-black-shorts",
+    "name": "GMF Wave Mark — Black Shorts",
+    "description": "Signature GMF wave logo, classic black ink.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-wave-black",
+    "image": "assets/mockups/gmf-wave-black-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFWAVEBLACK",
+    "slug": "gmf-wave-black-hat",
+    "name": "GMF Wave Mark — Black Hat",
+    "description": "Signature GMF wave logo, classic black ink.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-wave-black",
+    "image": "assets/mockups/gmf-wave-black-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFWAVEOUTLINE",
+    "slug": "gmf-wave-outline-tee",
+    "name": "GMF Wave Mark — Outline Tee",
+    "description": "GMF wave logo, outline edition.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-wave-outline",
+    "image": "assets/mockups/gmf-wave-outline-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFWAVEOUTLINE",
+    "slug": "gmf-wave-outline-shorts",
+    "name": "GMF Wave Mark — Outline Shorts",
+    "description": "GMF wave logo, outline edition.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-wave-outline",
+    "image": "assets/mockups/gmf-wave-outline-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFWAVEOUTLINE",
+    "slug": "gmf-wave-outline-hat",
+    "name": "GMF Wave Mark — Outline Hat",
+    "description": "GMF wave logo, outline edition.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-wave-outline",
+    "image": "assets/mockups/gmf-wave-outline-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFWAVEPINK",
+    "slug": "gmf-wave-pink-tee",
+    "name": "GMF Wave Mark — Pink Tee",
+    "description": "GMF wave logo, hot-pink heat-print.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-wave-pink",
+    "image": "assets/mockups/gmf-wave-pink-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFWAVEPINK",
+    "slug": "gmf-wave-pink-shorts",
+    "name": "GMF Wave Mark — Pink Shorts",
+    "description": "GMF wave logo, hot-pink heat-print.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-wave-pink",
+    "image": "assets/mockups/gmf-wave-pink-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFWAVEPINK",
+    "slug": "gmf-wave-pink-hat",
+    "name": "GMF Wave Mark — Pink Hat",
+    "description": "GMF wave logo, hot-pink heat-print.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-wave-pink",
+    "image": "assets/mockups/gmf-wave-pink-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFGRAFFITIPINK",
+    "slug": "gmf-graffiti-pink-tee",
+    "name": "GMF Graffiti Tag Tee",
+    "description": "Spray-painted GMF tag with neon halo.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-graffiti-pink",
+    "image": "assets/mockups/gmf-graffiti-pink-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFGRAFFITIPINK",
+    "slug": "gmf-graffiti-pink-shorts",
+    "name": "GMF Graffiti Tag Shorts",
+    "description": "Spray-painted GMF tag with neon halo.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-graffiti-pink",
+    "image": "assets/mockups/gmf-graffiti-pink-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GETTINMONEYFOREVERGROOVYPINK",
+    "slug": "gettin-money-forever-groovy-pink-tee",
+    "name": "Gettin Money Forever — Groovy Pink Tee",
+    "description": "Wavy 70s-style 'Gettin Money Forever' lettering.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gettin-money-forever-groovy-pink",
+    "image": "assets/mockups/gettin-money-forever-groovy-pink-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GETTINMONEYFOREVERGROOVYPINK",
+    "slug": "gettin-money-forever-groovy-pink-shorts",
+    "name": "Gettin Money Forever — Groovy Pink Shorts",
+    "description": "Wavy 70s-style 'Gettin Money Forever' lettering.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gettin-money-forever-groovy-pink",
+    "image": "assets/mockups/gettin-money-forever-groovy-pink-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GETTINMONEYFOREVERGROOVYPURPLE",
+    "slug": "gettin-money-forever-groovy-purple-tee",
+    "name": "Gettin Money Forever — Groovy Purple Tee",
+    "description": "Wavy retro 'Gettin Money Forever' in deep purple.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gettin-money-forever-groovy-purple",
+    "image": "assets/mockups/gettin-money-forever-groovy-purple-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GETTINMONEYFOREVERGROOVYPURPLE",
+    "slug": "gettin-money-forever-groovy-purple-shorts",
+    "name": "Gettin Money Forever — Groovy Purple Shorts",
+    "description": "Wavy retro 'Gettin Money Forever' in deep purple.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gettin-money-forever-groovy-purple",
+    "image": "assets/mockups/gettin-money-forever-groovy-purple-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFASTRONAUTBIGGERGOALS",
+    "slug": "gmf-astronaut-bigger-goals-tee",
+    "name": "Bigger Your Goals — Astronaut Tee",
+    "description": "Astronaut reaching for the moon. 'The bigger your goals, the further you'll go.'",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-astronaut-bigger-goals",
+    "image": "assets/mockups/gmf-astronaut-bigger-goals-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMF904GOLD",
+    "slug": "gmf-904-gold-tee",
+    "name": "GMF 904 — Gold Tee",
+    "description": "Jacksonville crest in metallic gold + blue.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-904-gold",
+    "image": "assets/mockups/gmf-904-gold-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMF904GOLD",
+    "slug": "gmf-904-gold-shorts",
+    "name": "GMF 904 — Gold Shorts",
+    "description": "Jacksonville crest in metallic gold + blue.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-904-gold",
+    "image": "assets/mockups/gmf-904-gold-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMF904GOLD",
+    "slug": "gmf-904-gold-hat",
+    "name": "GMF 904 — Gold Hat",
+    "description": "Jacksonville crest in metallic gold + blue.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-904-gold",
+    "image": "assets/mockups/gmf-904-gold-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMF904CHROME",
+    "slug": "gmf-904-chrome-tee",
+    "name": "GMF 904 — Chrome Tee",
+    "description": "Jacksonville crest in raw chrome finish.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-904-chrome",
+    "image": "assets/mockups/gmf-904-chrome-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMF904CHROME",
+    "slug": "gmf-904-chrome-shorts",
+    "name": "GMF 904 — Chrome Shorts",
+    "description": "Jacksonville crest in raw chrome finish.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-904-chrome",
+    "image": "assets/mockups/gmf-904-chrome-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMF904CHROME",
+    "slug": "gmf-904-chrome-hat",
+    "name": "GMF 904 — Chrome Hat",
+    "description": "Jacksonville crest in raw chrome finish.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-904-chrome",
+    "image": "assets/mockups/gmf-904-chrome-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFCASSETTEFIRE",
+    "slug": "gmf-cassette-fire-tee",
+    "name": "Tape On Fire Tee",
+    "description": "GMF Productions cassette burning over guitars and mics.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-cassette-fire",
+    "image": "assets/mockups/gmf-cassette-fire-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GAMEOVER",
+    "slug": "game-over-tee",
+    "name": "Game Over Tee",
+    "description": "Stencil 'GAME OVER' arsenal collage.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "game-over",
+    "image": "assets/mockups/game-over-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFANGELBLACK",
+    "slug": "gmf-angel-black-tee",
+    "name": "GMF Angel — Black Tee",
+    "description": "Winged angel mascot, classic black.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-angel-black",
+    "image": "assets/mockups/gmf-angel-black-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFANGELBLACK",
+    "slug": "gmf-angel-black-shorts",
+    "name": "GMF Angel — Black Shorts",
+    "description": "Winged angel mascot, classic black.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-angel-black",
+    "image": "assets/mockups/gmf-angel-black-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFANGELBLACK",
+    "slug": "gmf-angel-black-hat",
+    "name": "GMF Angel — Black Hat",
+    "description": "Winged angel mascot, classic black.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-angel-black",
+    "image": "assets/mockups/gmf-angel-black-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFANGELNAVY",
+    "slug": "gmf-angel-navy-tee",
+    "name": "GMF Angel — Navy Tee",
+    "description": "Winged angel mascot, deep navy edition.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-angel-navy",
+    "image": "assets/mockups/gmf-angel-navy-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFANGELNAVY",
+    "slug": "gmf-angel-navy-shorts",
+    "name": "GMF Angel — Navy Shorts",
+    "description": "Winged angel mascot, deep navy edition.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-angel-navy",
+    "image": "assets/mockups/gmf-angel-navy-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFANGELNAVY",
+    "slug": "gmf-angel-navy-hat",
+    "name": "GMF Angel — Navy Hat",
+    "description": "Winged angel mascot, deep navy edition.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-angel-navy",
+    "image": "assets/mockups/gmf-angel-navy-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-FAITHOVERFEAR",
+    "slug": "faith-over-fear-tee",
+    "name": "Faith Over Fear Tee",
+    "description": "Smiley-wheel low-rider with 'Faith Over Fear' banner.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "faith-over-fear",
+    "image": "assets/mockups/faith-over-fear-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-FAITHOVERFEAR",
+    "slug": "faith-over-fear-shorts",
+    "name": "Faith Over Fear Shorts",
+    "description": "Smiley-wheel low-rider with 'Faith Over Fear' banner.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "faith-over-fear",
+    "image": "assets/mockups/faith-over-fear-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GETTINMONEYFOREVERDRIP",
+    "slug": "gettin-money-forever-drip-tee",
+    "name": "Gettin Money Forever — Drip Tee",
+    "description": "Hand-drawn drippy 'Gettin Money Forever' with falling star.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gettin-money-forever-drip",
+    "image": "assets/mockups/gettin-money-forever-drip-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GETTINMONEYFOREVERDRIP",
+    "slug": "gettin-money-forever-drip-shorts",
+    "name": "Gettin Money Forever — Drip Shorts",
+    "description": "Hand-drawn drippy 'Gettin Money Forever' with falling star.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gettin-money-forever-drip",
+    "image": "assets/mockups/gettin-money-forever-drip-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GETTINMONEYFOREVERDRIP",
+    "slug": "gettin-money-forever-drip-hat",
+    "name": "Gettin Money Forever — Drip Hat",
+    "description": "Hand-drawn drippy 'Gettin Money Forever' with falling star.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gettin-money-forever-drip",
+    "image": "assets/mockups/gettin-money-forever-drip-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GETMONEYFRANKLINBLUE",
+    "slug": "get-money-franklin-blue-tee",
+    "name": "Get Money — Franklin Blue Tee",
+    "description": "Bandit Ben Franklin crest, electric blue.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "get-money-franklin-blue",
+    "image": "assets/mockups/get-money-franklin-blue-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GETMONEYFRANKLIN",
+    "slug": "get-money-franklin-tee",
+    "name": "Get Money — Franklin Classic Tee",
+    "description": "Bandit Ben Franklin crest, black on natural.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "get-money-franklin",
+    "image": "assets/mockups/get-money-franklin-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFCROWNGRAYSCALE",
+    "slug": "gmf-crown-grayscale-tee",
+    "name": "GMF Crown — Grayscale Tee",
+    "description": "Crowned GMF emblem inside a spiked star.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-crown-grayscale",
+    "image": "assets/mockups/gmf-crown-grayscale-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFCROWNGRAYSCALE",
+    "slug": "gmf-crown-grayscale-shorts",
+    "name": "GMF Crown — Grayscale Shorts",
+    "description": "Crowned GMF emblem inside a spiked star.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-crown-grayscale",
+    "image": "assets/mockups/gmf-crown-grayscale-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFCROWNGRAYSCALE",
+    "slug": "gmf-crown-grayscale-hat",
+    "name": "GMF Crown — Grayscale Hat",
+    "description": "Crowned GMF emblem inside a spiked star.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-crown-grayscale",
+    "image": "assets/mockups/gmf-crown-grayscale-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFCROWNWHITE",
+    "slug": "gmf-crown-white-tee",
+    "name": "GMF Crown — White Tee",
+    "description": "Crowned GMF emblem in clean white linework.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-crown-white",
+    "image": "assets/mockups/gmf-crown-white-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFCROWNWHITE",
+    "slug": "gmf-crown-white-shorts",
+    "name": "GMF Crown — White Shorts",
+    "description": "Crowned GMF emblem in clean white linework.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-crown-white",
+    "image": "assets/mockups/gmf-crown-white-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFCROWNWHITE",
+    "slug": "gmf-crown-white-hat",
+    "name": "GMF Crown — White Hat",
+    "description": "Crowned GMF emblem in clean white linework.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-crown-white",
+    "image": "assets/mockups/gmf-crown-white-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  },
+  {
+    "sku": "GMF-TEE-GMFCROWNBLUE",
+    "slug": "gmf-crown-blue-tee",
+    "name": "GMF Crown — Royal Blue Tee",
+    "description": "Crowned GMF emblem with royal-blue fill and silver border.",
+    "unitAmount": 2500,
+    "currency": "usd",
+    "garment": "tee",
+    "design": "gmf-crown-blue",
+    "image": "assets/mockups/gmf-crown-blue-tee.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-SHORTS-GMFCROWNBLUE",
+    "slug": "gmf-crown-blue-shorts",
+    "name": "GMF Crown — Royal Blue Shorts",
+    "description": "Crowned GMF emblem with royal-blue fill and silver border.",
+    "unitAmount": 3500,
+    "currency": "usd",
+    "garment": "shorts",
+    "design": "gmf-crown-blue",
+    "image": "assets/mockups/gmf-crown-blue-shorts.jpg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ]
+  },
+  {
+    "sku": "GMF-HAT-GMFCROWNBLUE",
+    "slug": "gmf-crown-blue-hat",
+    "name": "GMF Crown — Royal Blue Hat",
+    "description": "Crowned GMF emblem with royal-blue fill and silver border.",
+    "unitAmount": 1999,
+    "currency": "usd",
+    "garment": "hat",
+    "design": "gmf-crown-blue",
+    "image": "assets/mockups/gmf-crown-blue-hat.jpg",
+    "sizes": [
+      "OS"
+    ]
+  }
+]

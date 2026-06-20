@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3>Details</h3>
         <p><strong>Material:</strong> ${product.material}</p>
         <p><strong>Fit:</strong> ${product.fit}</p>
-        <p><strong>GSM:</strong> ${product.gsm}</p>
+        ${product.gsm ? `<p><strong>GSM:</strong> ${product.gsm}</p>` : ''}
         <p><strong>Care:</strong></p>
         <ul>
           ${product.care.map(c => `<li>${c}</li>`).join('')}
@@ -122,8 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // DEBUG: apply background color to verify script runs; remove for production
-    detailContainer.style.backgroundColor = '#550';
     renderVariantOptions();
     updatePriceAndButton();
     // Add to cart handler

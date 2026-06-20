@@ -1,0 +1,202 @@
+{
+  "designs": [
+    {
+      "slug": "time-is-money",
+      "name": "Time Is Money",
+      "tagline": "Blue drip alarm-clock graphic — every second is currency.",
+      "source": "IMG_20260617_221300.png",
+      "primaryColor": "blue",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "money-bag-black",
+      "name": "Money Bag — Black",
+      "tagline": "Drippy money-bag mascot with chains and peace signs.",
+      "source": "IMG_20260617_221305.png",
+      "primaryColor": "black",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "money-bag-gold",
+      "name": "Money Bag — Gold",
+      "tagline": "Money-bag mascot, gold-chain colorway.",
+      "source": "IMG_20260617_221432.png",
+      "primaryColor": "gold",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "money-bag-violet",
+      "name": "Money Bag — Violet",
+      "tagline": "Money-bag mascot, violet colorway.",
+      "source": "IMG_20260617_221436.png",
+      "primaryColor": "violet",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "gmf-wave-black",
+      "name": "GMF Wave Mark — Black",
+      "tagline": "Signature GMF wave logo, classic black ink.",
+      "source": "IMG_20260617_221308.jpg",
+      "primaryColor": "black",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-wave-outline",
+      "name": "GMF Wave Mark — Outline",
+      "tagline": "GMF wave logo, outline edition.",
+      "source": "IMG_20260617_221310.jpg",
+      "primaryColor": "white",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-wave-pink",
+      "name": "GMF Wave Mark — Pink",
+      "tagline": "GMF wave logo, hot-pink heat-print.",
+      "source": "IMG_20260617_221313.jpg",
+      "primaryColor": "pink",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-graffiti-pink",
+      "name": "GMF Graffiti Tag",
+      "tagline": "Spray-painted GMF tag with neon halo.",
+      "source": "IMG_20260617_221316.png",
+      "primaryColor": "pink",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "gettin-money-forever-groovy-pink",
+      "name": "Gettin Money Forever — Groovy Pink",
+      "tagline": "Wavy 70s-style 'Gettin Money Forever' lettering.",
+      "source": "IMG_20260617_221319.png",
+      "primaryColor": "pink",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "gettin-money-forever-groovy-purple",
+      "name": "Gettin Money Forever — Groovy Purple",
+      "tagline": "Wavy retro 'Gettin Money Forever' in deep purple.",
+      "source": "IMG_20260617_221332.png",
+      "primaryColor": "purple",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "gmf-astronaut-bigger-goals",
+      "name": "Bigger Your Goals — Astronaut",
+      "tagline": "Astronaut reaching for the moon. 'The bigger your goals, the further you'll go.'",
+      "source": "IMG_20260617_221336.png",
+      "primaryColor": "black",
+      "garments": ["tee"]
+    },
+    {
+      "slug": "gmf-904-gold",
+      "name": "GMF 904 — Gold",
+      "tagline": "Jacksonville crest in metallic gold + blue.",
+      "source": "IMG_20260617_221349.png",
+      "primaryColor": "gold",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-904-chrome",
+      "name": "GMF 904 — Chrome",
+      "tagline": "Jacksonville crest in raw chrome finish.",
+      "source": "IMG_20260617_221404.png",
+      "primaryColor": "silver",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-cassette-fire",
+      "name": "Tape On Fire",
+      "tagline": "GMF Productions cassette burning over guitars and mics.",
+      "source": "IMG_20260617_221354.png",
+      "primaryColor": "red",
+      "garments": ["tee"]
+    },
+    {
+      "slug": "game-over",
+      "name": "Game Over",
+      "tagline": "Stencil 'GAME OVER' arsenal collage.",
+      "source": "IMG_20260617_221410.png",
+      "primaryColor": "black",
+      "garments": ["tee"]
+    },
+    {
+      "slug": "gmf-angel-black",
+      "name": "GMF Angel — Black",
+      "tagline": "Winged angel mascot, classic black.",
+      "source": "IMG_20260617_221415.png",
+      "primaryColor": "black",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-angel-navy",
+      "name": "GMF Angel — Navy",
+      "tagline": "Winged angel mascot, deep navy edition.",
+      "source": "IMG_20260617_221559.png",
+      "primaryColor": "navy",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "faith-over-fear",
+      "name": "Faith Over Fear",
+      "tagline": "Smiley-wheel low-rider with 'Faith Over Fear' banner.",
+      "source": "IMG_20260617_221423.png",
+      "primaryColor": "black",
+      "garments": ["tee", "shorts"]
+    },
+    {
+      "slug": "gettin-money-forever-drip",
+      "name": "Gettin Money Forever — Drip",
+      "tagline": "Hand-drawn drippy 'Gettin Money Forever' with falling star.",
+      "source": "IMG_20260617_221429.png",
+      "primaryColor": "black",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "get-money-franklin-blue",
+      "name": "Get Money — Franklin Blue",
+      "tagline": "Bandit Ben Franklin crest, electric blue.",
+      "source": "IMG_20260617_221546.png",
+      "primaryColor": "blue",
+      "garments": ["tee"]
+    },
+    {
+      "slug": "get-money-franklin",
+      "name": "Get Money — Franklin Classic",
+      "tagline": "Bandit Ben Franklin crest, black on natural.",
+      "source": "IMG_20260617_221639.png",
+      "primaryColor": "black",
+      "garments": ["tee"]
+    },
+    {
+      "slug": "gmf-crown-grayscale",
+      "name": "GMF Crown — Grayscale",
+      "tagline": "Crowned GMF emblem inside a spiked star.",
+      "source": "IMG_20260617_221548.png",
+      "primaryColor": "gray",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-crown-white",
+      "name": "GMF Crown — White",
+      "tagline": "Crowned GMF emblem in clean white linework.",
+      "source": "IMG_20260617_221551.png",
+      "primaryColor": "white",
+      "garments": ["tee", "shorts", "hat"]
+    },
+    {
+      "slug": "gmf-crown-blue",
+      "name": "GMF Crown — Royal Blue",
+      "tagline": "Crowned GMF emblem with royal-blue fill and silver border.",
+      "source": "IMG_20260617_221603.jpg",
+      "primaryColor": "blue",
+      "garments": ["tee", "shorts", "hat"]
+    }
+  ],
+  "pricing": {
+    "tee": 2500,
+    "shorts": 3500,
+    "hat": 1999,
+    "currency": "USD"
+  }
+}

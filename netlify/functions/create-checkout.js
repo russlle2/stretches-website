@@ -27,8 +27,17 @@ exports.handler = async (event) => {
     const priceMap = JSON.parse(process.env.STRIPE_PRICE_MAP || '{}');
     const siteUrl = process.env.SITE_URL || process.env.URL || 'http://localhost:8888';
 
+    // Each variant SKU looks like GMF-TEE-TIMEISMONEY-S; the price map is keyed
+    // by the size-stripped base SKU, since pricing is identical across sizes.
+    function baseSku(sku) {
+      if (!sku) return '';
+      // strip trailing -<size> where size is OS or letters/digits
+      return sku.replace(/-(?:OS|XS|S|M|L|XL|2XL|3XL|4XL)$/i, '');
+    }
+
     const lineItems = items.map((item) => {
-      const priceId = priceMap[item.slug] || item.stripePriceId;
+      const lookupKey = baseSku(item.sku) || item.slug;
+      const priceId = priceMap[lookupKey] || item.stripePriceId;
       if (priceId) {
         return { price: priceId, quantity: item.quantity || 1 };
       }
@@ -38,7 +47,7 @@ exports.handler = async (event) => {
           product_data: {
             name: item.name,
             images: item.image ? [item.image] : [],
-            metadata: { slug: item.slug || '' },
+            metadata: { slug: item.slug || '', sku: item.sku || '' },
           },
           unit_amount: Math.round(item.price * 100),
         },
@@ -53,8 +62,35 @@ exports.handler = async (event) => {
       cancel_url: `${siteUrl}/cart.html`,
       customer_email: customerEmail || undefined,
       shipping_address_collection: { allowed_countries: ['US'] },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            display_name: 'Standard shipping (3-7 business days)',
+            type: 'fixed_amount',
+            fixed_amount: { amount: 599, currency: 'usd' },
+            delivery_estimate: {
+              minimum: { unit: 'business_day', value: 3 },
+              maximum: { unit: 'business_day', value: 7 },
+            },
+          },
+        },
+        {
+          shipping_rate_data: {
+            display_name: 'Priority (1-3 business days)',
+            type: 'fixed_amount',
+            fixed_amount: { amount: 1499, currency: 'usd' },
+            delivery_estimate: {
+              minimum: { unit: 'business_day', value: 1 },
+              maximum: { unit: 'business_day', value: 3 },
+            },
+          },
+        },
+      ],
+      automatic_tax: { enabled: false },
+      allow_promotion_codes: true,
       metadata: {
         source: 'gmf-stretch-website',
+        skus: items.map((i) => i.sku || i.slug || '').join(','),
       },
     });
 

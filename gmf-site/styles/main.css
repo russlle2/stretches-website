@@ -251,6 +251,34 @@ header {
   margin: var(--space-7) 0;
 }
 
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin: var(--space-5) 0 var(--space-4);
+}
+
+.filter-btn {
+  appearance: none;
+  border: 1px solid #2a2a2a;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.filter-btn:hover { border-color: #555; }
+
+.filter-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
 .product-card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
