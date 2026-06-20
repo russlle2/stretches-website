@@ -6,6 +6,11 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[functions]
+  # Bundle non-JS files referenced via fs.readFileSync at runtime so they ship
+  # with every Lambda. zip-it-and-ship-it can't auto-discover dynamic paths.
+  included_files = ["netlify/functions/_shared/**"]
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
