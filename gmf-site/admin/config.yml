@@ -1,0 +1,259 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# Where uploaded images are saved in the repo
+media_folder: "gmf-site/assets/uploads"
+public_folder: "/assets/uploads"
+
+# ─────────────────────────────────────────────
+# COLLECTION 1: Catalog & Pricing
+# Edits gmf-site/content/design-manifest.json
+# ─────────────────────────────────────────────
+collections:
+  - name: catalog
+    label: "Catalog & Pricing"
+    files:
+      - name: manifest
+        label: "Designs & Prices"
+        file: "gmf-site/content/design-manifest.json"
+        format: json
+        description: >
+          Edit the product catalog and pricing here.
+          Prices are in cents (2500 = $25.00).
+          Every save triggers a full rebuild — new prices go live in ~90 seconds.
+        fields:
+          - name: pricing
+            label: "Pricing"
+            widget: object
+            summary: "Tee {{fields.tee}}¢ · Shorts {{fields.shorts}}¢ · Hat {{fields.hat}}¢"
+            fields:
+              - name: tee
+                label: "T-Shirt price (cents)"
+                widget: number
+                value_type: int
+                min: 100
+                hint: "e.g. 2500 = $25.00"
+              - name: shorts
+                label: "Shorts price (cents)"
+                widget: number
+                value_type: int
+                min: 100
+                hint: "e.g. 3500 = $35.00"
+              - name: hat
+                label: "Hat price (cents)"
+                widget: number
+                value_type: int
+                min: 100
+                hint: "e.g. 2500 = $25.00"
+              - name: currency
+                label: "Currency"
+                widget: hidden
+                default: "USD"
+          - name: designs
+            label: "Designs"
+            label_singular: "Design"
+            widget: list
+            summary: "{{fields.name}} — {{fields.garments}}"
+            fields:
+              - name: slug
+                label: "Slug (URL key — do not change)"
+                widget: string
+              - name: name
+                label: "Product Name"
+                widget: string
+              - name: tagline
+                label: "Tagline"
+                widget: text
+              - name: source
+                label: "Source image filename"
+                widget: string
+                hint: "Filename only, e.g. IMG_20260617_221300.png"
+              - name: primaryColor
+                label: "Primary Color"
+                widget: select
+                options:
+                  - black
+                  - white
+                  - blue
+                  - navy
+                  - red
+                  - pink
+                  - gold
+                  - silver
+                  - gray
+                  - purple
+                  - violet
+                  - green
+              - name: garments
+                label: "Available on"
+                widget: select
+                multiple: true
+                options:
+                  - { label: "T-Shirt", value: "tee" }
+                  - { label: "Shorts",  value: "shorts" }
+                  - { label: "Hat",     value: "hat" }
+
+  # ─────────────────────────────────────────────
+  # COLLECTION 2: Page Text
+  # Edits gmf-site/content/pages/home.json
+  # ─────────────────────────────────────────────
+  - name: pages
+    label: "Page Text"
+    files:
+      - name: home
+        label: "Home Page"
+        file: "gmf-site/content/pages/home.json"
+        format: json
+        fields:
+          - name: route
+            widget: hidden
+            default: "/"
+          - name: template
+            widget: hidden
+            default: "home"
+          - name: seo
+            label: "SEO"
+            widget: object
+            fields:
+              - name: title
+                label: "Browser Tab Title"
+                widget: string
+                hint: "Keep under 60 characters"
+              - name: description
+                label: "Meta Description"
+                widget: text
+                hint: "Keep under 160 characters — used by Google"
+          - name: sections
+            label: "Page Sections"
+            widget: list
+            summary: "{{fields.component}}"
+            types:
+              - name: AnnouncementBar
+                label: "Announcement Bar"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "AnnouncementBar"
+                  - name: props
+                    label: "Settings"
+                    widget: object
+                    fields:
+                      - name: text
+                        label: "Announcement Text"
+                        widget: string
+                      - name: variant
+                        label: "Style"
+                        widget: select
+                        options: [info, warning, success, promo]
+              - name: HeroBanner
+                label: "Hero Banner"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "HeroBanner"
+                  - name: props
+                    label: "Content"
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: "Eyebrow (small text above headline)"
+                        widget: string
+                      - name: headline
+                        label: "Headline"
+                        widget: string
+                      - name: body
+                        label: "Body Text"
+                        widget: text
+                      - name: primaryCta
+                        label: "Primary Button"
+                        widget: object
+                        fields:
+                          - { name: label, label: "Button Label", widget: string }
+                          - { name: href, label: "Button Link", widget: string }
+                      - name: secondaryCta
+                        label: "Secondary Button"
+                        widget: object
+                        fields:
+                          - { name: label, label: "Button Label", widget: string }
+                          - { name: href, label: "Button Link", widget: string }
+                      - name: media
+                        label: "Background Image"
+                        widget: object
+                        fields:
+                          - { name: image, label: "Image path or URL", widget: string }
+                          - { name: alt, label: "Alt text", widget: string }
+              - name: CollectionStrip
+                label: "Category Links Strip"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "CollectionStrip"
+                  - name: props
+                    label: "Content"
+                    widget: object
+                    fields:
+                      - name: heading
+                        label: "Heading"
+                        widget: string
+                      - name: items
+                        label: "Links"
+                        widget: list
+                        fields:
+                          - { name: label, label: "Link Text", widget: string }
+                          - { name: href, label: "Link URL", widget: string }
+              - name: FeaturedProducts
+                label: "Featured Products"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "FeaturedProducts"
+                  - name: props
+                    label: "Settings"
+                    widget: object
+                    fields:
+                      - name: heading
+                        label: "Section Heading"
+                        widget: string
+                      - name: source
+                        label: "Data Source"
+                        widget: hidden
+                        default: "featured-tees"
+              - name: WatchThenShop
+                label: "Watch Then Shop"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "WatchThenShop"
+                  - name: props
+                    label: "Settings"
+                    widget: object
+                    fields:
+                      - name: heading
+                        label: "Section Heading"
+                        widget: string
+                      - name: source
+                        widget: hidden
+                        default: "music-preview"
+              - name: FaqAccordion
+                label: "FAQ Section"
+                widget: object
+                fields:
+                  - name: component
+                    widget: hidden
+                    default: "FaqAccordion"
+                  - name: props
+                    label: "Settings"
+                    widget: object
+                    fields:
+                      - name: heading
+                        label: "Section Heading"
+                        widget: string
+                      - name: source
+                        widget: hidden
+                        default: "faq-home-short"
