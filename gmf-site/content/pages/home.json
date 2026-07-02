@@ -94,9 +94,17 @@
           "href": "/gmfmusic"
         },
         "media": {
-          "image": "/Users/gmf_str3tch/Downloads/ChatGPT Image Jul 2, 2026 at 04_10_53 AM.png",
+          "image": "https://share.icloud.com/photos/052jZtj4HW1dZLjtmCdpe-Fmw",
           "alt": "STAY DOWN"
         }
+      }
+    },
+    {
+      "type": "AnnouncementBar",
+      "component": "AnnouncementBar",
+      "props": {
+        "text": "ABOUT",
+        "variant": "info"
       }
     }
   ]
