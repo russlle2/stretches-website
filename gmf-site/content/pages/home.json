@@ -2,8 +2,8 @@
   "route": "/",
   "template": "home",
   "seo": {
-    "title": "GMF Productions | Jacksonville Streetwear",
-    "description": "GMF Productions delivers heavyweight tees, premium streetwear, and limited drops rooted in Jacksonville loyalty, hustle, and legacy."
+    "title": "GMF Productions | Premium Apparel Company / Record Label",
+    "description": "Luxury streetwear based in Jacksonville, Florida. GMF Productions 904, inspired & founded by hometown musician GMF Str3tch delivers exclusive drops, premium quality, and undeniable style.\n"
   },
   "sections": [
     {
@@ -38,10 +38,22 @@
       "props": {
         "heading": "Shop by Category",
         "items": [
-          { "label": "Tees", "href": "/shop/tees" },
-          { "label": "Hoodies", "href": "/shop?category=hoodies" },
-          { "label": "Hats", "href": "/shop?category=hats" },
-          { "label": "Bundles", "href": "/shop?category=bundles" }
+          {
+            "label": "Tees",
+            "href": "/shop/tees"
+          },
+          {
+            "label": "Hoodies",
+            "href": "/shop?category=hoodies"
+          },
+          {
+            "label": "Hats",
+            "href": "/shop?category=hats"
+          },
+          {
+            "label": "Bundles",
+            "href": "/shop?category=bundles"
+          }
         ]
       }
     },
@@ -64,6 +76,27 @@
       "props": {
         "heading": "Need to Know",
         "source": "faq-home-short"
+      }
+    },
+    {
+      "type": "HeroBanner",
+      "component": "HeroBanner",
+      "props": {
+        "eyebrow": "Duval County, Florida • Independent Record Label • Premium Streetwear",
+        "headline": "Welcome to GMF Productions 904",
+        "body": "Music. Fashion. Culture.\n\nGMF Productions 904 is an independent record label and premium streetwear brand founded by artist GMF Str3tch. Built in Jacksonville, Florida, our mission is to inspire ambition, represent authenticity, and create timeless music and fashion that reflects the hustle behind every success.\n",
+        "primaryCta": {
+          "label": "Shop GMF Clothing",
+          "href": "/shop"
+        },
+        "secondaryCta": {
+          "label": "Stream Music",
+          "href": "/gmfmusic"
+        },
+        "media": {
+          "image": "/Users/gmf_str3tch/Downloads/ChatGPT Image Jul 2, 2026 at 04_10_53 AM.png",
+          "alt": "STAY DOWN"
+        }
       }
     }
   ]
