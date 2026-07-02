@@ -8,8 +8,7 @@
       "primaryColor": "blue",
       "garments": [
         "tee",
-        "shorts",
-        "hat"
+        "shorts"
       ]
     },
     {
@@ -53,42 +52,6 @@
       "primaryColor": "black",
       "garments": [
         "tee",
-        "shorts",
-        "hat"
-      ]
-    },
-    {
-      "slug": "gmf-wave-outline",
-      "name": "GMF Wave Mark — Outline",
-      "tagline": "GMF wave logo, outline edition.",
-      "source": "IMG_20260617_221310.jpg",
-      "primaryColor": "white",
-      "garments": [
-        "tee",
-        "shorts",
-        "hat"
-      ]
-    },
-    {
-      "slug": "gmf-wave-pink",
-      "name": "GMF Wave Mark — Pink",
-      "tagline": "GMF wave logo, hot-pink heat-print.",
-      "source": "IMG_20260617_221313.jpg",
-      "primaryColor": "pink",
-      "garments": [
-        "tee",
-        "shorts",
-        "hat"
-      ]
-    },
-    {
-      "slug": "gmf-graffiti-pink",
-      "name": "GMF Graffiti Tag",
-      "tagline": "Spray-painted GMF tag with neon halo.",
-      "source": "IMG_20260617_221316.png",
-      "primaryColor": "pink",
-      "garments": [
-        "tee",
         "shorts"
       ]
     },
@@ -98,17 +61,6 @@
       "tagline": "Wavy 70s-style 'Gettin Money Forever' lettering.",
       "source": "IMG_20260617_221319.png",
       "primaryColor": "pink",
-      "garments": [
-        "tee",
-        "shorts"
-      ]
-    },
-    {
-      "slug": "gettin-money-forever-groovy-purple",
-      "name": "Gettin Money Forever — Groovy Purple",
-      "tagline": "Wavy retro 'Gettin Money Forever' in deep purple.",
-      "source": "IMG_20260617_221332.png",
-      "primaryColor": "purple",
       "garments": [
         "tee",
         "shorts"
@@ -132,8 +84,7 @@
       "primaryColor": "gold",
       "garments": [
         "tee",
-        "shorts",
-        "hat"
+        "shorts"
       ]
     },
     {
@@ -144,8 +95,7 @@
       "primaryColor": "silver",
       "garments": [
         "tee",
-        "shorts",
-        "hat"
+        "shorts"
       ]
     },
     {
@@ -169,30 +119,6 @@
       ]
     },
     {
-      "slug": "gmf-angel-black",
-      "name": "GMF Angel — Black",
-      "tagline": "Winged angel mascot, classic black.",
-      "source": "IMG_20260617_221415.png",
-      "primaryColor": "black",
-      "garments": [
-        "tee",
-        "shorts",
-        "hat"
-      ]
-    },
-    {
-      "slug": "gmf-angel-navy",
-      "name": "GMF Angel — Navy",
-      "tagline": "Winged angel mascot, deep navy edition.",
-      "source": "IMG_20260617_221559.png",
-      "primaryColor": "navy",
-      "garments": [
-        "tee",
-        "shorts",
-        "hat"
-      ]
-    },
-    {
       "slug": "faith-over-fear",
       "name": "Faith Over Fear",
       "tagline": "Smiley-wheel low-rider with 'Faith Over Fear' banner.",
@@ -211,8 +137,7 @@
       "primaryColor": "black",
       "garments": [
         "tee",
-        "shorts",
-        "hat"
+        "shorts"
       ]
     },
     {
