@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "/assets/uploads/1783571308277-website.PNG",
+    "backgroundImage": "file:///Users/gmf_str3tch/Downloads/website.PNG {     background-image: url('background.jpg'); /* Replace with your image file path */     background-repeat: no-repeat;            /* Prevents the image from tiling */     background-size: cover;                  /* Forces image to scale and fill the screen */     background-position: center;             /* Centers the image on the page */     background-attachment: fixed;            /* Keeps image static while content scrolls */ }",
     "featuredVideo": {
       "youtubeId": "3gNG8Iy7Pzo",
       "title": "No Restin",
