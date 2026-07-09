@@ -39,7 +39,7 @@
     .cart-modal { transition: opacity 0.3s ease, visibility 0.3s ease; }
   </style>
 </head>
-<body class="bg-grit antialiased selection:bg-brand-green selection:text-black">
+<body data-page="home" class="bg-grit antialiased selection:bg-brand-green selection:text-black">
 
   <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center bg-black/80 backdrop-blur-md border-b border-white/10">
     <a href="#home" class="font-display font-bold text-2xl tracking-widest text-white uppercase">
@@ -48,6 +48,7 @@
     <div class="hidden md:flex gap-8 font-semibold text-sm tracking-wide">
       <a href="#music" class="hover:text-brand-green transition">MUSIC</a>
       <a href="#videos" class="hover:text-brand-green transition">VIDEOS</a>
+      <a href="news.html" class="hover:text-brand-green transition">NEWS</a>
       <a href="#merch" class="hover:text-brand-green transition">STORE</a>
       <a href="#about" class="hover:text-brand-green transition">ABOUT</a>
       <a href="shop.html" class="hover:text-brand-green transition">FULL SHOP</a>
@@ -58,14 +59,14 @@
   </nav>
 
   <header id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
-    <h2 class="text-brand-green font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md">Gettin' Money Forever</h2>
-    <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter mb-6 drop-shadow-xl">GMF Productions</h1>
+    <h2 id="home-hero-eyebrow" class="text-brand-green font-bold tracking-[0.3em] uppercase mb-4 drop-shadow-md">Gettin' Money Forever</h2>
+    <h1 id="home-hero-headline" class="font-display text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter mb-6 drop-shadow-xl">GMF Productions</h1>
     <p id="hero-tagline" class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl font-light">
       Watch the official video for <strong>"No Restin"</strong> — out now.
     </p>
     <div class="flex flex-col sm:flex-row gap-4">
-      <a href="#music" class="bg-brand-green text-black font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white transition transform hover:scale-105">Listen Now</a>
-      <a href="#merch" class="bg-transparent border-2 border-white text-white font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white hover:text-black transition transform hover:scale-105">Shop Merch</a>
+      <a id="home-hero-primary" href="#music" class="bg-brand-green text-black font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white transition transform hover:scale-105">Listen Now</a>
+      <a id="home-hero-secondary" href="#merch" class="bg-transparent border-2 border-white text-white font-display font-bold text-lg px-8 py-4 uppercase tracking-wider hover:bg-white hover:text-black transition transform hover:scale-105">Shop Merch</a>
     </div>
   </header>
 
@@ -130,10 +131,10 @@
   <section id="merch" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-end mb-16">
       <div>
-        <h2 class="font-display text-4xl md:text-6xl font-bold uppercase mb-4">Official Merch</h2>
+        <h2 id="home-merch-heading" class="font-display text-4xl md:text-6xl font-bold uppercase mb-4">Official Merch</h2>
         <div class="w-24 h-1 bg-brand-green"></div>
       </div>
-      <p class="text-gray-400 mt-4 md:mt-0 uppercase tracking-widest text-sm">Gettin' Money Forever Apparel</p>
+      <p id="home-merch-subtitle" class="text-gray-400 mt-4 md:mt-0 uppercase tracking-widest text-sm">Gettin' Money Forever Apparel</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="group bg-white/5 border border-white/10 rounded-lg overflow-hidden relative transition hover:border-brand-green">
@@ -174,13 +175,15 @@
 
   <section id="about" class="py-24 bg-black px-6 md:px-12 border-t border-white/10">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="font-display text-4xl md:text-5xl font-bold uppercase mb-8">About Joshua Miller</h2>
+      <h2 id="home-about-heading" class="font-display text-4xl md:text-5xl font-bold uppercase mb-8">About Joshua Miller</h2>
+      <div id="home-about-body">
       <p class="text-xl text-gray-300 leading-relaxed mb-6">
         Known to the streets and the industry as <strong class="text-white">GMF Productions</strong>, Joshua Miller is a rising force in the rap scene. Representing the authentic sound of the Southside, his music delivers raw lyricism, undeniable grit, and heavy beats.
       </p>
       <p class="text-lg text-gray-400 leading-relaxed mb-12">
         Under his own imprint, <strong>GETTIN' MONEY FOREVER Productions LLC</strong>, Joshua released his highly acclaimed track <em>"Aint No Sunshine"</em> in early 2026, solidifying his spot. Between high-energy records like <em>"Get Em' Gone"</em> and <em>"Big Smoke"</em>, and a rapidly growing streetwear line, GMF Productions is building an empire.
       </p>
+      </div>
       <div class="flex justify-center gap-6 mb-16">
         <a id="social-instagram" href="https://www.instagram.com/gmf_str3tch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">IG</a>
         <a id="social-tiktok" href="https://www.tiktok.com/@gmf_str3tch" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-green hover:text-black transition font-bold text-sm">TK</a>
@@ -236,6 +239,7 @@
 
   <script src="scripts/site-config.js"></script>
   <script src="scripts/api.js"></script>
+  <script src="scripts/content-loader.js"></script>
   <script src="scripts/media.js"></script>
   <script src="scripts/gmf-cart.js"></script>
   <script src="scripts/forms.js"></script>

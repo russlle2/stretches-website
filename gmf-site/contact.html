@@ -7,7 +7,7 @@
   <meta name="description" content="Reach out to the GMF Productions team for support, questions or collaborations." />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
+<body data-page="contact">
   <div class="announcement-bar">Free U.S. shipping on orders over $100</div>
   <header>
     <div class="container header-inner">
@@ -24,7 +24,7 @@
   </header>
   <main class="container">
     <h1>Contact Us</h1>
-    <p>Have a question about your order, a suggestion or want to work together? Reach out using the form below or email us at <a href="mailto:booking@gmfproductions.com">booking@gmfproductions.com</a>.</p>
+    <p id="page-intro">Have a question about your order, a suggestion or want to work together? Reach out using the form below or email us at <a href="mailto:support@gmfproductions904.com">support@gmfproductions904.com</a>.</p>
     <form id="contact-form" style="display:flex; flex-direction:column; gap: var(--space-4); max-width:600px;">
       <div>
         <label for="contact-name" style="display:block; margin-bottom:var(--space-2);">Name*</label>
@@ -89,6 +89,7 @@
   </footer>
   <script src="scripts/site-config.js"></script>
   <script src="scripts/api.js"></script>
+  <script src="scripts/content-loader.js"></script>
   <script src="scripts/forms.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <meta name="description" content="Learn about our shipping policy including processing times, domestic shipping and more." />
   <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
+<body data-page="shipping">
   <div class="announcement-bar">Free U.S. shipping on orders over $100</div>
   <header>
     <div class="container header-inner">
@@ -24,9 +24,11 @@
   </header>
   <main class="container">
     <h1>Shipping Policy</h1>
+    <div id="policy-body">
     <p>We currently ship domestically within the United States. Orders over $100 ship free via standard ground service. Orders are processed within 2–5 business days, excluding weekends and holidays. Once your order ships you will receive a confirmation email with tracking information.</p>
     <p>International shipping is not available on this preview site. All shipping times are estimates and may vary by destination and carrier demand.</p>
     <p>This preview site reflects our intended shipping policy. The final, legally binding version will appear when live commerce is enabled.</p>
+    </div>
   </main>
   <footer>
     <div class="container">
@@ -69,5 +71,6 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/content-loader.js"></script>
 </body>
 </html>

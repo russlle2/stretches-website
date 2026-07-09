@@ -1,111 +1,24 @@
 {
-  "route": "/",
-  "template": "home",
   "seo": {
     "title": "GMF Productions | Premium Apparel Company / Record Label",
-    "description": "Luxury streetwear based in Jacksonville, Florida. GMF Productions 904, inspired & founded by hometown musician GMF Str3tch delivers exclusive drops, premium quality, and undeniable style.\n"
+    "description": "Luxury streetwear based in Jacksonville, Florida. GMF Productions 904, inspired & founded by hometown musician GMF Str3tch delivers exclusive drops, premium quality, and undeniable style."
   },
-  "sections": [
-    {
-      "component": "AnnouncementBar",
-      "props": {
-        "text": "Preview build on yourbusiness.dailyclarity.org — live checkout coming soon.",
-        "variant": "warning"
-      }
-    },
-    {
-      "component": "HeroBanner",
-      "props": {
-        "eyebrow": "Jacksonville‑born streetwear",
-        "headline": "GETTIN MONEY FOREVER.",
-        "body": "Heavyweight fits, limited drops, and a brand built on loyalty, focus, and forward motion.",
-        "primaryCta": {
-          "label": "Shop the Drop",
-          "href": "/shop/tees"
-        },
-        "secondaryCta": {
-          "label": "View the Archive",
-          "href": "/archive"
-        },
-        "media": {
-          "image": "assets/home-hero.png",
-          "alt": "Nighttime Jacksonville streetwear editorial featuring GMF Productions apparel."
-        }
-      }
-    },
-    {
-      "component": "CollectionStrip",
-      "props": {
-        "heading": "Shop by Category",
-        "items": [
-          {
-            "label": "Tees",
-            "href": "/shop/tees"
-          },
-          {
-            "label": "Hoodies",
-            "href": "/shop?category=hoodies"
-          },
-          {
-            "label": "Hats",
-            "href": "/shop?category=hats"
-          },
-          {
-            "label": "Bundles",
-            "href": "/shop?category=bundles"
-          }
-        ]
-      }
-    },
-    {
-      "component": "FeaturedProducts",
-      "props": {
-        "heading": "Current Drop",
-        "source": "featured-tees"
-      }
-    },
-    {
-      "component": "WatchThenShop",
-      "props": {
-        "heading": "Watch Then Shop",
-        "source": "music-preview"
-      }
-    },
-    {
-      "component": "FaqAccordion",
-      "props": {
-        "heading": "Need to Know",
-        "source": "faq-home-short"
-      }
-    },
-    {
-      "type": "HeroBanner",
-      "component": "HeroBanner",
-      "props": {
-        "eyebrow": "Duval County, Florida • Independent Record Label • Premium Streetwear",
-        "headline": "Welcome to GMF Productions 904",
-        "body": "Music. Fashion. Culture.\n\nGMF Productions 904 is an independent record label and premium streetwear brand founded by artist GMF Str3tch. Built in Jacksonville, Florida, our mission is to inspire ambition, represent authenticity, and create timeless music and fashion that reflects the hustle behind every success.\n",
-        "primaryCta": {
-          "label": "Shop GMF Clothing",
-          "href": "/shop"
-        },
-        "secondaryCta": {
-          "label": "Stream Music",
-          "href": "/gmfmusic"
-        },
-        "media": {
-          "image": "gmf-site/assets/uploads/chatgpt-image-jul-2-2026-at-04_13_13-am.png",
-          "alt": "STAY DOWN"
-        }
-      }
-    },
-    {
-      "type": "AnnouncementBar",
-      "component": "AnnouncementBar",
-      "props": {
-        "text": "ABOUT",
-        "variant": "info"
-      }
-    }
-  ]
+  "hero": {
+    "eyebrow": "Duval County, Florida • Independent Record Label • Premium Streetwear",
+    "headline": "Welcome to GMF Productions 904",
+    "tagline": "Music. Fashion. Culture. GMF Productions 904 is an independent record label and premium streetwear brand founded by artist GMF Str3tch.",
+    "primaryCta": { "label": "Shop GMF Clothing", "href": "#merch" },
+    "secondaryCta": { "label": "Stream Music", "href": "#music" }
+  },
+  "about": {
+    "heading": "About Joshua Miller",
+    "paragraphs": [
+      "Known to the streets and the industry as <strong class=\"text-white\">GMF Productions</strong>, Joshua Miller is a rising force in the rap scene. Representing the authentic sound of the Southside, his music delivers raw lyricism, undeniable grit, and heavy beats.",
+      "Built in Jacksonville, Florida, our mission is to inspire ambition, represent authenticity, and create timeless music and fashion that reflects the hustle behind every success."
+    ]
+  },
+  "merchSection": {
+    "heading": "Official Merch",
+    "subtitle": "Gettin' Money Forever Apparel"
+  }
 }

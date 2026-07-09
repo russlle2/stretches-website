@@ -1,13 +1,51 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>GMF Productions — Site Editor</title>
-  </head>
-  <body>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>GMF Productions — Site Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div id="login-screen" class="screen">
+    <div class="login-card">
+      <p class="eyebrow">GMF Productions</p>
+      <h1>Site Editor</h1>
+      <p class="muted">Sign in to edit your catalog, prices, videos, and page text. Changes go live automatically.</p>
+      <button id="btn-login" class="btn btn-primary">Sign In</button>
+      <p id="login-error" class="error hidden"></p>
+    </div>
+  </div>
+
+  <div id="app" class="screen hidden">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">GMF Productions</p>
+        <h1>Site Editor</h1>
+      </div>
+      <div class="topbar-actions">
+        <span id="user-email" class="muted"></span>
+        <a class="btn btn-ghost" href="/" target="_blank" rel="noopener">Preview Site</a>
+        <button id="btn-logout" class="btn btn-ghost">Sign Out</button>
+      </div>
+    </header>
+
+    <div id="status-bar" class="status-bar hidden"></div>
+
+    <main class="layout">
+      <nav class="task-nav" id="task-nav"></nav>
+      <section class="editor-panel" id="editor-panel">
+        <p class="muted">Choose a task on the left to get started.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="git-gateway.js"></script>
+  <script src="admin.js"></script>
+</body>
 </html>

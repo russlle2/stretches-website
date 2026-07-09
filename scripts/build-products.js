@@ -11,12 +11,10 @@ const MANIFEST = path.join(ROOT, 'gmf-site', 'content', 'design-manifest.json');
 const DATA_JS = path.join(ROOT, 'gmf-site', 'scripts', 'data.js');
 const PRODUCTS_JSON = path.join(ROOT, 'scripts', 'products.json');
 
-const GARMENT_META = {
+const GARMENT_BASE = {
   tee: {
     label: 'Tee',
     category: 'tees',
-    price: 25,
-    unitAmount: 2500,
     material: '100% cotton heavyweight jersey',
     fit: 'Relaxed',
     gsm: 240,
@@ -26,8 +24,6 @@ const GARMENT_META = {
   shorts: {
     label: 'Shorts',
     category: 'shorts',
-    price: 35,
-    unitAmount: 3500,
     material: 'Heavyweight fleece, brushed interior',
     fit: 'Relaxed mid-rise',
     gsm: 320,
@@ -37,8 +33,6 @@ const GARMENT_META = {
   hat: {
     label: 'Hat',
     category: 'hats',
-    price: 25,
-    unitAmount: 2500,
     material: '6-panel structured cotton twill',
     fit: 'One size, snapback adjustable',
     gsm: null,
@@ -47,14 +41,29 @@ const GARMENT_META = {
   },
 };
 
+const DEFAULT_PRICING = { tee: 2500, shorts: 3500, hat: 2500, currency: 'USD' };
+
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
+const pricing = { ...DEFAULT_PRICING, ...(manifest.pricing || {}) };
+
+function garmentMeta(g) {
+  const base = GARMENT_BASE[g];
+  if (!base) return null;
+  const unitAmount = Number(pricing[g]) || DEFAULT_PRICING[g];
+  return {
+    ...base,
+    unitAmount,
+    price: unitAmount / 100,
+  };
+}
 
 const products = {};
 const stripeProducts = [];
 
 for (const d of manifest.designs) {
   for (const g of d.garments) {
-    const meta = GARMENT_META[g];
+    const meta = garmentMeta(g);
+    if (!meta) continue;
     const slug = `${d.slug}-${g}`;
     const sku = `GMF-${g.toUpperCase()}-${d.slug.toUpperCase().replace(/-/g, '')}`;
     const image = `assets/mockups/${slug}.jpg`;
