@@ -123,9 +123,13 @@
       if (!renderer) throw new Error('Unknown task');
       await renderer(panel);
     } catch (e) {
-      panel.innerHTML = `<div class="card"><p class="error">${escapeHtml(e.message)}</p>
-        <p class="muted">If this says Git Gateway is not configured, enable Git Gateway in Netlify → Identity → Services.</p></div>`;
-      showStatus(e.message, 'error');
+      const msg = e.message || String(e);
+      const tip = /operator microservice|role doesn't allow|Sign in|expired/i.test(msg)
+        ? 'Sign Out, refresh the page, then Sign In again. That usually clears this.'
+        : 'If this keeps happening, tell Chris.';
+      panel.innerHTML = `<div class="card"><p class="error">${escapeHtml(msg)}</p>
+        <p class="muted">${tip}</p></div>`;
+      showStatus(msg, 'error');
     }
   }
 
@@ -666,10 +670,18 @@
 
   // ─── Auth ───────────────────────────────────────────────────────
 
-  function showApp(user) {
+  async function showApp(user) {
     $('#login-screen').classList.add('hidden');
     $('#app').classList.remove('hidden');
     $('#user-email').textContent = user.email || '';
+    // Refresh JWT so expired sessions don't hit broken Git Gateway errors
+    try {
+      if (user && typeof user.jwt === 'function') await user.jwt(true);
+    } catch (_) {
+      showLogin('Your login expired. Please sign in again.');
+      try { netlifyIdentity.logout(); } catch (__) {}
+      return;
+    }
     renderNav();
     openTask('prices');
   }
@@ -677,9 +689,12 @@
   function showLogin(err) {
     $('#app').classList.add('hidden');
     $('#login-screen').classList.remove('hidden');
+    const box = $('#login-error');
     if (err) {
-      $('#login-error').textContent = err;
-      $('#login-error').classList.remove('hidden');
+      box.textContent = err;
+      box.classList.remove('hidden');
+    } else {
+      box.classList.add('hidden');
     }
   }
 
@@ -700,7 +715,14 @@
       cache = {};
       showLogin();
     });
-    netlifyIdentity.on('error', (err) => showLogin(err.message || String(err)));
+    netlifyIdentity.on('error', (err) => {
+      const msg = (err && err.message) || String(err);
+      if (/operator microservice/i.test(msg)) {
+        showLogin('Connection glitch. Sign out, refresh this page, then sign in again.');
+      } else {
+        showLogin(msg);
+      }
+    });
     netlifyIdentity.init();
 
     $('#btn-login').onclick = () => netlifyIdentity.open('login');
