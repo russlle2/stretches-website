@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "file:///Users/gmf_str3tch/Downloads/website.PNG {     background-image: url('background.jpg'); /* Replace with your image file path */     background-repeat: no-repeat;            /* Prevents the image from tiling */     background-size: cover;                  /* Forces image to scale and fill the screen */     background-position: center;             /* Centers the image on the page */     background-attachment: fixed;            /* Keeps image static while content scrolls */ }",
+    "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
     "featuredVideo": {
       "youtubeId": "3gNG8Iy7Pzo",
       "title": "No Restin",
@@ -26,28 +26,33 @@
   "tracks": [
     {
       "title": "No Restin",
-      "youtubeId": "3gNG8Iy7Pzo",
-      "featured": true
+      "featured": true,
+      "youtubeId": "3gNG8Iy7Pzo"
     },
     {
       "title": "Get Em' Gone (feat. D MAN JR)",
-      "spotifySearch": "GMF Productions Get Em Gone",
-      "rank": 1
+      "featured": false,
+      "spotifySearch": "GMF Str3tch - Get Em Gone"
     },
     {
       "title": "Big Smoke",
-      "spotifySearch": "GMF Productions Big Smoke",
-      "rank": 2
+      "featured": false,
+      "spotifySearch": "GMF Str3tch - Big Smoke"
     },
     {
       "title": "Interstate",
-      "spotifySearch": "GMF Productions Interstate",
-      "rank": 3
+      "featured": false,
+      "spotifySearch": "GMF Str3tch - Interstate"
     },
     {
       "title": "Like I Left Sum",
-      "spotifySearch": "GMF Productions Like I Left Sum",
-      "rank": 4
+      "featured": false,
+      "spotifySearch": "GMF Str3tch - Like I Left Sum"
+    },
+    {
+      "title": "KXLL SHXT - MONCRIEF DEE x GMF STR3TCH",
+      "featured": false,
+      "spotifySearch": "KXLL SHXT - MONCRIEF DEE X GMF STR3TCH"
     }
   ],
   "videos": [
