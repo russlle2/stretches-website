@@ -4,11 +4,17 @@
     "description": "Luxury streetwear based in Jacksonville, Florida. GMF Productions 904, inspired & founded by hometown musician GMF Str3tch delivers exclusive drops, premium quality, and undeniable style."
   },
   "hero": {
-    "eyebrow": "Duval County, Florida • Independent Record Label • Premium Streetwear",
+    "eyebrow": "puval County, Florida • Independent Record Label • Premium Streetwear",
     "headline": "Welcome to GMF Productions 904",
     "tagline": "Music. Fashion. Culture. GMF Productions 904 is an independent record label and premium streetwear brand founded by artist GMF Str3tch.",
-    "primaryCta": { "label": "Shop GMF Clothing", "href": "#merch" },
-    "secondaryCta": { "label": "Stream Music", "href": "#music" }
+    "primaryCta": {
+      "label": "Shop GMF Clothing",
+      "href": "#merch"
+    },
+    "secondaryCta": {
+      "label": "Stream Music",
+      "href": "#music"
+    }
   },
   "about": {
     "heading": "About Joshua Miller",
