@@ -10,6 +10,17 @@
         "tee",
         "shorts"
       ]
+    },
+    {
+      "slug": "badasd-hirt",
+      "name": "badasd hirt",
+      "tagline": "",
+      "source": "badasd-hirt.jpg",
+      "primaryColor": "black",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
     }
   ],
   "pricing": {
