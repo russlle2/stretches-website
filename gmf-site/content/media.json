@@ -36,12 +36,12 @@
     },
     {
       "title": "Big Smoke",
-      "featured": true,
+      "featured": false,
       "spotifySearch": "GMF Str3tch - Big Smoke"
     },
     {
       "title": "Interstate",
-      "featured": true,
+      "featured": false,
       "spotifySearch": "GMF Str3tch - Interstate"
     },
     {
@@ -53,6 +53,21 @@
       "title": "KXLL SHXT - MONCRIEF DEE x GMF STR3TCH",
       "featured": true,
       "youtubeId": "_bqROFEgmNQ"
+    },
+    {
+      "title": "CLOSER TO MY DREAMS",
+      "featured": true,
+      "youtubeId": "bebuPWpBjNQ"
+    },
+    {
+      "title": "MAKE IT HOME",
+      "featured": true,
+      "youtubeId": "hs_aT6b4jgE"
+    },
+    {
+      "title": "LEMME PYO",
+      "featured": true,
+      "youtubeId": "9TExhuIc1vI"
     }
   ],
   "videos": [
