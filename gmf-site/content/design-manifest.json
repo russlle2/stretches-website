@@ -18,7 +18,8 @@
       "source": "badasd-hirt.jpg",
       "primaryColor": "black",
       "garments": [
-        "tee"
+        "tee",
+        "shorts"
       ],
       "needsMockup": true
     }
