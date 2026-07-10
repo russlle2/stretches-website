@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "",
+    "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
     "featuredVideo": {
       "youtubeId": "3gNG8Iy7Pzo",
       "title": "No Restin",
@@ -31,28 +31,28 @@
     },
     {
       "title": "Get Em' Gone (feat. D MAN JR)",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Get Em Gone"
     },
     {
       "title": "Big Smoke",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Big Smoke"
     },
     {
       "title": "Interstate",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Interstate"
     },
     {
       "title": "Like I Left Sum",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Like I Left Sum"
     },
     {
       "title": "KXLL SHXT - MONCRIEF DEE x GMF STR3TCH",
-      "featured": false,
-      "spotifySearch": "KXLL SHXT - MONCRIEF DEE X GMF STR3TCH"
+      "featured": true,
+      "youtubeId": "_bqROFEgmNQ"
     }
   ],
   "videos": [
