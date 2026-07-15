@@ -7,21 +7,18 @@
       "source": "",
       "primaryColor": "black",
       "garments": [
-        "tee",
-        "shorts"
+        "tee"
       ]
     },
     {
-      "slug": "badasd-hirt",
-      "name": "badasd hirt",
-      "tagline": "The shirts",
-      "source": "badasd-hirt.jpg",
+      "slug": "paid-in-full-shorts",
+      "name": "PAID IN FULL",
+      "tagline": "From the studio to the streets",
+      "source": "",
       "primaryColor": "black",
       "garments": [
-        "tee",
         "shorts"
-      ],
-      "needsMockup": true
+      ]
     }
   ],
   "pricing": {
