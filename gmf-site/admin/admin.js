@@ -28,7 +28,7 @@
     { id: 'contact', label: 'Contact Text', hint: 'Contact page intro' },
     { id: 'policies', label: 'Policies', hint: 'Shipping & returns' },
     { id: 'site', label: 'Site Settings', hint: 'Announcement bar & email' },
-    { id: 'images', label: 'Photos & Images', hint: 'Hero background & uploads' },
+    { id: 'images', label: 'Background & Homepage Merch', hint: 'Site background + 3 featured products' },
     { id: 'posts', label: 'Add a New Page', hint: 'News / promo pages' },
   ];
 
@@ -553,32 +553,160 @@
 
     async images(panel) {
       const media = await loadJson('media');
+      let manifest = { designs: [] };
+      try {
+        const m = await loadJson('manifest');
+        manifest = m.data || { designs: [] };
+      } catch (_) {}
+
+      const productOptions = [];
+      (manifest.designs || []).forEach((d) => {
+        (d.garments || []).forEach((g) => {
+          const slug = `${d.slug}-${g}`;
+          const label = `${d.name} ${g === 'tee' ? 'Tee' : g === 'shorts' ? 'Shorts' : 'Hat'}`;
+          productOptions.push({
+            slug,
+            label,
+            image: `assets/mockups/${slug}.jpg`,
+            price: g === 'shorts' ? 35 : 25,
+          });
+        });
+      });
+
+      const merch = Array.isArray(media.data.merch) ? media.data.merch.slice(0, 3) : [];
+      while (merch.length < 3) {
+        const fallback = productOptions[merch.length] || {
+          slug: 'time-is-money-tee',
+          label: 'Time Is Money Tee',
+          image: 'assets/mockups/time-is-money-tee.jpg',
+          price: 25,
+        };
+        merch.push({
+          slug: fallback.slug,
+          name: fallback.label,
+          price: fallback.price,
+          image: fallback.image,
+        });
+      }
+
+      const optionHtml = productOptions
+        .map((o) => `<option value="${escapeHtml(o.slug)}">${escapeHtml(o.label)}</option>`)
+        .join('');
+
+      const bgVal = (media.data.hero && media.data.hero.backgroundImage) || '';
+      const atmChecked = media.data.hero && media.data.hero.useAsAtmosphere === false ? '' : 'checked';
+
       panel.innerHTML = `
         <div class="card">
-          <h2>Photos & Images</h2>
-          <p class="muted">Update the homepage hero background, or upload a general site image.</p>
-          ${field('Hero background image URL', `<input id="bg" type="text" value="${escapeHtml((media.data.hero && media.data.hero.backgroundImage) || '')}" />`, 'Paste an image URL, or leave blank to use the featured video thumbnail.')}
-          ${field('Upload a new image to the site', `<input id="up" type="file" accept="image/*" />`, 'Saved under /assets/uploads/')}
+          <h2>Background & Homepage Merch</h2>
+          <p class="muted">Upload a real image file for the background. iCloud / Google Drive / Dropbox <strong>share links will not work</strong> — use Upload.</p>
+          ${field('Background image URL', `<input id="bg" type="text" value="${escapeHtml(bgVal)}" />`, 'Direct image URL only, or upload a file below.')}
+          ${field('Upload background image', `<input id="up" type="file" accept="image/*" />`, 'PNG or JPG. Saved to /assets/uploads/')}
+          <label style="display:flex;gap:0.5rem;align-items:center;margin:0.75rem 0 1.25rem;">
+            <input id="atm" type="checkbox" ${atmChecked} />
+            Also use this image as a soft look across the whole website
+          </label>
+          <div id="bg-preview" style="margin-bottom:1rem;"></div>
+          <hr style="border:0;border-top:1px solid var(--border);margin:1.5rem 0;" />
+          <h3>Homepage featured products (3)</h3>
+          <p class="muted">These are the three products shown on the home page Official Merch section.</p>
+          <div id="merch-slots"></div>
           <div class="actions">
             <button class="btn btn-primary" id="save-img">Save & Publish</button>
           </div>
           <p id="upload-result" class="muted"></p>
         </div>`;
+
+      function renderBgPreview(url) {
+        const el = $('#bg-preview');
+        if (!url) {
+          el.innerHTML = '';
+          return;
+        }
+        el.innerHTML = `<img src="${escapeHtml(url)}" alt="Background preview" style="max-width:100%;max-height:160px;object-fit:cover;border-radius:8px;border:1px solid var(--border);" onerror="this.parentNode.innerHTML='<p class=error>Preview failed — this link is probably not a direct image.</p>'" />`;
+      }
+      renderBgPreview(bgVal);
+      $('#bg').oninput = () => renderBgPreview($('#bg').value.trim());
+
+      const slots = $('#merch-slots');
+      slots.innerHTML = merch
+        .map(
+          (item, i) => `
+        <div class="design-item" data-slot="${i}">
+          <strong>Slot ${i + 1}</strong>
+          ${field('Product', `<select data-f="slug">${optionHtml}</select>`)}
+          ${field('Display name', `<input data-f="name" type="text" value="${escapeHtml(item.name || '')}" />`)}
+          ${field('Price ($)', `<input data-f="price" type="number" min="1" step="0.01" value="${Number(item.price) || 25}" />`)}
+          ${field('Custom image URL (optional)', `<input data-f="image" type="text" value="${escapeHtml(item.image || '')}" />`, 'Leave blank to use the product mockup automatically.')}
+          ${field('Or upload custom image', `<input data-f="file" type="file" accept="image/*" />`)}
+          <img data-f="thumb" src="${escapeHtml(item.image || '')}" alt="" style="width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid var(--border);margin-top:0.5rem;" />
+        </div>`
+        )
+        .join('');
+
+      $$('.design-item', slots).forEach((el, i) => {
+        const sel = $('[data-f="slug"]', el);
+        if (sel && merch[i] && merch[i].slug) sel.value = merch[i].slug;
+        sel.onchange = () => {
+          const opt = productOptions.find((o) => o.slug === sel.value);
+          if (!opt) return;
+          $('[data-f="name"]', el).value = opt.label;
+          $('[data-f="price"]', el).value = opt.price;
+          if (!$('[data-f="image"]', el).value || $('[data-f="image"]', el).value.includes('/mockups/')) {
+            $('[data-f="image"]', el).value = opt.image;
+            $('[data-f="thumb"]', el).src = opt.image;
+          }
+        };
+      });
+
+      function isBadShareUrl(url) {
+        return /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|share\./i.test(url || '');
+      }
+
       $('#save-img').onclick = async () => {
         try {
+          let bg = $('#bg').value.trim();
           const file = $('#up').files && $('#up').files[0];
           if (file) {
             const safe = file.name.replace(/[^a-zA-Z0-9._-]/g, '-');
             const dest = `gmf-site/assets/uploads/${Date.now()}-${safe}`;
-            showStatus('Uploading image…');
-            await GMF_GIT.putBinary(dest, await file.arrayBuffer(), 'Upload site image: ' + safe);
-            const publicUrl = '/assets/uploads/' + dest.split('/').pop();
-            $('#upload-result').textContent = 'Uploaded: ' + publicUrl;
-            if (!$('#bg').value) $('#bg').value = publicUrl;
+            showStatus('Uploading background…');
+            await GMF_GIT.putBinary(dest, await file.arrayBuffer(), 'Upload site background: ' + safe);
+            bg = '/assets/uploads/' + dest.split('/').pop();
+            $('#bg').value = bg;
+            $('#upload-result').textContent = 'Background uploaded: ' + bg;
+            renderBgPreview(bg);
           }
+          if (isBadShareUrl(bg)) {
+            throw new Error('That background link is a share page, not an image. Please Upload a JPG/PNG instead.');
+          }
+
+          const nextMerch = [];
+          for (const el of $$('.design-item', slots)) {
+            const slug = $('[data-f="slug"]', el).value;
+            const opt = productOptions.find((o) => o.slug === slug);
+            let image = $('[data-f="image"]', el).value.trim() || (opt && opt.image) || '';
+            const slotFile = $('[data-f="file"]', el).files && $('[data-f="file"]', el).files[0];
+            if (slotFile) {
+              const safe = slotFile.name.replace(/[^a-zA-Z0-9._-]/g, '-');
+              const dest = `gmf-site/assets/uploads/${Date.now()}-${safe}`;
+              showStatus('Uploading merch image…');
+              await GMF_GIT.putBinary(dest, await slotFile.arrayBuffer(), 'Upload homepage merch image: ' + safe);
+              image = '/assets/uploads/' + dest.split('/').pop();
+            }
+            nextMerch.push({
+              slug,
+              name: $('[data-f="name"]', el).value.trim() || (opt && opt.label) || slug,
+              price: parseFloat($('[data-f="price"]', el).value) || (opt && opt.price) || 25,
+              image,
+            });
+          }
+
           media.data.hero = media.data.hero || {};
-          media.data.hero.backgroundImage = $('#bg').value.trim();
-          await saveJson('media', media.data, 'Update hero background image');
+          media.data.hero.backgroundImage = bg;
+          media.data.hero.useAsAtmosphere = $('#atm').checked;
+          media.data.merch = nextMerch;
+          await saveJson('media', media.data, 'Update background and homepage merch');
         } catch (e) {
           showStatus(e.message, 'error');
         }

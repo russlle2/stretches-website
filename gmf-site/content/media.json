@@ -9,7 +9,8 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "https://canva.link/q2psk0fjjnrqcg6",
+    "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
+    "useAsAtmosphere": true,
     "featuredVideo": {
       "youtubeId": "3gNG8Iy7Pzo",
       "title": "No Restin",
@@ -97,22 +98,22 @@
   },
   "merch": [
     {
-      "slug": "gmf-core-logo-tee",
-      "name": "GMF Core Logo Tee",
-      "price": 30,
-      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      "slug": "time-is-money-tee",
+      "name": "Time Is Money Tee",
+      "price": 25,
+      "image": "assets/mockups/time-is-money-tee.jpg"
     },
     {
-      "slug": "aint-no-sunshine-hoodie",
-      "name": "Aint No Sunshine Hoodie",
-      "price": 60,
-      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      "slug": "gmf-904-gold-tee",
+      "name": "GMF 904 — Gold Tee",
+      "price": 25,
+      "image": "assets/mockups/gmf-904-gold-tee.jpg"
     },
     {
-      "slug": "southside-tour-tee",
-      "name": "Southside Tour Tee",
-      "price": 35,
-      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      "slug": "gmf-angel-black-tee",
+      "name": "GMF Angel — Black Tee",
+      "price": 25,
+      "image": "assets/mockups/gmf-angel-black-tee.jpg"
     }
   ]
 }

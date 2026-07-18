@@ -1,4 +1,4 @@
-// media.js — loads videos, tracks, and hero content from API + media.json fallback
+// media.js — loads videos, tracks, hero, atmosphere, and homepage merch
 document.addEventListener('DOMContentLoaded', async () => {
   let media = null;
 
@@ -17,8 +17,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderVideos(media.videos || []);
   renderTracks(media.tracks || []);
   applyHero(media.hero || {});
+  applyAtmosphere(media.hero || {});
   applySocial(media.social || {});
+  renderHomeMerch(media.merch || []);
 });
+
+function isUsableImageUrl(url) {
+  if (!url) return false;
+  const u = String(url).trim().toLowerCase();
+  if (/icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|share\.|photos\.app\.goo/.test(u)) {
+    return false;
+  }
+  return true;
+}
 
 function renderVideos(videos) {
   const grid = document.getElementById('videos-grid');
@@ -66,11 +77,18 @@ function renderTracks(tracks) {
 }
 
 function applyHero(hero) {
-  if (hero.backgroundImage) {
-    const header = document.getElementById('home');
-    if (header) {
-      header.style.backgroundImage = `linear-gradient(to bottom, rgba(10,10,10,0.3), rgba(10,10,10,1)), url('${hero.backgroundImage}')`;
-    }
+  const header = document.getElementById('home');
+  let bg = hero.backgroundImage;
+  if (!isUsableImageUrl(bg) && hero.featuredVideo && hero.featuredVideo.youtubeId) {
+    bg = `https://img.youtube.com/vi/${hero.featuredVideo.youtubeId}/maxresdefault.jpg`;
+  } else if (!isUsableImageUrl(bg) && hero.featuredVideo && hero.featuredVideo.thumbnail) {
+    bg = hero.featuredVideo.thumbnail;
+  }
+
+  if (header && isUsableImageUrl(bg)) {
+    header.style.backgroundImage = `linear-gradient(to bottom, rgba(10,10,10,0.45), rgba(10,10,10,1)), url('${bg}')`;
+    header.style.backgroundSize = 'cover';
+    header.style.backgroundPosition = 'center';
   }
 
   const taglineEl = document.getElementById('hero-tagline');
@@ -99,6 +117,75 @@ function applyHero(hero) {
   if (youtubeEl && video.embedUrl) {
     youtubeEl.src = video.embedUrl;
   }
+}
+
+function applyAtmosphere(hero) {
+  if (hero.useAsAtmosphere === false) return;
+  let bg = hero.backgroundImage;
+  if (!isUsableImageUrl(bg) && hero.featuredVideo && hero.featuredVideo.youtubeId) {
+    bg = `https://img.youtube.com/vi/${hero.featuredVideo.youtubeId}/maxresdefault.jpg`;
+  }
+  if (!isUsableImageUrl(bg)) return;
+
+  let layer = document.getElementById('site-atmosphere');
+  if (!layer) {
+    layer = document.createElement('div');
+    layer.id = 'site-atmosphere';
+    layer.setAttribute('aria-hidden', 'true');
+    document.body.prepend(layer);
+    // Ensure styles exist on non-home pages
+    if (!document.getElementById('site-atmosphere-style')) {
+      const style = document.createElement('style');
+      style.id = 'site-atmosphere-style';
+      style.textContent = `
+        #site-atmosphere {
+          position: fixed; inset: 0; z-index: -1; pointer-events: none;
+          background-position: center; background-size: cover;
+          opacity: 0.12; filter: saturate(0.85) brightness(0.5);
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  }
+  layer.style.backgroundImage = `url('${bg}')`;
+}
+
+function renderHomeMerch(items) {
+  const grid = document.getElementById('home-merch-grid');
+  if (!grid) return;
+  const cards = (items || []).slice(0, 3);
+  if (!cards.length) {
+    grid.innerHTML = '<p class="text-gray-400">Merch coming soon — visit the full shop.</p>';
+    return;
+  }
+
+  grid.innerHTML = cards.map((item) => {
+    const name = item.name || 'GMF Merch';
+    const price = Number(item.price) || 25;
+    const slug = item.slug || '';
+    const image = item.image || 'assets/mockups/time-is-money-tee.jpg';
+    const priceLabel = `$${price.toFixed(2)} USD`;
+    const productHref = slug ? `product.html?slug=${encodeURIComponent(slug)}` : 'shop.html';
+    const safeName = escapeHtml(name);
+    const safeImage = escapeHtml(image);
+    return `
+      <div class="group bg-white/5 border border-white/10 rounded-lg overflow-hidden relative transition hover:border-brand-green">
+        <a href="${productHref}" class="block aspect-square bg-gray-800 relative overflow-hidden">
+          <img src="${safeImage}" alt="${safeName}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy" />
+        </a>
+        <div class="p-6">
+          <h3 class="font-display text-xl uppercase font-bold mb-1">
+            <a href="${productHref}" class="hover:text-brand-green transition">${safeName}</a>
+          </h3>
+          <p class="text-gray-400 mb-4">${priceLabel}</p>
+          <button type="button"
+            onclick="addToCart('${safeName.replace(/'/g, "\\'")}', ${price}, '${escapeHtml(slug)}', '${safeImage}')"
+            class="w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">
+            Add to Cart
+          </button>
+        </div>
+      </div>`;
+  }).join('');
 }
 
 function applySocial(social) {

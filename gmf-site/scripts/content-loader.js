@@ -141,6 +141,31 @@
 
     window.GMF_CONTENT = { site, page, pageKey };
 
+    // Site atmosphere from media.json (pages without media.js still match the look)
+    try {
+      const media = await loadJson('media.json');
+      const hero = (media && media.hero) || {};
+      if (hero.useAsAtmosphere !== false && hero.backgroundImage) {
+        const bad = /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|share\./i.test(hero.backgroundImage);
+        if (!bad) {
+          let layer = document.getElementById('site-atmosphere');
+          if (!layer) {
+            layer = document.createElement('div');
+            layer.id = 'site-atmosphere';
+            layer.setAttribute('aria-hidden', 'true');
+            document.body.prepend(layer);
+            if (!document.getElementById('site-atmosphere-style')) {
+              const style = document.createElement('style');
+              style.id = 'site-atmosphere-style';
+              style.textContent = '#site-atmosphere{position:fixed;inset:0;z-index:-1;pointer-events:none;background-position:center;background-size:cover;opacity:0.12;filter:saturate(0.85) brightness(0.5);}';
+              document.head.appendChild(style);
+            }
+          }
+          layer.style.backgroundImage = `url('${hero.backgroundImage}')`;
+        }
+      }
+    } catch (_) { /* optional */ }
+
     // Global announcement
     document.querySelectorAll('.announcement-bar').forEach((el) => {
       const override = page.announcement;
