@@ -5,10 +5,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     media = await window.GMF_API.fetchMedia();
   } catch {
-    try {
-      const res = await fetch('content/media.json');
-      media = await res.json();
-    } catch (err) {
+    media = null;
+  }
+
+  // Always merge curated media.json so merch/background edits are never dropped
+  // when the youtube-feed function returns a partial payload.
+  try {
+    const res = await fetch('content/media.json');
+    const curated = await res.json();
+    media = {
+      ...(curated || {}),
+      ...(media || {}),
+      merch: (media && media.merch && media.merch.length) ? media.merch : (curated.merch || []),
+      hero: { ...(curated.hero || {}), ...((media && media.hero) || {}) },
+    };
+  } catch (err) {
+    if (!media) {
       console.warn('Could not load media:', err);
       return;
     }
@@ -25,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 function isUsableImageUrl(url) {
   if (!url) return false;
   const u = String(url).trim().toLowerCase();
-  if (/icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|share\.|photos\.app\.goo/.test(u)) {
+  if (/icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|canva\.link|share\.|photos\.app\.goo/.test(u)) {
     return false;
   }
   return true;

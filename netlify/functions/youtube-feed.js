@@ -99,6 +99,8 @@ exports.handler = async (event) => {
       tracks: curated.tracks || [],
       social: curated.social || {},
       hero: curated.hero || {},
+      merch: curated.merch || [],
+      artist: curated.artist || {},
       source: apiKey ? (channelId ? 'youtube-channel' : 'youtube-search') : 'curated',
     });
   } catch (err) {
@@ -108,6 +110,8 @@ exports.handler = async (event) => {
       tracks: curated.tracks || [],
       social: curated.social || {},
       hero: curated.hero || {},
+      merch: curated.merch || [],
+      artist: curated.artist || {},
       source: 'curated-fallback',
       warning: err.message,
     });
