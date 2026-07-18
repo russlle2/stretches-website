@@ -1,5 +1,16 @@
 {
-  "designs": [],
+  "designs": [
+    {
+      "slug": "paid-in-full",
+      "name": "Paid In Full",
+      "tagline": "Polyester Performance/Dri fit fabric for the hot summer days",
+      "source": "",
+      "primaryColor": "black",
+      "garments": [
+        "tee"
+      ]
+    }
+  ],
   "pricing": {
     "tee": 2500,
     "shorts": 3000,
