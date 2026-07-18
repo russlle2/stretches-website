@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "https://img.youtube.com/vi/3gNG8Iy7Pzo/maxresdefault.jpg",
+    "backgroundImage": "/assets/uploads/1784357361483-ChatGPT-Image-Jul-2--2026-at-04_13_13-AM.png",
     "useAsAtmosphere": true,
     "featuredVideo": {
       "youtubeId": "3gNG8Iy7Pzo",
@@ -98,19 +98,19 @@
   },
   "merch": [
     {
-      "slug": "time-is-money-tee",
+      "slug": "",
       "name": "Time Is Money Tee",
       "price": 25,
       "image": "assets/mockups/time-is-money-tee.jpg"
     },
     {
-      "slug": "gmf-904-gold-tee",
+      "slug": "",
       "name": "GMF 904 — Gold Tee",
       "price": 25,
       "image": "assets/mockups/gmf-904-gold-tee.jpg"
     },
     {
-      "slug": "gmf-angel-black-tee",
+      "slug": "",
       "name": "GMF Angel — Black Tee",
       "price": 25,
       "image": "assets/mockups/gmf-angel-black-tee.jpg"
