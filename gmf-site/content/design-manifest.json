@@ -1,26 +1,5 @@
 {
-  "designs": [
-    {
-      "slug": "paid-in-full",
-      "name": "PAID IN FULL",
-      "tagline": "From the studio to the streets.",
-      "source": "",
-      "primaryColor": "black",
-      "garments": [
-        "tee"
-      ]
-    },
-    {
-      "slug": "paid-in-full-shorts",
-      "name": "PAID IN FULL",
-      "tagline": "From the studio to the streets",
-      "source": "",
-      "primaryColor": "black",
-      "garments": [
-        "shorts"
-      ]
-    }
-  ],
+  "designs": [],
   "pricing": {
     "tee": 2500,
     "shorts": 3000,
