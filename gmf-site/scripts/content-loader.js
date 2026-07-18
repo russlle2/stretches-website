@@ -146,7 +146,7 @@
       const media = await loadJson('media.json');
       const hero = (media && media.hero) || {};
       if (hero.useAsAtmosphere !== false && hero.backgroundImage) {
-        const bad = /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|share\./i.test(hero.backgroundImage);
+        const bad = /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|canva\.link|share\./i.test(hero.backgroundImage);
         if (!bad) {
           let layer = document.getElementById('site-atmosphere');
           if (!layer) {

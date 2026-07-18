@@ -660,7 +660,7 @@
       });
 
       function isBadShareUrl(url) {
-        return /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|share\./i.test(url || '');
+        return /icloud\.com|drive\.google\.com|dropbox\.com\/s\/|onedrive\.live\.com|canva\.link|share\./i.test(url || '');
       }
 
       $('#save-img').onclick = async () => {

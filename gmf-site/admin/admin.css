@@ -169,6 +169,16 @@ textarea { min-height: 110px; resize: vertical; }
   margin-bottom: 0.75rem;
   background: var(--surface-2);
 }
+#merch-slots .design-item {
+  display: grid;
+  gap: 0.25rem;
+}
+#merch-slots .design-item > strong {
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
 .design-item summary {
   cursor: pointer;
   font-weight: 700;
