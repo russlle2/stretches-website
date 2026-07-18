@@ -1,6 +1,6 @@
 # GMF Productions Website
 
-Official website for **GMF Productions** (Joshua Miller) — music, merch, and live integrations powered by Stripe, Supabase, and Netlify.
+Official website for **GMF Productions** — music, merch, and live integrations powered by Stripe, Supabase, and Netlify.
 
 ## Stack
 

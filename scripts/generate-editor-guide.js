@@ -106,7 +106,7 @@ const doc = new Document({
         spacing: { after: 80 },
       }),
       new Paragraph({
-        children: [normal('For: Joshua Miller  ·  Prepared by: Chris', 20, '888888')],
+        children: [normal('For: GMF Productions  ·  Prepared by: Chris', 20, '888888')],
         alignment: AlignmentType.CENTER,
         spacing: { after: 480 },
       }),
