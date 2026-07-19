@@ -9,19 +9,19 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "/assets/uploads/1784359732661-ChatGPT-Image-Jul-2--2026-at-04_13_13-AM.png",
+    "backgroundImage": "https://img.youtube.com/vi/Ud17a64o1pc/maxresdefault.jpg",
     "useAsAtmosphere": true,
     "featuredVideo": {
-      "youtubeId": "3gNG8Iy7Pzo",
-      "title": "No Restin",
-      "subtitle": "Official Music Video #ShotBy @3039Media",
-      "embedUrl": "https://www.youtube.com/embed/3gNG8Iy7Pzo",
-      "thumbnail": "https://i.ytimg.com/vi/3gNG8Iy7Pzo/hqdefault.jpg"
+      "youtubeId": "Ud17a64o1pc",
+      "title": "\"He Love The Streets\"",
+      "subtitle": "Official Music Video #ShotBy @igvcci : Edited by: 3039Media",
+      "embedUrl": "https://www.youtube.com/embed/Ud17a64o1pc",
+      "thumbnail": "https://i.ytimg.com/vi/Ud17a64o1pc/hqdefault.jpg"
     },
     "featuredTrack": {
       "title": "No Restin",
       "spotifyArtistId": "7JhhCQz1w8HYAFMyCZAu6R",
-      "description": "Official music video from GMF Productions. Stream the full catalog on Spotify."
+      "description": "The Latest Official music video drop by GMF Str3tch. Stream his full catalog on Spotify,Apple, Youtube & All other major platforms!"
     }
   },
   "tracks": [
@@ -33,7 +33,7 @@
     {
       "title": "Get Em' Gone (feat. D MAN JR)",
       "featured": true,
-      "spotifySearch": "GMF Str3tch - Get Em Gone"
+      "youtubeId": "Wy9GTLs7fNE"
     },
     {
       "title": "Big Smoke",
@@ -72,6 +72,13 @@
     }
   ],
   "videos": [
+    {
+      "id": "Ud17a64o1pc",
+      "title": "\"He Love The Streets\" (Official Music Video)",
+      "embedUrl": "https://www.youtube.com/embed/Ud17a64o1pc",
+      "thumbnail": "https://i.ytimg.com/vi/Ud17a64o1pc/hqdefault.jpg",
+      "type": "video"
+    },
     {
       "id": "3gNG8Iy7Pzo",
       "title": "No Restin (Official Music Video)",
