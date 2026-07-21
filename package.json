@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "netlify dev",
-    "build": "node scripts/build-config.js && node scripts/build-products.js && node scripts/regen-mockups.js && node scripts/stripe-sync-products.js && node scripts/refresh-price-map.js && node scripts/build-posts.js"
+    "build": "node scripts/build-config.js && node scripts/build-products.js && node scripts/regen-mockups.js && node scripts/stripe-sync-products.js && node scripts/refresh-price-map.js && node scripts/build-posts.js",
+    "test": "node --test tests/*.test.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",

@@ -77,6 +77,40 @@ function encodePath(filePath) {
     .join('/');
 }
 
+async function getCurrentFileSha(encodedPath) {
+  try {
+    const current = await github(
+      `/contents/${encodedPath}?ref=${encodeURIComponent(BRANCH)}`
+    );
+    return current && !Array.isArray(current) ? current.sha : null;
+  } catch (err) {
+    if (err.status === 404) return null;
+    throw err;
+  }
+}
+
+async function putFileContent(encodedPath, payload) {
+  const write = () =>
+    github(`/contents/${encodedPath}`, {
+      method: 'PUT',
+      body: JSON.stringify(payload),
+    });
+
+  try {
+    return await write();
+  } catch (err) {
+    const isRevisionConflict =
+      (err.status === 409 || err.status === 422) &&
+      /sha|conflict|does not match/i.test(err.message || '');
+    if (!isRevisionConflict) throw err;
+
+    const refreshedSha = await getCurrentFileSha(encodedPath);
+    if (refreshedSha) payload.sha = refreshedSha;
+    else delete payload.sha;
+    return write();
+  }
+}
+
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 204, headers: cors, body: '' };
@@ -106,11 +140,11 @@ exports.handler = async (event) => {
         content: body.content,
         branch: BRANCH,
       };
-      if (body.sha) payload.sha = body.sha;
-      const data = await github(`/contents/${encoded}`, {
-        method: 'PUT',
-        body: JSON.stringify(payload),
-      });
+      // GitHub requires the current SHA when a path already exists. Resolve it
+      // here so editors never need to understand or supply repository metadata.
+      const currentSha = await getCurrentFileSha(encoded);
+      if (currentSha) payload.sha = currentSha;
+      const data = await putFileContent(encoded, payload);
       return json(200, data);
     }
 
@@ -130,6 +164,15 @@ exports.handler = async (event) => {
 
     return json(405, { message: 'Method not allowed' });
   } catch (err) {
+    if (
+      (err.status === 409 || err.status === 422) &&
+      /sha|conflict|does not match/i.test(err.message || '')
+    ) {
+      return json(409, {
+        message:
+          'The site changed while your update was saving. Please click Save & Publish again.',
+      });
+    }
     return json(err.status || 500, { message: err.message || 'Server error' });
   }
 };
