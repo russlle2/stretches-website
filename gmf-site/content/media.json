@@ -37,12 +37,12 @@
     },
     {
       "title": "Big Smoke",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Big Smoke"
     },
     {
       "title": "Interstate",
-      "featured": false,
+      "featured": true,
       "spotifySearch": "GMF Str3tch - Interstate"
     },
     {
