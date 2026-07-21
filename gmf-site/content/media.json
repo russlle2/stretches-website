@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "https://img.youtube.com/vi/Ud17a64o1pc/maxresdefault.jpg",
+    "backgroundImage": "/assets/uploads/1784616938987-gmf-website-light-blue-image.jpg",
     "useAsAtmosphere": true,
     "featuredVideo": {
       "youtubeId": "Ud17a64o1pc",
@@ -105,19 +105,19 @@
   },
   "merch": [
     {
-      "slug": "",
+      "slug": "paid-in-full-tee",
       "name": "Time Is Money Tee",
       "price": 25,
       "image": "assets/mockups/time-is-money-tee.jpg"
     },
     {
-      "slug": "",
+      "slug": "paid-in-full-tee",
       "name": "GMF 904 — Gold Tee",
       "price": 25,
       "image": "assets/mockups/gmf-904-gold-tee.jpg"
     },
     {
-      "slug": "",
+      "slug": "paid-in-full-tee",
       "name": "GAME OVER",
       "price": 25,
       "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG"
