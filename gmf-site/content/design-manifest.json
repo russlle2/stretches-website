@@ -1,5 +1,17 @@
 {
-  "designs": [],
+  "designs": [
+    {
+      "slug": "paid-in-full",
+      "name": "PAID IN FULL",
+      "tagline": "SHORT SLEEVE SHIRT",
+      "source": "paid-in-full.png",
+      "primaryColor": "black",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
+    }
+  ],
   "pricing": {
     "tee": 3000,
     "shorts": 3000,
