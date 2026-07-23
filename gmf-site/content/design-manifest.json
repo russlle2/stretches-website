@@ -6,7 +6,9 @@
       "tagline": "SHORT SLEEVE SHIRT",
       "source": "paid-in-full.png",
       "primaryColor": "black",
-      "garments": [],
+      "garments": [
+        "tee"
+      ],
       "needsMockup": true
     }
   ],
