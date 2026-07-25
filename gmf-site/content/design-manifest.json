@@ -10,6 +10,17 @@
         "tee"
       ],
       "needsMockup": true
+    },
+    {
+      "slug": "astronaut-status",
+      "name": "Astronaut Status",
+      "tagline": "\"You'll only be as big as your goals\"",
+      "source": "astronaut-status.jpg",
+      "primaryColor": "black",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
     }
   ],
   "pricing": {
