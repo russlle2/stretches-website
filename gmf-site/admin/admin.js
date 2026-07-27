@@ -19,7 +19,7 @@
 
   const TASKS = [
     { id: 'prices', label: 'Change Prices', hint: 'Tee, shorts & hat prices' },
-    { id: 'catalog', label: 'Edit Catalog', hint: 'Names, taglines, garments' },
+    { id: 'catalog', label: 'Edit Catalog', hint: 'Names, taglines, mockup style' },
     { id: 'media', label: 'Featured Video & Music', hint: 'YouTube, tracks, Spotify' },
     { id: 'home', label: 'Homepage Text', hint: 'Hero, about, merch heading' },
     { id: 'shop', label: 'Shop Page Text', hint: 'Shop intro & heading' },
@@ -180,7 +180,7 @@
       panel.innerHTML = `
         <div class="card">
           <h2>Edit Catalog</h2>
-          <p class="muted">Click a design to edit its name, tagline, or which products it appears on. Upload a new design image if you want to replace the artwork.</p>
+          <p class="muted">Click a design to edit its name, tagline, or which products it appears on. When you upload an image, choose how it should appear in the shop — on stock black garments, on a colored background, or exactly as uploaded.</p>
           <div id="design-list"></div>
           <div class="actions">
             <button class="btn btn-primary" id="save-catalog">Save & Publish</button>
@@ -188,26 +188,120 @@
           </div>
         </div>`;
       const list = $('#design-list');
+      const MOCKUP_MODES = [
+        { value: 'stock', label: 'Stock designs', hint: 'Place artwork on black tee / shorts / hat photos' },
+        { value: 'colorBg', label: 'Colored background', hint: 'Show artwork on a solid color background (not on clothes)' },
+        { value: 'asIs', label: 'Use image as-is', hint: 'Keep your upload exactly as the product photo — no auto-placement' },
+      ];
+      const BG_PRESETS = [
+        { value: '#111111', label: 'Black' },
+        { value: '#ffffff', label: 'White' },
+        { value: '#1a1a1a', label: 'Charcoal' },
+        { value: '#d4af37', label: 'Gold' },
+        { value: '#6b21a8', label: 'Violet' },
+        { value: '#0f766e', label: 'Teal' },
+      ];
+
+      function modeLabel(mode) {
+        if (mode === 'colorBg') return 'colored bg';
+        if (mode === 'asIs') return 'as-is';
+        return 'stock';
+      }
+
+      function normalizeMode(mode) {
+        return mode === 'colorBg' || mode === 'asIs' ? mode : 'stock';
+      }
+
+      function bindModeToggles(root) {
+        $$('.design-item', root).forEach((el) => {
+          const update = () => {
+            const mode = ($('[data-f="mockupMode"]:checked', el) || {}).value || 'stock';
+            const bgField = $('[data-bg-field]', el);
+            if (bgField) bgField.hidden = mode !== 'colorBg';
+            const garmentsField = $('[data-garments-field]', el);
+            if (garmentsField) {
+              const hint = $('[data-garments-hint]', garmentsField);
+              if (hint) {
+                hint.textContent =
+                  mode === 'stock'
+                    ? 'Artwork will be placed on the selected black stock garment photos.'
+                    : 'Still chooses which products this design sells as. The product photo will not be placed onto clothes.';
+              }
+            }
+          };
+          $$('[data-f="mockupMode"]', el).forEach((input) => {
+            input.onchange = update;
+          });
+          update();
+        });
+      }
+
       function renderList() {
         list.innerHTML = data.designs
-          .map(
-            (d, i) => `
+          .map((d, i) => {
+            const mode = normalizeMode(d.mockupMode);
+            const bg = d.backgroundColor || d.primaryColor || '#111111';
+            const bgHex = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(bg)
+              ? bg
+              : bg === 'black'
+                ? '#111111'
+                : bg === 'white'
+                  ? '#ffffff'
+                  : '#111111';
+            return `
           <details class="design-item" data-i="${i}">
-            <summary>${escapeHtml(d.name)} <span class="muted">— ${(d.garments || []).join(', ')}</span></summary>
+            <summary>${escapeHtml(d.name)} <span class="muted">— ${(d.garments || []).join(', ') || 'no garments'} · ${modeLabel(mode)}</span></summary>
             <div style="margin-top:1rem">
               ${field('Product name', `<input data-f="name" type="text" value="${escapeHtml(d.name)}" />`)}
               ${field('Tagline / description', `<textarea data-f="tagline">${escapeHtml(d.tagline || '')}</textarea>`)}
-              ${field('Available on', `
-                <div class="checks">
-                  <label><input type="checkbox" data-g="tee" ${d.garments.includes('tee') ? 'checked' : ''}/> T-Shirt</label>
-                  <label><input type="checkbox" data-g="shorts" ${d.garments.includes('shorts') ? 'checked' : ''}/> Shorts</label>
-                  <label><input type="checkbox" data-g="hat" ${d.garments.includes('hat') ? 'checked' : ''}/> Hat</label>
-                </div>`)}
-              ${field('Replace design image', `<input data-f="file" type="file" accept="image/*" />`, 'Optional. PNG or JPG works best.')}
+              ${field(
+                'How should this image appear?',
+                `<div class="mode-options">
+                  ${MOCKUP_MODES.map(
+                    (m) => `
+                    <label class="mode-option">
+                      <input type="radio" name="mockupMode-${i}" data-f="mockupMode" value="${m.value}" ${mode === m.value ? 'checked' : ''}/>
+                      <span>
+                        <strong>${m.label}</strong>
+                        <span class="hint">${m.hint}</span>
+                      </span>
+                    </label>`
+                  ).join('')}
+                </div>`,
+                'Choose before uploading. Stock designs place artwork on black clothes. Colored background and as-is leave clothes out of the photo.'
+              )}
+              <div data-bg-field ${mode === 'colorBg' ? '' : 'hidden'}>
+                ${field(
+                  'Background color',
+                  `<div class="bg-color-row">
+                    <input data-f="backgroundColor" type="color" value="${escapeHtml(bgHex)}" />
+                    <select data-f="backgroundPreset">
+                      ${BG_PRESETS.map(
+                        (p) =>
+                          `<option value="${p.value}" ${p.value.toLowerCase() === bgHex.toLowerCase() ? 'selected' : ''}>${p.label}</option>`
+                      ).join('')}
+                      <option value="custom">Custom</option>
+                    </select>
+                  </div>`,
+                  'Used only for Colored background mode.'
+                )}
+              </div>
+              <div data-garments-field>
+                ${field(
+                  'Available on',
+                  `<div class="checks">
+                    <label><input type="checkbox" data-g="tee" ${(d.garments || []).includes('tee') ? 'checked' : ''}/> T-Shirt</label>
+                    <label><input type="checkbox" data-g="shorts" ${(d.garments || []).includes('shorts') ? 'checked' : ''}/> Shorts</label>
+                    <label><input type="checkbox" data-g="hat" ${(d.garments || []).includes('hat') ? 'checked' : ''}/> Hat</label>
+                  </div>
+                  <span class="hint" data-garments-hint></span>`
+                )}
+              </div>
+              ${field('Replace design image', `<input data-f="file" type="file" accept="image/*" />`, 'Optional. PNG or JPG works best. Pair with the appearance choice above.')}
               <button type="button" class="btn btn-danger" data-remove="${i}">Remove design</button>
             </div>
-          </details>`
-          )
+          </details>`;
+          })
           .join('');
         $$('[data-remove]', list).forEach((btn) => {
           btn.onclick = () => {
@@ -216,6 +310,22 @@
             renderList();
           };
         });
+        $$('[data-f="backgroundPreset"]', list).forEach((sel) => {
+          sel.onchange = () => {
+            if (sel.value === 'custom') return;
+            const colorInput = $('[data-f="backgroundColor"]', sel.closest('[data-bg-field]'));
+            if (colorInput) colorInput.value = sel.value;
+          };
+        });
+        $$('[data-f="backgroundColor"]', list).forEach((input) => {
+          input.oninput = () => {
+            const sel = $('[data-f="backgroundPreset"]', input.closest('[data-bg-field]'));
+            if (!sel) return;
+            const match = BG_PRESETS.some((p) => p.value.toLowerCase() === input.value.toLowerCase());
+            sel.value = match ? input.value : 'custom';
+          };
+        });
+        bindModeToggles(list);
       }
       renderList();
 
@@ -228,6 +338,8 @@
           tagline: '',
           source: '',
           primaryColor: 'black',
+          mockupMode: 'stock',
+          backgroundColor: '#111111',
           garments: ['tee'],
         });
         renderList();
@@ -239,12 +351,24 @@
             const i = Number(el.dataset.i);
             const d = data.designs[i];
             if (!d) return;
+            const prevMode = normalizeMode(d.mockupMode);
+            const prevBg = d.backgroundColor || '';
             d.name = $('[data-f="name"]', el).value.trim();
             d.tagline = $('[data-f="tagline"]', el).value.trim();
             d.garments = $$('[data-g]', el)
               .filter((c) => c.checked)
               .map((c) => c.dataset.g);
+            const modeInput = $('[data-f="mockupMode"]:checked', el);
+            d.mockupMode = normalizeMode(modeInput && modeInput.value);
+            const bgInput = $('[data-f="backgroundColor"]', el);
+            if (bgInput && bgInput.value) {
+              d.backgroundColor = bgInput.value;
+              if (d.mockupMode === 'colorBg') d.primaryColor = bgInput.value;
+            }
             if (!d.slug) d.slug = slugify(d.name);
+            if (prevMode !== d.mockupMode || (d.mockupMode === 'colorBg' && prevBg !== (d.backgroundColor || ''))) {
+              d.needsMockup = true;
+            }
           });
 
           // Upload any selected images first

@@ -155,10 +155,16 @@ const doc = new Document({
       numbered('Click Edit Catalog.'),
       numbered('Click a design name to open it.'),
       numbered('Change the Product name or Tagline.'),
-      numbered('Check or uncheck T-Shirt / Shorts / Hat.'),
+      numbered('Choose how the image should appear: Stock designs (placed on black tee/shorts/hat photos), Colored background (artwork on a solid color, not on clothes), or Use image as-is (your upload becomes the product photo with no auto-placement).'),
+      numbered('If you picked Colored background, choose the background color.'),
+      numbered('Check or uncheck T-Shirt / Shorts / Hat for which products this design sells as.'),
       numbered('Optional: choose a new image file to replace the artwork.'),
       numbered('Click Save & Publish.'),
-      body('To add a brand-new design, click Add New Design, give it a name, then upload an image and Save & Publish.'),
+      body('To add a brand-new design, click Add New Design, give it a name, pick an appearance mode, upload an image, and Save & Publish.'),
+      body([
+        bold('Important: '),
+        normal('Uploads are not forced onto black clothes anymore. Pick Stock designs only when you want that look.'),
+      ]),
       divider(),
 
       heading1('5. Change the Featured Video'),

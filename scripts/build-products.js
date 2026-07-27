@@ -57,21 +57,44 @@ function garmentMeta(g) {
   };
 }
 
+function normalizeMode(mode) {
+  return mode === 'colorBg' || mode === 'asIs' ? mode : 'stock';
+}
+
+function productDescription(d, meta, mode) {
+  const tag = (d.tagline || '').trim();
+  const base = tag ? `${tag} ` : '';
+  if (mode === 'asIs') {
+    return `${base}${d.name} ${meta.label} from the GMF Productions catalog.`.trim();
+  }
+  if (mode === 'colorBg') {
+    return `${base}Printed on a ${meta.label.toLowerCase()} from the GMF Productions catalog.`.trim();
+  }
+  return `${base}Printed on a heavyweight black ${meta.label.toLowerCase()} from the GMF Productions catalog.`.trim();
+}
+
+function designImagePath(d) {
+  const src = d.source || `${d.slug}.png`;
+  return `assets/designs/${src}`;
+}
+
 const products = {};
 const stripeProducts = [];
 
 for (const d of manifest.designs) {
+  const mode = normalizeMode(d.mockupMode);
   for (const g of d.garments) {
     const meta = garmentMeta(g);
     if (!meta) continue;
     const slug = `${d.slug}-${g}`;
     const sku = `GMF-${g.toUpperCase()}-${d.slug.toUpperCase().replace(/-/g, '')}`;
     const image = `assets/mockups/${slug}.jpg`;
+    const variantColor = mode === 'stock' ? 'Black' : mode === 'colorBg' ? 'Custom' : 'As Shown';
 
     const variants = meta.sizes.map((size) => ({
       sku: `${sku}-${size}`,
       size,
-      color: 'Black',
+      color: variantColor,
       price: meta.price,
       inventoryStatus: 'in_stock',
       featuredImage: image,
@@ -86,7 +109,7 @@ for (const d of manifest.designs) {
       category: meta.category,
       collection: 'gmf-productions',
       missionTag: 'Gettin Money Forever.',
-      description: `${d.tagline} Printed on a heavyweight black ${meta.label.toLowerCase()} from the GMF Productions catalog.`,
+      description: productDescription(d, meta, mode),
       priceRange: { min: meta.price, max: meta.price, currency: 'USD' },
       material: meta.material,
       fit: meta.fit,
@@ -97,7 +120,7 @@ for (const d of manifest.designs) {
         'Do not iron directly on print',
       ],
       sizeGuide: { sizes: meta.sizes, fitNote: meta.sizeNote },
-      images: [image, `assets/designs/${d.slug}.png`],
+      images: [image, designImagePath(d)],
       variants,
       trustBadges: [
         'Official GMF Productions Product',
@@ -105,6 +128,7 @@ for (const d of manifest.designs) {
       ],
       design: d.slug,
       garment: g,
+      mockupMode: mode,
     };
 
     stripeProducts.push({
@@ -118,6 +142,7 @@ for (const d of manifest.designs) {
       design: d.slug,
       image,
       sizes: meta.sizes,
+      mockupMode: mode,
     });
   }
 }
