@@ -161,6 +161,40 @@ textarea { min-height: 110px; resize: vertical; }
 .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
 .checks { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; }
 .checks label { display: flex; align-items: center; gap: 0.4rem; font-weight: 500; }
+.mode-options { display: grid; gap: 0.65rem; }
+.mode-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #0a0a0a;
+  cursor: pointer;
+  font-weight: 500;
+}
+.mode-option:has(input:checked) {
+  border-color: var(--green);
+  background: rgba(16, 185, 129, 0.08);
+}
+.mode-option input { margin-top: 0.2rem; flex-shrink: 0; }
+.mode-option strong { display: block; font-weight: 600; }
+.mode-option .hint { margin-top: 0.2rem; }
+.bg-color-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.bg-color-row input[type="color"] {
+  width: 3rem;
+  height: 2.6rem;
+  padding: 0.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #0a0a0a;
+  cursor: pointer;
+}
+.bg-color-row select { flex: 1; }
 .actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem; }
 .design-item {
   border: 1px solid var(--border);

@@ -2,6 +2,11 @@
  * regen-mockups.js — build-safe mockup regeneration.
  * Uses designs already in gmf-site/assets/designs/ (not the local Downloads folder).
  * Regenerates a mockup when it is missing, or when the design is flagged needsMockup.
+ *
+ * mockupMode (per design):
+ *   stock   — composite artwork onto black garment templates (default)
+ *   colorBg — place artwork on a solid colored background
+ *   asIs    — use the uploaded image as the product photo with no compositing
  */
 const fs = require('fs');
 const path = require('path');
@@ -19,6 +24,8 @@ const PRINT_ZONE = {
   hat: { cx: 0.5, cy: 0.42, w: 0.38, h: 0.22 },
 };
 
+const CANVAS = { width: 1024, height: 1024 };
+
 function findDesignFile(slug, source) {
   const candidates = [
     source && path.join(DESIGN_DIR, source),
@@ -28,6 +35,37 @@ function findDesignFile(slug, source) {
     path.join(DESIGN_DIR, `${slug}.webp`),
   ].filter(Boolean);
   return candidates.find((p) => fs.existsSync(p)) || null;
+}
+
+function normalizeMode(mode) {
+  return mode === 'colorBg' || mode === 'asIs' ? mode : 'stock';
+}
+
+function parseColor(input) {
+  const raw = String(input || '').trim().toLowerCase();
+  const named = {
+    black: '#111111',
+    white: '#ffffff',
+    charcoal: '#1a1a1a',
+    gold: '#d4af37',
+    violet: '#6b21a8',
+    teal: '#0f766e',
+  };
+  if (named[raw]) return named[raw];
+  if (/^#[0-9a-f]{6}$/i.test(raw)) return raw;
+  if (/^#[0-9a-f]{3}$/i.test(raw)) {
+    return `#${raw[1]}${raw[1]}${raw[2]}${raw[2]}${raw[3]}${raw[3]}`;
+  }
+  return '#111111';
+}
+
+function hexToRgb(hex) {
+  const h = parseColor(hex).slice(1);
+  return {
+    r: parseInt(h.slice(0, 2), 16),
+    g: parseInt(h.slice(2, 4), 16),
+    b: parseInt(h.slice(4, 6), 16),
+  };
 }
 
 async function cleanDesignBuffer(srcPath) {
@@ -78,7 +116,7 @@ async function cleanDesignBuffer(srcPath) {
   return sharp(out, { raw: { width, height, channels: 4 } }).png().toBuffer();
 }
 
-async function composite(garment, designPng, outPath) {
+async function compositeStock(garment, designPng, outPath) {
   const tplPath = path.join(TEMPLATE_DIR, `${garment}.png`);
   if (!fs.existsSync(tplPath)) throw new Error('Missing template: ' + tplPath);
   const m = await sharp(tplPath).metadata();
@@ -102,6 +140,43 @@ async function composite(garment, designPng, outPath) {
     .toFile(outPath);
 }
 
+async function renderColorBackground(designPng, bgColor, outPath) {
+  const { r, g, b } = hexToRgb(bgColor);
+  const trimmed = await sharp(designPng).trim({ threshold: 5 }).toBuffer({ resolveWithObject: true });
+  const maxW = Math.round(CANVAS.width * 0.72);
+  const maxH = Math.round(CANVAS.height * 0.72);
+  const scale = Math.min(maxW / trimmed.info.width, maxH / trimmed.info.height, 1);
+  const targetW = Math.max(1, Math.round(trimmed.info.width * scale));
+  const targetH = Math.max(1, Math.round(trimmed.info.height * scale));
+  const left = Math.round((CANVAS.width - targetW) / 2);
+  const top = Math.round((CANVAS.height - targetH) / 2);
+  const designResized = await sharp(trimmed.data).resize(targetW, targetH, { fit: 'inside' }).png().toBuffer();
+  await sharp({
+    create: {
+      width: CANVAS.width,
+      height: CANVAS.height,
+      channels: 3,
+      background: { r, g, b },
+    },
+  })
+    .composite([{ input: designResized, left, top, blend: 'over' }])
+    .jpeg({ quality: 90, mozjpeg: true })
+    .toFile(outPath);
+}
+
+async function renderAsIs(designFile, outPath) {
+  await sharp(designFile)
+    .rotate()
+    .resize(CANVAS.width, CANVAS.height, {
+      fit: 'inside',
+      withoutEnlargement: false,
+      background: { r: 255, g: 255, b: 255, alpha: 1 },
+    })
+    .flatten({ background: { r: 255, g: 255, b: 255 } })
+    .jpeg({ quality: 92, mozjpeg: true })
+    .toFile(outPath);
+}
+
 async function main() {
   if (!fs.existsSync(MANIFEST)) {
     console.log('[regen-mockups] No manifest — skip');
@@ -119,13 +194,25 @@ async function main() {
       continue;
     }
     const force = !!d.needsMockup;
+    const mode = normalizeMode(d.mockupMode);
+    const garments = d.garments && d.garments.length ? d.garments : ['tee'];
     let cleaned;
-    for (const g of d.garments || []) {
+
+    for (const g of garments) {
       const out = path.join(MOCKUP_DIR, `${d.slug}-${g}.jpg`);
       if (!force && fs.existsSync(out)) continue;
-      if (!cleaned) cleaned = await cleanDesignBuffer(designFile);
-      process.stdout.write(`[regen] ${d.slug}-${g} `);
-      await composite(g, cleaned, out);
+
+      process.stdout.write(`[regen] ${d.slug}-${g} (${mode}) `);
+      if (mode === 'asIs') {
+        await renderAsIs(designFile, out);
+      } else if (mode === 'colorBg') {
+        if (!cleaned) cleaned = await cleanDesignBuffer(designFile);
+        const bg = d.backgroundColor || d.primaryColor || '#111111';
+        await renderColorBackground(cleaned, bg, out);
+      } else {
+        if (!cleaned) cleaned = await cleanDesignBuffer(designFile);
+        await compositeStock(g, cleaned, out);
+      }
       made++;
       console.log('ok');
     }
