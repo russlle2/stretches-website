@@ -15,7 +15,7 @@
       "slug": "astronaut-status",
       "name": "Astronaut Status",
       "tagline": "\"You'll only be as big as your goals\"",
-      "source": "astronaut-status.jpg",
+      "source": "astronaut-status.png",
       "primaryColor": "black",
       "garments": [
         "tee"
