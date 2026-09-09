@@ -1,17 +1,6 @@
 {
   "designs": [
     {
-      "slug": "paid-in-full",
-      "name": "PAID IN FULL",
-      "tagline": "SHORT SLEEVE SHIRT",
-      "source": "paid-in-full.png",
-      "primaryColor": "black",
-      "garments": [
-        "tee"
-      ],
-      "needsMockup": true
-    },
-    {
       "slug": "astronaut-status",
       "name": "Astronaut Status",
       "tagline": "\"You'll only be as big as your goals\"",
@@ -19,6 +8,21 @@
       "primaryColor": "black",
       "garments": [
         "tee"
+      ],
+      "needsMockup": true,
+      "mockupMode": "asIs",
+      "backgroundColor": "#111111"
+    },
+    {
+      "slug": "gmf",
+      "name": "PAID IN FULL (SHORTS)",
+      "tagline": "Paid In Full Cargo Shorts",
+      "source": "",
+      "primaryColor": "#ffffff",
+      "mockupMode": "asIs",
+      "backgroundColor": "#ffffff",
+      "garments": [
+        "shorts"
       ],
       "needsMockup": true
     }
