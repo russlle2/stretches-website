@@ -25,6 +25,19 @@
         "shorts"
       ],
       "needsMockup": true
+    },
+    {
+      "slug": "paid-in-full-shirt",
+      "name": "PAID IN FULL SHIRT",
+      "tagline": "",
+      "source": "paid-in-full-shirt.png",
+      "primaryColor": "black",
+      "mockupMode": "asIs",
+      "backgroundColor": "#111111",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
     }
   ],
   "pricing": {
