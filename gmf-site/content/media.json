@@ -9,14 +9,14 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "/assets/uploads/1784616941234-gmf-website-light-blue-image.jpg",
+    "backgroundImage": "https://img.youtube.com/vi/3ZoYvaCuUA0/maxresdefault.jpg",
     "useAsAtmosphere": true,
     "featuredVideo": {
-      "youtubeId": "Ud17a64o1pc",
-      "title": "\"He Love The Streets\"",
-      "subtitle": "Official Music Video #ShotBy @igvcci : Edited by: 3039Media",
-      "embedUrl": "https://www.youtube.com/embed/Ud17a64o1pc",
-      "thumbnail": "https://i.ytimg.com/vi/Ud17a64o1pc/hqdefault.jpg"
+      "youtubeId": "3ZoYvaCuUA0",
+      "title": "CAN'T BE STOPPED #HERE2STAY",
+      "subtitle": "Official Music Video #ShotBy @3039shotu",
+      "embedUrl": "https://www.youtube.com/embed/3ZoYvaCuUA0",
+      "thumbnail": "https://i.ytimg.com/vi/3ZoYvaCuUA0/hqdefault.jpg"
     },
     "featuredTrack": {
       "title": "No Restin",
@@ -72,6 +72,13 @@
     }
   ],
   "videos": [
+    {
+      "id": "3ZoYvaCuUA0",
+      "title": "CAN'T BE STOPPED #HERE2STAY (Official Music Video)",
+      "embedUrl": "https://www.youtube.com/embed/3ZoYvaCuUA0",
+      "thumbnail": "https://i.ytimg.com/vi/3ZoYvaCuUA0/hqdefault.jpg",
+      "type": "video"
+    },
     {
       "id": "Ud17a64o1pc",
       "title": "\"He Love The Streets\" (Official Music Video)",
