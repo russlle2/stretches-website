@@ -9,7 +9,7 @@
     "eyebrow": "Gettin' Money Forever",
     "headline": "GMF Productions",
     "tagline": "Watch the official video for \"No Restin\" — out now.",
-    "backgroundImage": "https://img.youtube.com/vi/3ZoYvaCuUA0/maxresdefault.jpg",
+    "backgroundImage": "/assets/uploads/1789188681014-ChatGPT-Image-Jul-2--2026-at-04_13_13-AM.png",
     "useAsAtmosphere": true,
     "featuredVideo": {
       "youtubeId": "3ZoYvaCuUA0",
@@ -112,19 +112,19 @@
   },
   "merch": [
     {
-      "slug": "",
+      "slug": "astronaut-status-tee",
       "name": "PAID IN FULL TEE",
       "price": 30,
       "image": "/assets/uploads/1788943662986-paid-in-full-wrinkled.PNG"
     },
     {
-      "slug": "",
+      "slug": "astronaut-status-tee",
       "name": "GMF OG TEE",
       "price": 25,
       "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG"
     },
     {
-      "slug": "",
+      "slug": "astronaut-status-tee",
       "name": "GAME OVER",
       "price": 30,
       "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG"
