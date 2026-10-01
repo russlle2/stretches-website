@@ -38,6 +38,19 @@
         "tee"
       ],
       "needsMockup": true
+    },
+    {
+      "slug": "gmf-angel",
+      "name": "GMF DEMON",
+      "tagline": "GMF DEMON DESIGN",
+      "source": "gmf-angel.png",
+      "primaryColor": "black",
+      "mockupMode": "asIs",
+      "backgroundColor": "#111111",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
     }
   ],
   "pricing": {
