@@ -51,6 +51,19 @@
         "tee"
       ],
       "needsMockup": true
+    },
+    {
+      "slug": "gmf-angel",
+      "name": "GMF ANGEL",
+      "tagline": "GMF ANGEL",
+      "source": "gmf-angel.png",
+      "primaryColor": "black",
+      "mockupMode": "asIs",
+      "backgroundColor": "#111111",
+      "garments": [
+        "tee"
+      ],
+      "needsMockup": true
     }
   ],
   "pricing": {
