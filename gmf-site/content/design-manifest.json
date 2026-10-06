@@ -45,7 +45,7 @@
       "tagline": "GMF DEMON DESIGN",
       "source": "gmf-angel.png",
       "primaryColor": "black",
-      "mockupMode": "asIs",
+      "mockupMode": "stock",
       "backgroundColor": "#111111",
       "garments": [
         "tee"
