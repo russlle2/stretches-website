@@ -14,19 +14,6 @@
       "backgroundColor": "#111111"
     },
     {
-      "slug": "gmf",
-      "name": "PAID IN FULL (SHORTS)",
-      "tagline": "Paid In Full Cargo Shorts",
-      "source": "",
-      "primaryColor": "#ffffff",
-      "mockupMode": "asIs",
-      "backgroundColor": "#ffffff",
-      "garments": [
-        "shorts"
-      ],
-      "needsMockup": true
-    },
-    {
       "slug": "paid-in-full-shirt",
       "name": "PAID IN FULL SHIRT",
       "tagline": "PAID IN FULL TEE",
