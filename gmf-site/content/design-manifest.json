@@ -51,21 +51,6 @@
         "tee"
       ],
       "needsMockup": true
-    },
-    {
-      "slug": "bulk-orders",
-      "name": "Bulk Orders",
-      "tagline": "Custom Apparel Orders\n10-25-50-100pc.",
-      "source": "bulk-orders.jpg",
-      "primaryColor": "black",
-      "mockupMode": "stock",
-      "backgroundColor": "#111111",
-      "garments": [
-        "tee",
-        "shorts",
-        "hat"
-      ],
-      "needsMockup": true
     }
   ],
   "pricing": {
