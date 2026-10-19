@@ -1,0 +1,4 @@
+const test=require('node:test'),assert=require('node:assert/strict');const {statusFor,handler}=require('../netlify/functions/stripe-webhook');
+test('completed checkout is pending until Stripe reports payment',()=>{assert.equal(statusFor({status:'complete',payment_status:'unpaid'},'checkout.session.completed'),'pending');assert.equal(statusFor({status:'complete',payment_status:'paid'},'checkout.session.completed'),'paid');});
+test('late failure cannot override a payment confirmed by Stripe',()=>{assert.equal(statusFor({status:'complete',payment_status:'paid'},'checkout.session.async_payment_failed'),'paid');assert.equal(statusFor({status:'complete',payment_status:'unpaid'},'checkout.session.async_payment_failed'),'failed');});
+test('invalid webhook signature cannot persist orders',async()=>{const result=await handler({httpMethod:'POST',headers:{},body:'{}'});assert.equal(result.statusCode,400);});

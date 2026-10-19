@@ -72,7 +72,11 @@ async function ensurePrice(product, unitAmount, currency) {
 }
 
 async function main() {
+  if (!process.env.STRIPE_ACCOUNT_ID) throw new Error('STRIPE_ACCOUNT_ID is required before syncing.');
+  const account = await stripe.accounts.retrieve();
+  if (account.id !== process.env.STRIPE_ACCOUNT_ID) throw new Error('Stripe account does not match this website.');
   const products = JSON.parse(fs.readFileSync(PRODUCTS_JSON, 'utf8'));
+  if (products.some(p => !p.sku || !Number.isSafeInteger(p.unitAmount) || p.unitAmount <= 0)) throw new Error('Only priced canonical variants may sync.');
   const priceMap = {};
   let created = 0;
   let reused = 0;

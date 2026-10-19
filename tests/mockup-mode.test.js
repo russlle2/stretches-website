@@ -6,7 +6,7 @@ const { spawnSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const MANIFEST = path.join(ROOT, 'gmf-site', 'content', 'design-manifest.json');
-const MOCKUP_DIR = path.join(ROOT, 'gmf-site', 'assets', 'mockups');
+const os = require('os');
 
 function normalizeMode(mode) {
   return mode === 'colorBg' || mode === 'asIs' ? mode : 'stock';
@@ -24,9 +24,17 @@ describe('mockupMode helpers', () => {
 
 describe('regen-mockups respects mockupMode', () => {
   it('generates as-is and colorBg outputs without garment templates', () => {
-    const original = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
-    const design = (original.designs || []).find((d) => d.source || d.slug === 'astronaut-status');
-    assert.ok(design, 'expected at least one design with a source file');
+    const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'gmf-legacy-mockups-'));
+    const MANIFEST = path.join(fixtureRoot, 'gmf-site', 'content', 'design-manifest.json');
+    const MOCKUP_DIR = path.join(fixtureRoot, 'gmf-site', 'assets', 'mockups');
+    fs.mkdirSync(path.dirname(MANIFEST), {recursive:true});
+    fs.mkdirSync(path.join(fixtureRoot, 'gmf-site', 'assets', 'designs'), {recursive:true});
+    fs.mkdirSync(path.join(fixtureRoot, 'scripts'));
+    fs.symlinkSync(path.join(ROOT, 'node_modules'), path.join(fixtureRoot, 'node_modules'), 'dir');
+    fs.copyFileSync(path.join(ROOT, 'scripts', 'regen-mockups.js'), path.join(fixtureRoot, 'scripts', 'regen-mockups.js'));
+    fs.copyFileSync(path.join(ROOT, 'gmf-site', 'assets', 'designs', 'astronaut-status.png'), path.join(fixtureRoot, 'gmf-site', 'assets', 'designs', 'astronaut-status.png'));
+    const original = {designs: []};
+    const design = {source: 'astronaut-status.png'};
 
     const tmpSlug = `mode-test-${Date.now()}`;
     const backup = JSON.stringify(original, null, 2) + '\n';
@@ -60,8 +68,8 @@ describe('regen-mockups respects mockupMode', () => {
       };
       fs.writeFileSync(MANIFEST, JSON.stringify(asIsManifest, null, 2) + '\n');
 
-      const result = spawnSync(process.execPath, [path.join(ROOT, 'scripts', 'regen-mockups.js')], {
-        cwd: ROOT,
+      const result = spawnSync(process.execPath, [path.join(fixtureRoot, 'scripts', 'regen-mockups.js')], {
+        cwd: fixtureRoot,
         encoding: 'utf8',
       });
       assert.equal(result.status, 0, result.stderr || result.stdout);
@@ -78,6 +86,7 @@ describe('regen-mockups respects mockupMode', () => {
           fs.unlinkSync(f);
         } catch (_) {}
       }
+      fs.rmSync(fixtureRoot, {recursive:true, force:true});
     }
   });
 });

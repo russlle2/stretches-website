@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="styles/theme.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,7 +22,7 @@
           },
           colors: {
             brand: {
-              green: '#10b981',
+              green: 'rgb(var(--gmf-primary-rgb) / <alpha-value>)',
               dark: '#0a0a0a',
             }
           }
@@ -46,7 +47,6 @@
       opacity: 0.14;
       filter: saturate(0.85) brightness(0.55);
     }
-    .cart-modal { transition: opacity 0.3s ease, visibility 0.3s ease; }
   </style>
 </head>
 <body data-page="home" class="bg-grit antialiased selection:bg-brand-green selection:text-black">
@@ -64,9 +64,9 @@
       <a href="#about" class="hover:text-brand-green transition">ABOUT</a>
       <a href="shop.html" class="hover:text-brand-green transition">FULL SHOP</a>
     </div>
-    <button onclick="toggleCart()" class="flex items-center gap-2 bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-brand-green transition">
+    <a href="cart.html" class="shrink-0 whitespace-nowrap bg-white text-black px-4 py-2 rounded-sm font-bold hover:bg-brand-green transition">
       CART (<span id="cart-count">0</span>)
-    </button>
+    </a>
   </nav>
 
   <header id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
@@ -197,29 +197,10 @@
     <p class="text-gray-600 text-sm">&copy; 2026 GETTIN' MONEY FOREVER Productions LLC. All rights reserved.</p>
   </footer>
 
-  <div id="cart-modal" class="cart-modal invisible opacity-0 fixed inset-0 z-[100] flex justify-end bg-black/80 backdrop-blur-sm">
-    <div class="w-full max-w-md bg-zinc-900 h-full p-6 shadow-2xl border-l border-white/10 flex flex-col">
-      <div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
-        <h2 class="font-display text-2xl uppercase font-bold">Your Cart</h2>
-        <button onclick="toggleCart()" class="text-gray-400 hover:text-white text-2xl">&times;</button>
-      </div>
-      <div id="cart-items" class="flex-1 overflow-y-auto space-y-4">
-        <p class="text-gray-500 text-center mt-10">Your cart is currently empty.</p>
-      </div>
-      <div class="pt-6 border-t border-white/10 mt-auto">
-        <div class="flex justify-between items-center mb-6">
-          <span class="text-lg text-gray-400">Total</span>
-          <span id="cart-total" class="font-bold text-2xl text-brand-green">$0.00</span>
-        </div>
-        <button onclick="checkout()" class="w-full bg-brand-green text-black py-4 font-bold uppercase tracking-wider hover:bg-white transition text-lg">Checkout Securely</button>
-        <p class="text-xs text-gray-500 text-center mt-3">Powered by Stripe · Orders saved to Supabase</p>
-      </div>
-    </div>
-  </div>
-
   <script src="scripts/site-config.js"></script>
   <script src="scripts/api.js"></script>
   <script src="scripts/content-loader.js"></script>
+  <script src="scripts/data.js"></script>
   <script src="scripts/media.js"></script>
   <script src="scripts/gmf-cart.js"></script>
   <script src="scripts/forms.js"></script>

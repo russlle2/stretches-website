@@ -10,3 +10,7 @@ scripts/tmp-*.json
 tmp-thumbs/
 COMMIT_MSG.tmp
 *.tmp
+
+__pycache__/
+*.pyc
+supabase/.temp/

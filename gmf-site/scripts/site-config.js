@@ -2,6 +2,6 @@
 window.SITE_CONFIG = {
   "stripePublishableKey": "",
   "checkoutEnabled": true,
-  "siteUrl": "https://gmfproductions-dailyclarity.netlify.app",
-  "bookingEmail": "booking@gmfproductions.com"
+  "siteUrl": "https://gmfproductions904.com",
+  "bookingEmail": "support@gmfproductions904.com"
 };

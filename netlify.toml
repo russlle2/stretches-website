@@ -7,6 +7,9 @@
   NODE_VERSION = "20"
 
 [functions]
+  # CommonJS uses ZISI's dependency copying. Keep Sharp external if esbuild is
+  # selected later; native binaries must come from the remote Linux install.
+  external_node_modules = ["sharp"]
   # Bundle non-JS files referenced via fs.readFileSync at runtime so they ship
   # with every Lambda. zip-it-and-ship-it can't auto-discover dynamic paths.
   included_files = ["netlify/functions/_shared/**"]
@@ -15,6 +18,25 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+# Retire legacy product pages that bypass the canonical product catalog.
+[[redirects]]
+  from = "/fake-smiles-heavyweight-tee.html"
+  to = "/shop.html"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/signature-dad-hat.html"
+  to = "/shop.html"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/loyalty-hoodie.html"
+  to = "/shop.html"
+  status = 302
+  force = true
 
 [[headers]]
   for = "/*"

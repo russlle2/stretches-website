@@ -5,6 +5,7 @@
 */
 
 /* Import Google Fonts — note: network fetch occurs when the site is live */
+@import url('theme.css');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
@@ -14,8 +15,8 @@
   --color-surface-raised: #1D1D1D;
   --color-text-primary: #F5F5F2;
   --color-text-secondary: #A7A7A7;
-  --color-accent-gold: #D6B25E;
-  --color-accent-blue: #5A9BFF;
+  --color-accent-gold: var(--gmf-secondary, #D6B25E);
+  --color-accent-blue: var(--gmf-primary-text, #10b981);
   --color-border: #2B2B2B;
   --color-error: #D96B6B;
   --color-success: #79C98C;
@@ -129,8 +130,8 @@ header {
 
 /* Announcement bar */
 .announcement-bar {
-  background-color: var(--color-accent-gold);
-  color: var(--color-bg);
+  background-color: var(--gmf-secondary);
+  color: var(--gmf-on-secondary);
   text-align: center;
   padding: var(--space-2);
   font-size: 0.85rem;
@@ -162,7 +163,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.75rem;
-  color: var(--color-accent-gold);
+  color: var(--gmf-secondary-text);
 }
 
 .hero-headline {
@@ -198,12 +199,13 @@ header {
 }
 
 .btn-primary {
-  background-color: var(--color-accent-gold);
-  color: var(--color-bg);
+  background-color: var(--gmf-secondary);
+  color: var(--gmf-on-secondary);
 }
 
 .btn-primary:hover {
-  background-color: #b3944a;
+  background-color: var(--gmf-secondary-hover);
+  color: var(--gmf-on-secondary-hover);
 }
 
 .btn-secondary {
@@ -315,7 +317,7 @@ header {
 
 .product-card .price {
   font-family: var(--font-utility);
-  color: var(--color-accent-gold);
+  color: var(--gmf-secondary-text);
   font-size: 0.9rem;
 }
 
@@ -325,8 +327,8 @@ header {
   border-radius: var(--radius-pill);
   font-size: 0.7rem;
   font-family: var(--font-utility);
-  color: var(--color-bg);
-  background-color: var(--color-accent-gold);
+  color: var(--gmf-on-secondary);
+  background-color: var(--gmf-secondary);
   margin-right: var(--space-2);
 }
 
@@ -395,8 +397,8 @@ header {
 }
 
 .variant-option.selected {
-  background-color: var(--color-accent-gold);
-  color: var(--color-bg);
+  background-color: var(--gmf-secondary);
+  color: var(--gmf-on-secondary);
 }
 
 /* Cart and checkout */

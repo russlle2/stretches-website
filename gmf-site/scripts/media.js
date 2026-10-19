@@ -165,7 +165,8 @@ function applyAtmosphere(hero) {
 function renderHomeMerch(items) {
   const grid = document.getElementById('home-merch-grid');
   if (!grid) return;
-  const cards = (items || []).slice(0, 3);
+  const catalog = window.GMF_CATALOG;
+  const cards = (items || []).filter(item => catalog && catalog.products[item.slug]).slice(0, 3);
   if (!cards.length) {
     grid.innerHTML = '<p class="text-gray-400">Merch coming soon — visit the full shop.</p>';
     return;
@@ -173,10 +174,11 @@ function renderHomeMerch(items) {
 
   grid.innerHTML = cards.map((item) => {
     const name = item.name || 'GMF Merch';
-    const price = Number(item.price) || 25;
     const slug = item.slug || '';
+    const product = catalog.products[slug];
+    const amounts = product.variants.filter(catalog.canBuy).map(v => v.unitAmount);
     const image = item.image || 'assets/mockups/time-is-money-tee.jpg';
-    const priceLabel = `$${price.toFixed(2)} USD`;
+    const priceLabel = amounts.length ? `${Math.min(...amounts) === Math.max(...amounts) ? '' : 'From '}${catalog.money(Math.min(...amounts))} USD` : 'Currently unavailable';
     const productHref = slug ? `product.html?slug=${encodeURIComponent(slug)}` : 'shop.html';
     const safeName = escapeHtml(name);
     const safeImage = escapeHtml(image);
@@ -190,11 +192,10 @@ function renderHomeMerch(items) {
             <a href="${productHref}" class="hover:text-brand-green transition">${safeName}</a>
           </h3>
           <p class="text-gray-400 mb-4">${priceLabel}</p>
-          <button type="button"
-            onclick="addToCart('${safeName.replace(/'/g, "\\'")}', ${price}, '${escapeHtml(slug)}', '${safeImage}')"
-            class="w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">
-            Add to Cart
-          </button>
+          <a href="${productHref}"
+            class="block text-center w-full bg-white text-black py-3 font-bold uppercase tracking-wider hover:bg-brand-green transition">
+            Choose Size & Color
+          </a>
         </div>
       </div>`;
   }).join('');

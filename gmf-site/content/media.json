@@ -119,19 +119,19 @@
   },
   "merch": [
     {
-      "slug": "astronaut-status-tee",
+      "slug": "paid-in-full-shirt-tee",
       "name": "PAID IN FULL TEE",
       "price": 30,
       "image": "/assets/uploads/1788943662986-paid-in-full-wrinkled.PNG"
     },
     {
-      "slug": "astronaut-status-tee",
+      "slug": "gmf-og-tee",
       "name": "GMF OG TEE",
       "price": 25,
       "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG"
     },
     {
-      "slug": "astronaut-status-tee",
+      "slug": "game-over-tee",
       "name": "GAME OVER",
       "price": 30,
       "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG"

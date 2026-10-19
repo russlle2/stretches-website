@@ -1,160 +1,72 @@
-// build-products.js
-// Convert gmf-site/content/design-manifest.json into:
-//   gmf-site/scripts/data.js   (browser window.PRODUCTS)
-//   scripts/products.json      (server-side source for Stripe sync)
-
+// Generate browser and authoritative server catalogs without network side effects.
 const fs = require('fs');
 const path = require('path');
+const { createCatalogRuntime } = require('./catalog-runtime');
+const CATEGORIES = { tee: 'tees', shorts: 'shorts', hat: 'hats', hoodie: 'hoodies', crewneck: 'crewnecks' };
+const safeImage = value => typeof value === 'string' && /^(?:https:\/\/|\/?assets\/)/.test(value) ? value : '';
 
-const ROOT = path.resolve(__dirname, '..');
-const MANIFEST = path.join(ROOT, 'gmf-site', 'content', 'design-manifest.json');
-const DATA_JS = path.join(ROOT, 'gmf-site', 'scripts', 'data.js');
-const PRODUCTS_JSON = path.join(ROOT, 'scripts', 'products.json');
-
-const GARMENT_BASE = {
-  tee: {
-    label: 'Tee',
-    category: 'tees',
-    material: '100% cotton heavyweight jersey',
-    fit: 'Relaxed',
-    gsm: 240,
-    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL'],
-    sizeNote: 'Runs true to size.',
-  },
-  shorts: {
-    label: 'Shorts',
-    category: 'shorts',
-    material: 'Heavyweight fleece, brushed interior',
-    fit: 'Relaxed mid-rise',
-    gsm: 320,
-    sizes: ['S', 'M', 'L', 'XL', '2XL', '3XL'],
-    sizeNote: 'Drawstring waist. Size up for an oversized fit.',
-  },
-  hat: {
-    label: 'Hat',
-    category: 'hats',
-    material: '6-panel structured cotton twill',
-    fit: 'One size, snapback adjustable',
-    gsm: null,
-    sizes: ['OS'],
-    sizeNote: 'Adjustable snapback fits most.',
-  },
-};
-
-const DEFAULT_PRICING = { tee: 2500, shorts: 3500, hat: 2500, currency: 'USD' };
-
-const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
-const pricing = { ...DEFAULT_PRICING, ...(manifest.pricing || {}) };
-
-function garmentMeta(g) {
-  const base = GARMENT_BASE[g];
-  if (!base) return null;
-  const unitAmount = Number(pricing[g]) || DEFAULT_PRICING[g];
-  return {
-    ...base,
-    unitAmount,
-    price: unitAmount / 100,
-  };
-}
-
-function normalizeMode(mode) {
-  return mode === 'colorBg' || mode === 'asIs' ? mode : 'stock';
-}
-
-function productDescription(d, meta, mode) {
-  const tag = (d.tagline || '').trim();
-  const base = tag ? `${tag} ` : '';
-  if (mode === 'asIs') {
-    return `${base}${d.name} ${meta.label} from the GMF Productions catalog.`.trim();
-  }
-  if (mode === 'colorBg') {
-    return `${base}Printed on a ${meta.label.toLowerCase()} from the GMF Productions catalog.`.trim();
-  }
-  return `${base}Printed on a heavyweight black ${meta.label.toLowerCase()} from the GMF Productions catalog.`.trim();
-}
-
-function designImagePath(d) {
-  const src = d.source || `${d.slug}.png`;
-  return `assets/designs/${src}`;
-}
-
-const products = {};
-const stripeProducts = [];
-
-for (const d of manifest.designs) {
-  const mode = normalizeMode(d.mockupMode);
-  for (const g of d.garments) {
-    const meta = garmentMeta(g);
-    if (!meta) continue;
-    const slug = `${d.slug}-${g}`;
-    const sku = `GMF-${g.toUpperCase()}-${d.slug.toUpperCase().replace(/-/g, '')}`;
-    const image = `assets/mockups/${slug}.jpg`;
-    const variantColor = mode === 'stock' ? 'Black' : mode === 'colorBg' ? 'Custom' : 'As Shown';
-
-    const variants = meta.sizes.map((size) => ({
-      sku: `${sku}-${size}`,
-      size,
-      color: variantColor,
-      price: meta.price,
-      inventoryStatus: 'in_stock',
-      featuredImage: image,
-    }));
-
-    products[slug] = {
-      productGroupID: sku,
-      slug,
-      type: 'productGroup',
-      name: `${d.name} ${meta.label}`,
-      brand: 'GMF Productions',
-      category: meta.category,
-      collection: 'gmf-productions',
-      missionTag: 'Gettin Money Forever.',
-      description: productDescription(d, meta, mode),
-      priceRange: { min: meta.price, max: meta.price, currency: 'USD' },
-      material: meta.material,
-      fit: meta.fit,
-      gsm: meta.gsm,
-      care: [
-        'Machine wash cold, inside out',
-        'Tumble dry low or hang dry',
-        'Do not iron directly on print',
-      ],
-      sizeGuide: { sizes: meta.sizes, fitNote: meta.sizeNote },
-      images: [image, designImagePath(d)],
-      variants,
-      trustBadges: [
-        'Official GMF Productions Product',
-        'Print-on-demand from Jacksonville, FL',
-      ],
-      design: d.slug,
-      garment: g,
-      mockupMode: mode,
+function buildCatalog(manifest) {
+  if (manifest.schemaVersion !== 2 || !Array.isArray(manifest.products)) throw new Error('Catalog schemaVersion 2 with products is required.');
+  if (String(manifest.currency || 'USD').toUpperCase() !== 'USD') throw new Error('Only USD is supported.');
+  const products = {}, variants = {}, stripeProducts = [];
+  const ids = new Set(), slugs = new Set(), skus = new Set();
+  for (const p of manifest.products) {
+    if (!p.id || ids.has(p.id)) throw new Error(`Missing or duplicate product ID: ${p.id}`);
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug || '') || slugs.has(p.slug)) throw new Error(`Invalid or duplicate product slug: ${p.slug}`);
+    if (!['draft', 'published'].includes(p.status)) throw new Error(`Invalid status for ${p.slug}`);
+    if (!p.name || !Array.isArray(p.variants)) throw new Error(`Name and variants required for ${p.slug}`);
+    ids.add(p.id); slugs.add(p.slug);
+    const publicVariants = [], combinations = new Set();
+    for (const v of p.variants) {
+      if (!/^[A-Za-z0-9_-]+$/.test(v.sku || '') || skus.has(v.sku)) throw new Error(`Invalid or duplicate variant SKU: ${v.sku}`);
+      if (!v.size || !v.colorCode || !v.color) throw new Error(`Size and color required for ${v.sku}`);
+      const combination = JSON.stringify([v.colorCode, v.artworkColorway || '', v.size]);
+      if (combinations.has(combination)) throw new Error(`Duplicate color/artwork/size for ${p.slug}`);
+      combinations.add(combination); skus.add(v.sku);
+      if (v.unitAmount != null && (!Number.isSafeInteger(v.unitAmount) || v.unitAmount <= 0)) throw new Error(`Price must be positive integer cents or null: ${v.sku}`);
+      if (String(v.currency || 'usd').toLowerCase() !== 'usd') throw new Error(`Unsupported currency for ${v.sku}`);
+      if (p.status !== 'published') continue;
+      const image = v.previewApproved === true ? safeImage(v.image) : '';
+      const sellable = v.available === true && v.previewApproved === true && v.unitAmount > 0 && !!image;
+      const canonical = {
+        sku: v.sku, productId: p.id, slug: p.slug, name: p.name,
+        size: v.size, colorCode: v.colorCode, color: v.color,
+        colorHex: /^#[0-9a-f]{6}$/i.test(v.colorHex || '') ? v.colorHex : null,
+        artworkColorway: v.artworkColorway || '', unitAmount: v.unitAmount ?? null,
+        currency: 'usd', image, available: v.available === true,
+        previewApproved: v.previewApproved === true, sellable,
+        generatedPreview: v.generatedPreview === true,
+      };
+      variants[v.sku] = canonical;
+      if (canonical.previewApproved && image) publicVariants.push({ ...canonical, price: v.unitAmount == null ? null : v.unitAmount / 100, featuredImage: image, inventoryStatus: sellable ? 'in_stock' : 'unavailable' });
+      if (sellable) stripeProducts.push({ ...canonical, name: `${p.name} — ${v.color}${v.artworkColorway ? ` / ${v.artworkColorway}` : ''} / ${v.size}`, description: p.description || '', garment: p.garment, collection: p.collection || '' });
+    }
+    if (p.status !== 'published' || !publicVariants.length) continue;
+    const prices = publicVariants.filter(v => v.sellable).map(v => v.price);
+    products[p.slug] = {
+      id: p.id, productGroupID: p.id, slug: p.slug, name: p.name,
+      garment: p.garment, category: CATEGORIES[p.garment] || p.garment,
+      collection: p.collection || '', description: p.description || '',
+      material: p.material || '', fit: p.fit || '', gsm: p.gsm || null,
+      care: Array.isArray(p.care) ? p.care : [], sizeGuide: p.sizeGuide || {},
+      images: [...new Set([...publicVariants.map(v => v.image), ...(p.images || []).map(safeImage).filter(Boolean)])],
+      variants: publicVariants,
+      priceRange: { min: prices.length ? Math.min(...prices) : null, max: prices.length ? Math.max(...prices) : null, currency: 'USD' },
     };
-
-    stripeProducts.push({
-      sku,
-      slug,
-      name: `${d.name} ${meta.label}`,
-      description: d.tagline,
-      unitAmount: meta.unitAmount,
-      currency: 'usd',
-      garment: g,
-      design: d.slug,
-      image,
-      sizes: meta.sizes,
-      mockupMode: mode,
-    });
   }
+  return { schemaVersion: 2, currency: 'usd', products, variants, stripeProducts };
 }
-
-const banner = `// Auto-generated by scripts/build-products.js — DO NOT EDIT BY HAND
-// Source: gmf-site/content/design-manifest.json
-// Run: node scripts/build-products.js
-`;
-
-const body = `${banner}\nwindow.PRODUCTS = ${JSON.stringify(products, null, 2)};\n`;
-fs.writeFileSync(DATA_JS, body);
-fs.writeFileSync(PRODUCTS_JSON, JSON.stringify(stripeProducts, null, 2));
-
-console.log(`Wrote ${Object.keys(products).length} products to ${DATA_JS}`);
-console.log(`Wrote ${stripeProducts.length} SKUs to ${PRODUCTS_JSON}`);
+function writeCatalog(root = path.resolve(__dirname, '..')) {
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'gmf-site/content/design-manifest.json'), 'utf8'));
+  const { stripeProducts, ...catalog } = buildCatalog(manifest);
+  const browser = `// Generated from content/design-manifest.json. Do not edit.\nwindow.PRODUCTS = ${JSON.stringify(catalog.products, null, 2)};\nwindow.GMF_CATALOG = (${createCatalogRuntime.toString()})(window.PRODUCTS);\n`;
+  fs.writeFileSync(path.join(root, 'gmf-site/scripts/data.js'), browser);
+  fs.writeFileSync(path.join(root, 'scripts/products.json'), JSON.stringify(stripeProducts, null, 2) + '\n');
+  const serverPath = path.join(root, 'netlify/functions/_shared/catalog.json');
+  fs.mkdirSync(path.dirname(serverPath), { recursive: true });
+  fs.writeFileSync(serverPath, JSON.stringify(catalog, null, 2) + '\n');
+  console.log(`Built ${Object.keys(catalog.products).length} public products and ${stripeProducts.length} sellable variants.`);
+  return catalog;
+}
+if (require.main === module) writeCatalog();
+module.exports = { buildCatalog, writeCatalog };

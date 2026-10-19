@@ -1,0 +1,22 @@
+/* Generated from content/theme.json. */
+:root {
+  --gmf-primary: #10b981;
+  --gmf-primary-rgb: 16 185 129;
+  --gmf-primary-text: #10b981;
+  --gmf-primary-text-rgb: 16 185 129;
+  --gmf-on-primary: #000000;
+  --gmf-primary-hover: #31c393;
+  --gmf-on-primary-hover: #000000;
+  --gmf-secondary: #d6b25e;
+  --gmf-secondary-rgb: 214 178 94;
+  --gmf-secondary-text: #d6b25e;
+  --gmf-secondary-text-rgb: 214 178 94;
+  --gmf-on-secondary: #000000;
+  --gmf-secondary-hover: #dcbd75;
+  --gmf-on-secondary-hover: #000000;
+}
+body .text-brand-green, body .hover\:text-brand-green:hover { color: var(--gmf-primary-text); }
+body .text-brand-green\/50 { color: rgb(var(--gmf-primary-text-rgb) / .5); }
+.bg-brand-green.text-black, .hover\:bg-brand-green.hover\:text-black:hover, .hover\:bg-brand-green.text-black:hover { color: var(--gmf-on-primary); }
+.bg-brand-green.hover\:bg-white:hover { color: #000; }
+::selection { background: var(--gmf-primary); color: var(--gmf-on-primary); }
