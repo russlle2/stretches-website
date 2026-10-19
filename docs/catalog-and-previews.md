@@ -6,6 +6,8 @@ The canonical catalog is `gmf-site/content/design-manifest.json` (schema version
 
 Deploy through Netlify's remote Linux Git build so dependency installation supplies Linux Sharp/libvips binaries. The current CommonJS functions use Netlify's default ZISI dependency copying; `external_node_modules = ["sharp"]` also protects Sharp if esbuild is selected later. Do not deploy a locally packaged macOS dependency tree as the image worker. The lockfile includes Linux optional dependencies, which must remain enabled during installation.
 
+Use Node 22 for both build and Functions runtime. `netlify.toml` pins `NODE_VERSION = "22"`; set `AWS_LAMBDA_JS_RUNTIME=nodejs22.x` through Netlify's environment settings and redeploy (this runtime setting does not belong in `netlify.toml`). The installed Supabase client initializes its Realtime transport even for storage/database calls and requires native WebSocket support, which is unavailable by default on Node 20. `package.json` therefore requires Node 22 or newer for local checks too.
+
 ## Configuration
 
 Apply `supabase/migrations/20261019084207_gmf_private_assets_mockup_jobs.sql` to the existing store's Supabase project. It creates server-only tables `gmf_assets` and `gmf_mockup_jobs`, private buckets `gmf-originals` and `gmf-previews-private`, and public bucket `gmf-previews`. Keep the service role key server-side. Client roles have no table access.

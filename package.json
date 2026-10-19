@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Official GMF Productions website — music, merch, and live integrations",
   "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "netlify dev",
     "build": "node scripts/build-config.js && node scripts/build-products.js && node scripts/build-posts.js",
