@@ -1,53 +1,30 @@
-// cart.js — renders cart items and handles quantity adjustments and navigation to checkout
 document.addEventListener('DOMContentLoaded', () => {
-  const cartContainer = document.getElementById('cart-container');
-  const emptyState = document.getElementById('cart-empty');
-  function renderCart() {
-    const cart = JSON.parse(localStorage.getItem('gmf_cart') || '[]');
-    if (!cart.length) {
-      cartContainer.style.display = 'none';
-      if (emptyState) emptyState.style.display = 'block';
-      return;
-    }
-    cartContainer.style.display = 'block';
-    if (emptyState) emptyState.style.display = 'none';
-    // Clear container
-    cartContainer.innerHTML = '';
-    let total = 0;
+  const host = document.getElementById('cart-container'), empty = document.getElementById('cart-empty'), C = window.GMF_CATALOG;
+  if (!host || !C) return;
+  const E = C.escapeHtml, notices = [];
+  function render() {
+    const result = C.readCart(localStorage);
+    notices.push(...result.notices);
+    const cart = result.cart;
+    host.style.display = 'block';
+    if (empty) empty.style.display = cart.length ? 'none' : 'block';
+    host.innerHTML = [...new Set(notices)].map(n => `<p class="cart-notice" role="status">${E(n)}</p>`).join('');
+    if (!cart.length) return;
+    const total = cart.reduce((sum, item) => sum + item.unitAmount * item.quantity, 0);
     cart.forEach((item, index) => {
-      total += item.price * item.quantity;
-      const row = document.createElement('div');
-      row.className = 'cart-item';
-      row.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" />
-        <div class="cart-item-info">
-          <h4>${item.name}</h4>
-          <p>Color: ${item.color} | Size: ${item.size}</p>
-          <p>Price: $${item.price.toFixed(2)} x ${item.quantity}</p>
-          <button class="btn btn-secondary" data-index="${index}" style="margin-top: var(--space-2);">Remove</button>
-        </div>
-      `;
-      cartContainer.appendChild(row);
-    });
-    // Cart summary
-    const summary = document.createElement('div');
-    summary.className = 'cart-summary';
-    summary.innerHTML = `
-      <div>
-        <strong>Total:</strong> $${total.toFixed(2)}
-      </div>
-      <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
-    `;
-    cartContainer.appendChild(summary);
-    // Attach remove handlers
-    cartContainer.querySelectorAll('button[data-index]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const idx = parseInt(btn.dataset.index);
-        cart.splice(idx, 1);
-        localStorage.setItem('gmf_cart', JSON.stringify(cart));
-        renderCart();
+      const row = document.createElement('div'); row.className = 'cart-item';
+      row.innerHTML = `<img src="${E(item.image)}" alt="${E(item.name)}"><div class="cart-item-info"><h2>${E(item.name)}</h2><p>${E(item.color)}${item.artworkColorway ? ` / ${E(item.artworkColorway)}` : ''} · ${E(item.size)}</p><p>${C.money(item.unitAmount)} each</p><label>Quantity <input type="number" min="1" max="20" step="1" value="${item.quantity}" aria-label="Quantity for ${E(item.name)}"></label><button type="button" class="btn btn-secondary">Remove</button></div>`;
+      row.querySelector('button').addEventListener('click', () => { cart.splice(index, 1); localStorage.setItem('gmf_cart', JSON.stringify(cart)); render(); });
+      row.querySelector('input').addEventListener('change', event => {
+        const quantity = Number(event.target.value);
+        if (!Number.isInteger(quantity) || quantity < 1 || quantity > 20) { event.target.value = item.quantity; return; }
+        item.quantity = quantity; localStorage.setItem('gmf_cart', JSON.stringify(cart)); render();
       });
+      host.appendChild(row);
     });
+    const summary = document.createElement('div'); summary.className = 'cart-summary';
+    summary.innerHTML = `<strong>Subtotal: ${C.money(total)}</strong><a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>`;
+    host.appendChild(summary);
   }
-  renderCart();
+  render();
 });

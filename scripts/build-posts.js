@@ -83,7 +83,7 @@ function renderPost(post) {
     description: post.summary || post.title,
     crumb: '← All News',
     body: `
-      <p style="color:#10b981;text-transform:uppercase;letter-spacing:0.12em;font-size:0.8rem;font-weight:700;">${badge}</p>
+      <p style="color:var(--gmf-primary-text);text-transform:uppercase;letter-spacing:0.12em;font-size:0.8rem;font-weight:700;">${badge}</p>
       <h1>${escapeHtml(post.title)}</h1>
       ${post.publishedAt ? `<p style="color:#a7a7a7;">${escapeHtml(post.publishedAt)}</p>` : ''}
       ${post.summary ? `<p style="font-size:1.15rem;color:#ccc;">${escapeHtml(post.summary)}</p>` : ''}
@@ -106,7 +106,7 @@ for (const file of files) {
   if (!post.slug) post.slug = file.replace(/\.json$/, '');
   posts.push(post);
   const out = path.join(OUT_DIR, `${post.slug}.html`);
-  fs.writeFileSync(out, renderPost(post));
+  fs.writeFileSync(out, renderPost(post).replace(/[\t ]+$/gm, ''));
 }
 
 const indexBody = `
@@ -119,7 +119,7 @@ const indexBody = `
             .map(
               (p) => `
       <a href="posts/${escapeHtml(p.slug)}.html" style="display:block;padding:1.25rem;border:1px solid #2b2b2b;border-radius:10px;text-decoration:none;color:inherit;">
-        <p style="color:#10b981;text-transform:uppercase;letter-spacing:0.12em;font-size:0.75rem;margin:0 0 0.35rem;">${p.type === 'promo' ? 'Promo' : 'News'}</p>
+        <p style="color:var(--gmf-primary-text);text-transform:uppercase;letter-spacing:0.12em;font-size:0.75rem;margin:0 0 0.35rem;">${p.type === 'promo' ? 'Promo' : 'News'}</p>
         <h2 style="margin:0 0 0.35rem;font-size:1.4rem;">${escapeHtml(p.title)}</h2>
         <p style="color:#a7a7a7;margin:0;">${escapeHtml(p.summary || '')}</p>
       </a>`
@@ -170,5 +170,5 @@ const newsPage = `<!DOCTYPE html>
 </html>
 `;
 
-fs.writeFileSync(NEWS_HTML, newsPage);
+fs.writeFileSync(NEWS_HTML, newsPage.replace(/[\t ]+$/gm, ''));
 console.log(`[build-posts] Wrote ${posts.length} post page(s) + news.html`);

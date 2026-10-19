@@ -1,62 +1,3264 @@
 {
-  "designs": [
+  "schemaVersion": 2,
+  "currency": "USD",
+  "products": [
     {
-      "slug": "astronaut-status",
-      "name": "Astronaut Status",
-      "tagline": "\"You'll only be as big as your goals\"",
-      "source": "astronaut-status.png",
-      "primaryColor": "black",
-      "garments": [
-        "tee"
+      "id": "astronaut-status-tee",
+      "slug": "astronaut-status-tee",
+      "skuPrefix": "GMF-TEE-ASTRONAUTSTATUS",
+      "name": "Astronaut Status Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "published",
+      "description": "You'll only be as big as your goals.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      "images": [
+        "/assets/designs/astronaut-status.png"
       ],
-      "needsMockup": true,
-      "mockupMode": "asIs",
-      "backgroundColor": "#111111"
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-ASTRONAUTSTATUS-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/astronaut-status.png",
+          "previewApproved": true
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Existing live catalog and homepage merchandising",
+        "note": "Existing imagery and USD price retained. No material or fit specification inferred."
+      }
     },
     {
-      "slug": "paid-in-full-shirt",
-      "name": "PAID IN FULL SHIRT",
-      "tagline": "PAID IN FULL TEE",
-      "source": "paid-in-full-shirt.png",
-      "primaryColor": "black",
-      "mockupMode": "asIs",
-      "backgroundColor": "#111111",
-      "garments": [
-        "tee"
+      "id": "paid-in-full-shirt-tee",
+      "slug": "paid-in-full-shirt-tee",
+      "skuPrefix": "GMF-TEE-PAIDINFULLSHIRT",
+      "name": "Paid in Full Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "published",
+      "description": "Paid in Full.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      "images": [
+        "/assets/designs/paid-in-full-shirt.png"
       ],
-      "needsMockup": true
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-PAIDINFULLSHIRT-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/paid-in-full-shirt.png",
+          "previewApproved": true
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Existing live catalog and homepage merchandising",
+        "note": "Existing imagery and USD price retained. No material or fit specification inferred."
+      }
     },
     {
-      "slug": "gmf-angel",
-      "name": "GMF DEMON",
-      "tagline": "GMF DEMON DESIGN",
-      "source": "gmf-angel.png",
-      "primaryColor": "black",
-      "mockupMode": "stock",
-      "backgroundColor": "#111111",
-      "garments": [
-        "tee"
+      "id": "gmf-angel-tee",
+      "slug": "gmf-angel-tee",
+      "skuPrefix": "GMF-TEE-GMFANGEL",
+      "name": "GMF Angel Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "published",
+      "description": "GMF Angel.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      "images": [
+        "/assets/designs/gmf-angel.png"
       ],
-      "needsMockup": true
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-GMFANGEL-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFANGEL-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFANGEL-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFANGEL-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFANGEL-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFANGEL-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/designs/gmf-angel.png",
+          "previewApproved": true
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Existing live catalog and homepage merchandising",
+        "note": "Existing imagery and USD price retained. No material or fit specification inferred."
+      }
     },
     {
-      "slug": "gmf-angel",
-      "name": "GMF ANGEL",
-      "tagline": "GMF ANGEL",
-      "source": "gmf-angel.png",
-      "primaryColor": "black",
-      "mockupMode": "asIs",
-      "backgroundColor": "#111111",
-      "garments": [
-        "tee"
+      "id": "gmf-og-tee",
+      "slug": "gmf-og-tee",
+      "skuPrefix": "GMF-TEE-GMFOG",
+      "name": "GMF OG Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "published",
+      "description": "The GMF original.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      "images": [
+        "/assets/uploads/1788943670263-og-gmf-white-logo.PNG"
       ],
-      "needsMockup": true
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-GMFOG-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFOG-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFOG-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFOG-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFOG-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GMFOG-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 2500,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1788943670263-og-gmf-white-logo.PNG",
+          "previewApproved": true
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Existing live catalog and homepage merchandising",
+        "note": "Existing imagery and USD price retained. No material or fit specification inferred."
+      }
+    },
+    {
+      "id": "game-over-tee",
+      "slug": "game-over-tee",
+      "skuPrefix": "GMF-TEE-GAMEOVER",
+      "name": "Game Over Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "published",
+      "description": "Game Over.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ]
+      },
+      "images": [
+        "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG"
+      ],
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-GAMEOVER-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GAMEOVER-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GAMEOVER-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GAMEOVER-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GAMEOVER-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        },
+        {
+          "sku": "GMF-TEE-GAMEOVER-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": 3000,
+          "currency": "usd",
+          "available": true,
+          "image": "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG",
+          "previewApproved": true
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Existing live catalog and homepage merchandising",
+        "note": "Existing imagery and USD price retained. No material or fit specification inferred."
+      }
+    },
+    {
+      "id": "gmf-demon-tee",
+      "slug": "gmf-demon-tee",
+      "skuPrefix": "GMF-TEE-GMFDEMON",
+      "name": "GMF Demon Tee",
+      "garment": "tee",
+      "collection": "core",
+      "status": "draft",
+      "description": "GMF Demon design. Select and approve the correct garment imagery before publishing.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-TEE-GMFDEMON-S",
+          "size": "S",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-TEE-GMFDEMON-M",
+          "size": "M",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-TEE-GMFDEMON-L",
+          "size": "L",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-TEE-GMFDEMON-XL",
+          "size": "XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-TEE-GMFDEMON-2XL",
+          "size": "2XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-TEE-GMFDEMON-3XL",
+          "size": "3XL",
+          "colorCode": "AS-SHOWN",
+          "color": "As Shown",
+          "colorHex": null,
+          "artworkColorway": "",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        }
+      ],
+      "previews": [],
+      "provenance": {
+        "source": "Legacy manifest",
+        "note": "Separated from the duplicated GMF Angel record; no Angel image reused."
+      }
+    },
+    {
+      "id": "prefall-2026-hustler-forever-hoodie",
+      "slug": "prefall-2026-hustler-forever-hoodie",
+      "skuPrefix": "GMF-PF26-HUSTLERHD-PIGBLK",
+      "name": "Hustler Forever Hoodie",
+      "garment": "hoodie",
+      "collection": "pre-fall-2026",
+      "status": "draft",
+      "description": "Distressed Gettin Money Forever Benjamin chest artwork, with coral #LLRR barbed wire above the right wrist. Matte DTF print.",
+      "material": "Dry-hand 3-end fleece; ring-spun cotton 21-singles face; 500 GSM rib.",
+      "fit": "Boxy fit with drop shoulder; double hood without drawcord.",
+      "gsm": 420,
+      "care": [
+        "Hang dry"
+      ],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "fitNote": "Boxy fit with drop shoulder; double hood without drawcord."
+      },
+      "images": [],
+      "sourceAssetIds": [
+        "usb-6e71e092080acecfe55b"
+      ],
+      "variants": [
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-S",
+          "size": "S",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-M",
+          "size": "M",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-L",
+          "size": "L",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-XL",
+          "size": "XL",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-2XL",
+          "size": "2XL",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-HUSTLERHD-PIGBLK-3XL",
+          "size": "3XL",
+          "colorCode": "PIGBLK",
+          "color": "Pigment Black",
+          "colorHex": null,
+          "artworkColorway": "Benjamin / Coral #LLRR",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        }
+      ],
+      "previews": [
+        {
+          "assetId": "usb-6e71e092080acecfe55b",
+          "url": "/assets/catalog-library/usb-6e71e092080acecfe55b.webp",
+          "type": "artwork",
+          "label": "Chest artwork candidate — garment preview not approved",
+          "approved": false
+        }
+      ],
+      "construction": [
+        "12.5 oz fleece",
+        "Double hood",
+        "No drawcord",
+        "500 GSM rib"
+      ],
+      "provenance": {
+        "source": "User-supplied Pre-Fall 2026 specifications",
+        "note": "Specifications retained as supplied. Price, measurements, stock, garment imagery, and certification evidence require confirmation."
+      }
+    },
+    {
+      "id": "prefall-2026-live-rich-die-rollin-tee",
+      "slug": "prefall-2026-live-rich-die-rollin-tee",
+      "skuPrefix": "GMF-PF26-LRDRTEE-BLK",
+      "name": "Live Rich Die Rollin Tee",
+      "garment": "tee",
+      "collection": "pre-fall-2026",
+      "status": "draft",
+      "description": "Crimson GMF arch on the front and oversized cracked Live Rich Die Rollin artwork in acid yellow on the back. Matte DTF print.",
+      "material": "Organic cotton; garment dyed and washed; sueded finish.",
+      "fit": "Relaxed boxy fit.",
+      "gsm": 240,
+      "care": [
+        "Hang dry"
+      ],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "fitNote": "Relaxed boxy fit."
+      },
+      "images": [],
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-S",
+          "size": "S",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-M",
+          "size": "M",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-L",
+          "size": "L",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-XL",
+          "size": "XL",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-2XL",
+          "size": "2XL",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-BLK-3XL",
+          "size": "3XL",
+          "colorCode": "BLK",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "Crimson / Acid Yellow",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        }
+      ],
+      "previews": [],
+      "construction": [
+        "8 oz jersey",
+        "Double-needle collar"
+      ],
+      "provenance": {
+        "source": "User-supplied Pre-Fall 2026 specifications",
+        "note": "Specifications retained as supplied. Price, measurements, stock, garment imagery, and certification evidence require confirmation."
+      },
+      "certificationClaims": [
+        {
+          "name": "GOTS organic cotton",
+          "verification": "not-verified",
+          "source": "user-supplied"
+        },
+        {
+          "name": "Oeko-Tex Standard 100",
+          "verification": "not-verified",
+          "source": "user-supplied"
+        }
+      ]
+    },
+    {
+      "id": "prefall-2026-live-rich-die-rollin-mono-tee",
+      "slug": "prefall-2026-live-rich-die-rollin-mono-tee",
+      "skuPrefix": "GMF-PF26-LRDRTEE-WHTMONO",
+      "name": "Live Rich Die Rollin Mono Tee",
+      "garment": "tee",
+      "collection": "pre-fall-2026",
+      "status": "draft",
+      "description": "White monochrome Live Rich Die Rollin artwork on the washed-black tee. Matte DTF print.",
+      "material": "Organic cotton; garment dyed and washed; sueded finish.",
+      "fit": "Relaxed boxy fit.",
+      "gsm": 240,
+      "care": [
+        "Hang dry"
+      ],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "fitNote": "Relaxed boxy fit."
+      },
+      "images": [],
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-S",
+          "size": "S",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-M",
+          "size": "M",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-L",
+          "size": "L",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-XL",
+          "size": "XL",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-2XL",
+          "size": "2XL",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LRDRTEE-WHTMONO-3XL",
+          "size": "3XL",
+          "colorCode": "WHTMONO",
+          "color": "Washed Black",
+          "colorHex": null,
+          "artworkColorway": "White Monochrome",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        }
+      ],
+      "previews": [],
+      "construction": [
+        "8 oz jersey",
+        "Double-needle collar"
+      ],
+      "provenance": {
+        "source": "User-supplied Pre-Fall 2026 specifications",
+        "note": "Specifications retained as supplied. Price, measurements, stock, garment imagery, and certification evidence require confirmation."
+      },
+      "certificationClaims": [
+        {
+          "name": "GOTS organic cotton",
+          "verification": "not-verified",
+          "source": "user-supplied"
+        },
+        {
+          "name": "Oeko-Tex Standard 100",
+          "verification": "not-verified",
+          "source": "user-supplied"
+        }
+      ]
+    },
+    {
+      "id": "prefall-2026-llrr-benjamin-crewneck",
+      "slug": "prefall-2026-llrr-benjamin-crewneck",
+      "skuPrefix": "GMF-PF26-LLRRCREW-BLK",
+      "name": "#LLRR Benjamin Crewneck",
+      "garment": "crewneck",
+      "collection": "pre-fall-2026",
+      "status": "draft",
+      "description": "Monochrome Benjamin chest artwork with distressed red #LLRR barbed wire and white Gettin Money Forever artwork on the upper back.",
+      "material": "Crossgrain 3-end fleece; ring-spun 21-singles face; 520 GSM 1×1 ribs and side panels.",
+      "fit": "Structured fit.",
+      "gsm": 450,
+      "care": [
+        "Hang dry flat"
+      ],
+      "sizeGuide": {
+        "sizes": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2XL",
+          "3XL"
+        ],
+        "fitNote": "Structured fit."
+      },
+      "images": [],
+      "sourceAssetIds": [],
+      "variants": [
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-S",
+          "size": "S",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-M",
+          "size": "M",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-L",
+          "size": "L",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-XL",
+          "size": "XL",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-2XL",
+          "size": "2XL",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        },
+        {
+          "sku": "GMF-PF26-LLRRCREW-BLK-3XL",
+          "size": "3XL",
+          "colorCode": "BLK",
+          "color": "Black",
+          "colorHex": null,
+          "artworkColorway": "Monochrome Benjamin / Red #LLRR / White Back",
+          "unitAmount": null,
+          "currency": "usd",
+          "available": false,
+          "image": "",
+          "previewApproved": false
+        }
+      ],
+      "previews": [],
+      "construction": [
+        "13.5 oz fleece",
+        "Reverse coverstitch",
+        "520 GSM 1×1 ribs and side panels"
+      ],
+      "provenance": {
+        "source": "User-supplied Pre-Fall 2026 specifications",
+        "note": "Specifications retained as supplied. Price, measurements, stock, garment imagery, and certification evidence require confirmation."
+      }
+    },
+    {
+      "id": "design-broken-heart",
+      "slug": "design-broken-heart",
+      "skuPrefix": "GMF-DESIGN-BROKEN-HEART",
+      "name": "Broken Heart",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Broken Heart design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-44d929ef7549e82df25d",
+        "usb-8874eb5139fa0359ccf6"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-44d929ef7549e82df25d",
+          "url": "/assets/catalog-library/usb-44d929ef7549e82df25d.webp",
+          "type": "artwork",
+          "label": "Broken Heart - Broken Heart 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-8874eb5139fa0359ccf6",
+          "url": "/assets/catalog-library/usb-8874eb5139fa0359ccf6.webp",
+          "type": "artwork",
+          "label": "Broken Heart - Broken Heart.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-crisis-duval",
+      "slug": "design-crisis-duval",
+      "skuPrefix": "GMF-DESIGN-CRISIS-DUVAL",
+      "name": "Crisis Duval",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Crisis Duval design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-ce54f7e9766f8d887a34",
+        "usb-f2b97927ece08b942c6b"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-ce54f7e9766f8d887a34",
+          "url": "/assets/catalog-library/usb-ce54f7e9766f8d887a34.webp",
+          "type": "artwork",
+          "label": "CrisisDuval(Front) (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-f2b97927ece08b942c6b",
+          "url": "/assets/catalog-library/usb-f2b97927ece08b942c6b.webp",
+          "type": "artwork",
+          "label": "CrisisDuval(Front) (2).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-dirty-hands-clean-money",
+      "slug": "design-dirty-hands-clean-money",
+      "skuPrefix": "GMF-DESIGN-DIRTY-HANDS-CLEAN-MONEY",
+      "name": "Dirty Hands Clean Money",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Dirty Hands Clean Money design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-ac629aa049adf9a5a004",
+        "usb-fa87d6a5c8c6638cc772",
+        "usb-aaa311d754b55b91cdde",
+        "usb-162a6427be8093a9f1dc",
+        "usb-9936b6461f685a538111",
+        "usb-845ba634a3091aac2c93",
+        "usb-60df07577a996fd3c35b",
+        "usb-5e44d258b77fcb7b9b55",
+        "usb-f8d8616221a59f49ecbc",
+        "usb-6658da630be97d9f1286"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-ac629aa049adf9a5a004",
+          "url": "/assets/catalog-library/usb-ac629aa049adf9a5a004.webp",
+          "type": "artwork",
+          "label": "Clean.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-aaa311d754b55b91cdde",
+          "url": "/assets/catalog-library/usb-aaa311d754b55b91cdde.webp",
+          "type": "artwork",
+          "label": "dirty hands clean money picture - Google Search.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-162a6427be8093a9f1dc",
+          "url": "/assets/catalog-library/usb-162a6427be8093a9f1dc.webp",
+          "type": "artwork",
+          "label": "dirty hands clean money.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-9936b6461f685a538111",
+          "url": "/assets/catalog-library/usb-9936b6461f685a538111.webp",
+          "type": "artwork",
+          "label": "Dirty.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-dreamer",
+      "slug": "design-dreamer",
+      "skuPrefix": "GMF-DESIGN-DREAMER",
+      "name": "Dreamer",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Dreamer design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-72c77378e4fda060e149",
+        "usb-856499689e8167204117"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-72c77378e4fda060e149",
+          "url": "/assets/catalog-library/usb-72c77378e4fda060e149.webp",
+          "type": "artwork",
+          "label": "Dreamer - Angelic Blind.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-856499689e8167204117",
+          "url": "/assets/catalog-library/usb-856499689e8167204117.webp",
+          "type": "artwork",
+          "label": "Dreamer - Dreamer (2).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-experimental-typography",
+      "slug": "design-experimental-typography",
+      "skuPrefix": "GMF-DESIGN-EXPERIMENTAL-TYPOGRAPHY",
+      "name": "Experimental Typography",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Experimental Typography design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-28d2eff8ce71a5ec1eae",
+        "usb-de23e23747e5a433ca7f",
+        "usb-fe3d5992b47110a2da24",
+        "usb-064fd857c717840dabba",
+        "usb-2ce4516dc586446653ca",
+        "usb-02e658145b0aceba036b",
+        "usb-6033497123c73f8a9bc8",
+        "usb-ab1b085c2c78a128efa9",
+        "usb-093702264a710637e9b4",
+        "usb-58d8e58f328e369ed17b"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-28d2eff8ce71a5ec1eae",
+          "url": "/assets/catalog-library/usb-28d2eff8ce71a5ec1eae.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - Experimental Typography.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-de23e23747e5a433ca7f",
+          "url": "/assets/catalog-library/usb-de23e23747e5a433ca7f.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - LOOK Apparel co. 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-fe3d5992b47110a2da24",
+          "url": "/assets/catalog-library/usb-fe3d5992b47110a2da24.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - Minimalist Grunge Stencil Lips Album.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-064fd857c717840dabba",
+          "url": "/assets/catalog-library/usb-064fd857c717840dabba.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - Experimental Typography.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-2ce4516dc586446653ca",
+          "url": "/assets/catalog-library/usb-2ce4516dc586446653ca.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - LOOK Apparel co. 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-02e658145b0aceba036b",
+          "url": "/assets/catalog-library/usb-02e658145b0aceba036b.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - Minimalist Grunge Stencil Lips Album.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-6033497123c73f8a9bc8",
+          "url": "/assets/catalog-library/usb-6033497123c73f8a9bc8.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - Experimental Typography.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-ab1b085c2c78a128efa9",
+          "url": "/assets/catalog-library/usb-ab1b085c2c78a128efa9.webp",
+          "type": "artwork",
+          "label": "Experimental Typography - LOOK Apparel co. 1 (1).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-gmf-angel-and-devil",
+      "slug": "design-gmf-angel-and-devil",
+      "skuPrefix": "GMF-DESIGN-GMF-ANGEL-AND-DEVIL",
+      "name": "GMF Angel and Devil",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "GMF Angel and Devil design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-97e51820d642dd224604",
+        "usb-fc5092e342b73e4371aa",
+        "usb-30f9174ae6db6b41e44e",
+        "usb-fd28b16f5ca65e46004d",
+        "usb-69c2e4b8fa4f431c01a6",
+        "usb-530a4cd8089bd6262ca6",
+        "usb-82034b88aeae3647c8bf",
+        "usb-1848741f1ca3c519b162",
+        "usb-81be9bab02c3c9566363",
+        "usb-1028acce32f04be2726e",
+        "usb-5c20be76aa2cc699916d",
+        "usb-14be73080a3eccda9605",
+        "usb-18d57a7420caaee4bf72",
+        "usb-556ce0370143b6e3c78c",
+        "usb-e317b4feb93803667eb6",
+        "usb-0efb728276fee0834092",
+        "usb-9b2e9abd28930a7f649c",
+        "usb-2a2396d64c7ce0fc0c41",
+        "usb-fa8d7971650834b51c94",
+        "usb-662af05c336df03cdaa4",
+        "usb-2383f928be5ec0a33cc2",
+        "usb-8d89cf0a2954c9a55eb2",
+        "usb-95a1c360d35c591619e1",
+        "usb-6e9d84898b85b9445739"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-97e51820d642dd224604",
+          "url": "/assets/catalog-library/usb-97e51820d642dd224604.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBlk (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-fc5092e342b73e4371aa",
+          "url": "/assets/catalog-library/usb-fc5092e342b73e4371aa.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBlk (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-30f9174ae6db6b41e44e",
+          "url": "/assets/catalog-library/usb-30f9174ae6db6b41e44e.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBlue (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-fd28b16f5ca65e46004d",
+          "url": "/assets/catalog-library/usb-fd28b16f5ca65e46004d.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBlue (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-69c2e4b8fa4f431c01a6",
+          "url": "/assets/catalog-library/usb-69c2e4b8fa4f431c01a6.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBrwn (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-530a4cd8089bd6262ca6",
+          "url": "/assets/catalog-library/usb-530a4cd8089bd6262ca6.webp",
+          "type": "artwork",
+          "label": "Angel&DevilBrwn (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-82034b88aeae3647c8bf",
+          "url": "/assets/catalog-library/usb-82034b88aeae3647c8bf.webp",
+          "type": "artwork",
+          "label": "Angel&Devilpink (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-1848741f1ca3c519b162",
+          "url": "/assets/catalog-library/usb-1848741f1ca3c519b162.webp",
+          "type": "artwork",
+          "label": "Angel&Devilpink (2).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-llrr",
+      "slug": "design-llrr",
+      "skuPrefix": "GMF-DESIGN-LLRR",
+      "name": "LLRR",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "LLRR design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-dc32ffb69e61b44ca9ed",
+        "usb-b4c31f42fc9e4f1f21a5",
+        "usb-184133b12e1645425e9d",
+        "usb-04c275a57de70b42bbd8",
+        "usb-c9c47e4709a74c6f41f1",
+        "usb-dfc72e93e5e82bb1bdd5",
+        "usb-4aef89fe23dca417851d",
+        "usb-8c429ce8d7bca0c1d3c8"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-dc32ffb69e61b44ca9ed",
+          "url": "/assets/catalog-library/usb-dc32ffb69e61b44ca9ed.webp",
+          "type": "artwork",
+          "label": "#LLRR(Bttm).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-04c275a57de70b42bbd8",
+          "url": "/assets/catalog-library/usb-04c275a57de70b42bbd8.webp",
+          "type": "artwork",
+          "label": "#LLRR(Top).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-dfc72e93e5e82bb1bdd5",
+          "url": "/assets/catalog-library/usb-dfc72e93e5e82bb1bdd5.webp",
+          "type": "artwork",
+          "label": "_LLRR(Front).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-3039-archives",
+      "slug": "design-3039-archives",
+      "skuPrefix": "GMF-DESIGN-3039-ARCHIVES",
+      "name": "3039 Archives",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "3039 Archives design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-c6c6e0fd87a1a293671c",
+        "usb-cd44747b3272b69a2590",
+        "usb-d181098893f3ff7435ec",
+        "usb-e33fdb27dede48c37e82"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-c6c6e0fd87a1a293671c",
+          "url": "/assets/catalog-library/usb-c6c6e0fd87a1a293671c.webp",
+          "type": "artwork",
+          "label": "3039 Archives(Blk).tif",
+          "approved": false
+        },
+        {
+          "assetId": "usb-cd44747b3272b69a2590",
+          "url": "/assets/catalog-library/usb-cd44747b3272b69a2590.webp",
+          "type": "artwork",
+          "label": "3039 Archives(Pnk).tif",
+          "approved": false
+        },
+        {
+          "assetId": "usb-d181098893f3ff7435ec",
+          "url": "/assets/catalog-library/usb-d181098893f3ff7435ec.webp",
+          "type": "artwork",
+          "label": "3039 Archives(Wht).tif",
+          "approved": false
+        },
+        {
+          "assetId": "usb-e33fdb27dede48c37e82",
+          "url": "/assets/catalog-library/usb-e33fdb27dede48c37e82.webp",
+          "type": "artwork",
+          "label": "3039 Archives.psd",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-arachnida",
+      "slug": "design-arachnida",
+      "skuPrefix": "GMF-DESIGN-ARACHNIDA",
+      "name": "Arachnida",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Arachnida design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-fd6b9b674828e51e847c"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-fd6b9b674828e51e847c",
+          "url": "/assets/catalog-library/usb-fd6b9b674828e51e847c.webp",
+          "type": "artwork",
+          "label": "Arachnida.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-backstabbed",
+      "slug": "design-backstabbed",
+      "skuPrefix": "GMF-DESIGN-BACKSTABBED",
+      "name": "Backstabbed",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Backstabbed design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-98330b72e5e0bc5c3a4d"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-98330b72e5e0bc5c3a4d",
+          "url": "/assets/catalog-library/usb-98330b72e5e0bc5c3a4d.webp",
+          "type": "artwork",
+          "label": "Backstabbed-(Black).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-beacon-of-hope",
+      "slug": "design-beacon-of-hope",
+      "skuPrefix": "GMF-DESIGN-BEACON-OF-HOPE",
+      "name": "Beacon of Hope",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Beacon of Hope design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-df6afa5005f29bc7f1e7",
+        "usb-11cfac45110333a8464a"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-df6afa5005f29bc7f1e7",
+          "url": "/assets/catalog-library/usb-df6afa5005f29bc7f1e7.webp",
+          "type": "artwork",
+          "label": "Untitled Project - Salvator - Beacon Of Hope (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-11cfac45110333a8464a",
+          "url": "/assets/catalog-library/usb-11cfac45110333a8464a.webp",
+          "type": "artwork",
+          "label": "Untitled Project - Salvator - Beacon Of Hope.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-comic-retro-vintage",
+      "slug": "design-comic-retro-vintage",
+      "skuPrefix": "GMF-DESIGN-COMIC-RETRO-VINTAGE",
+      "name": "Comic Retro Vintage",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Comic Retro Vintage design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-d0e3f9507fb1dbd5771e",
+        "usb-2fc32fea7368a6d00944"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-2fc32fea7368a6d00944",
+          "url": "/assets/catalog-library/usb-2fc32fea7368a6d00944.webp",
+          "type": "artwork",
+          "label": "Comic Retro Vintage Girl Graphic - Comic Retro Vintage Girl Graphic.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-dont-look-back",
+      "slug": "design-dont-look-back",
+      "skuPrefix": "GMF-DESIGN-DONT-LOOK-BACK",
+      "name": "Dont Look Back",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Dont Look Back design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-bc6baea72abaea2d6362"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-bc6baea72abaea2d6362",
+          "url": "/assets/catalog-library/usb-bc6baea72abaea2d6362.webp",
+          "type": "artwork",
+          "label": "Tell Me - Don't Look Back Motivational.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-fake-smiles",
+      "slug": "design-fake-smiles",
+      "skuPrefix": "GMF-DESIGN-FAKE-SMILES",
+      "name": "Fake Smiles",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Fake Smiles design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-1e681a6accb89a45b63e",
+        "usb-5c1deaadab8b498f7c8e",
+        "usb-83b4c0582fbe92759409",
+        "usb-8a426a9b83768e11418f",
+        "usb-c6fc0bd722ff9878ae08",
+        "usb-620f669cbf40f018ca3d",
+        "usb-5af6d1c219fc6c380824",
+        "usb-976fa7216c2bf97b643f",
+        "usb-a01124b0ad8ad14cf3e5",
+        "usb-0c6759c0238f0666fee2",
+        "usb-e105bce7c10ca909cbc6"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-5c1deaadab8b498f7c8e",
+          "url": "/assets/catalog-library/usb-5c1deaadab8b498f7c8e.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Lime)Chest.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-83b4c0582fbe92759409",
+          "url": "/assets/catalog-library/usb-83b4c0582fbe92759409.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Lime)Hero.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-8a426a9b83768e11418f",
+          "url": "/assets/catalog-library/usb-8a426a9b83768e11418f.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Lime)Hero1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-620f669cbf40f018ca3d",
+          "url": "/assets/catalog-library/usb-620f669cbf40f018ca3d.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Pnk)Chest.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-5af6d1c219fc6c380824",
+          "url": "/assets/catalog-library/usb-5af6d1c219fc6c380824.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Pnk)Hero.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a01124b0ad8ad14cf3e5",
+          "url": "/assets/catalog-library/usb-a01124b0ad8ad14cf3e5.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Yellow)Chest.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-0c6759c0238f0666fee2",
+          "url": "/assets/catalog-library/usb-0c6759c0238f0666fee2.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - FakeSmiles(Yellow)Hero.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-e105bce7c10ca909cbc6",
+          "url": "/assets/catalog-library/usb-e105bce7c10ca909cbc6.webp",
+          "type": "artwork",
+          "label": "FakeSmiles(PnkHalftone)Hero.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-fake-smiles-bear",
+      "slug": "design-fake-smiles-bear",
+      "skuPrefix": "GMF-DESIGN-FAKE-SMILES-BEAR",
+      "name": "Fake Smiles Bear",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Fake Smiles Bear design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-d62e513ebe8f51e3cab7",
+        "usb-eeeda0b870c32a87bd73",
+        "usb-f360615ff613c2f179d6",
+        "usb-e3db40e39340677ccb92",
+        "usb-edffdc31776e89463d7c",
+        "usb-e8b8da23a7d8f502d873",
+        "usb-3aebe7442897c9389e1b",
+        "usb-29577f16c0ddbcdfad5f",
+        "usb-2600b14f41bb5af01437",
+        "usb-e19db90359ad98c4a35a",
+        "usb-3b84e3c82f5f732d858a"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-d62e513ebe8f51e3cab7",
+          "url": "/assets/catalog-library/usb-d62e513ebe8f51e3cab7.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Bear #Flaw - Fake Smiles Bear #Flaw (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-eeeda0b870c32a87bd73",
+          "url": "/assets/catalog-library/usb-eeeda0b870c32a87bd73.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Bear #Flaw - Fake Smiles Bear #Flaw (Hero)Nvy (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-f360615ff613c2f179d6",
+          "url": "/assets/catalog-library/usb-f360615ff613c2f179d6.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Bear _Flaw - Fake Smiles Bear _Flaw (Hero)Nvy.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-e3db40e39340677ccb92",
+          "url": "/assets/catalog-library/usb-e3db40e39340677ccb92.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Bear _Flaw - Fake Smiles Bear _Flaw.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-fake-smiles-vintage",
+      "slug": "design-fake-smiles-vintage",
+      "skuPrefix": "GMF-DESIGN-FAKE-SMILES-VINTAGE",
+      "name": "Fake Smiles Vintage",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Fake Smiles Vintage design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-f0e53e03f8175362ed8e",
+        "usb-49587efba0608c4de515",
+        "usb-d1939b5d11783611cb40",
+        "usb-8b1c98503bf104359ef7",
+        "usb-c41b6d9063341449773c",
+        "usb-e11c52d045af8f35ca3d",
+        "usb-69b5435bfbf2d5fac5b8",
+        "usb-5181245dbf25d9121f42",
+        "usb-18caf1a9b328d12a26ef",
+        "usb-0fd18455554e799fae11",
+        "usb-4d559413a53746423f5d",
+        "usb-bfc9df801a1c9ddc84fe"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-f0e53e03f8175362ed8e",
+          "url": "/assets/catalog-library/usb-f0e53e03f8175362ed8e.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Vintage (Chest).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-49587efba0608c4de515",
+          "url": "/assets/catalog-library/usb-49587efba0608c4de515.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Vintage (Hero).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-d1939b5d11783611cb40",
+          "url": "/assets/catalog-library/usb-d1939b5d11783611cb40.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Vintage - Untitled Project 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-8b1c98503bf104359ef7",
+          "url": "/assets/catalog-library/usb-8b1c98503bf104359ef7.webp",
+          "type": "artwork",
+          "label": "Fake Smiles Vintage - Untitled Project.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-february-36",
+      "slug": "design-february-36",
+      "skuPrefix": "GMF-DESIGN-FEBRUARY-36",
+      "name": "February 36",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "February 36 design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-1b31a040da4217bbaa92"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-1b31a040da4217bbaa92",
+          "url": "/assets/catalog-library/usb-1b31a040da4217bbaa92.webp",
+          "type": "artwork",
+          "label": "Feb36.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-final-play",
+      "slug": "design-final-play",
+      "skuPrefix": "GMF-DESIGN-FINAL-PLAY",
+      "name": "Final Play",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Final Play design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-c264368c1b6c5985225f",
+        "usb-6c1624db0060c5ee3175"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-c264368c1b6c5985225f",
+          "url": "/assets/catalog-library/usb-c264368c1b6c5985225f.webp",
+          "type": "artwork",
+          "label": "Final Play - Back.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-6c1624db0060c5ee3175",
+          "url": "/assets/catalog-library/usb-6c1624db0060c5ee3175.webp",
+          "type": "artwork",
+          "label": "Final Play - Front.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-future-style",
+      "slug": "design-future-style",
+      "skuPrefix": "GMF-DESIGN-FUTURE-STYLE",
+      "name": "Future Style",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Future Style design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-dfda95a996594c094ed4",
+        "usb-04199e32afbd95974be6"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-04199e32afbd95974be6",
+          "url": "/assets/catalog-library/usb-04199e32afbd95974be6.webp",
+          "type": "artwork",
+          "label": "Future Style - Future Style.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-hope-skull",
+      "slug": "design-hope-skull",
+      "skuPrefix": "GMF-DESIGN-HOPE-SKULL",
+      "name": "Hope Skull",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Hope Skull design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-262ee9a63ca81637916c",
+        "usb-7908e514bd03ea479ebf",
+        "usb-042c57ec68acf4db04d2"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-7908e514bd03ea479ebf",
+          "url": "/assets/catalog-library/usb-7908e514bd03ea479ebf.webp",
+          "type": "artwork",
+          "label": "Hope Skull - Hope Skull 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-042c57ec68acf4db04d2",
+          "url": "/assets/catalog-library/usb-042c57ec68acf4db04d2.webp",
+          "type": "artwork",
+          "label": "Hope Skull - Hope Skull.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-hustle-25",
+      "slug": "design-hustle-25",
+      "skuPrefix": "GMF-DESIGN-HUSTLE-25",
+      "name": "Hustle 25",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Hustle 25 design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-1e41c9822b84b28354f3"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-1e41c9822b84b28354f3",
+          "url": "/assets/catalog-library/usb-1e41c9822b84b28354f3.webp",
+          "type": "artwork",
+          "label": "Hustle25_367.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-hustler-original",
+      "slug": "design-hustler-original",
+      "skuPrefix": "GMF-DESIGN-HUSTLER-ORIGINAL",
+      "name": "Hustler Original",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Hustler Original design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-6e71e092080acecfe55b",
+        "usb-a72021cae4d332ac4e08"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-6e71e092080acecfe55b",
+          "url": "/assets/catalog-library/usb-6e71e092080acecfe55b.webp",
+          "type": "artwork",
+          "label": "Hustler Original - Hustler Original.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a72021cae4d332ac4e08",
+          "url": "/assets/catalog-library/usb-a72021cae4d332ac4e08.webp",
+          "type": "artwork",
+          "label": "Hustler Original - Money Talk.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-joint-custody",
+      "slug": "design-joint-custody",
+      "skuPrefix": "GMF-DESIGN-JOINT-CUSTODY",
+      "name": "Joint Custody",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Joint Custody design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-732ef69b45301cdad299",
+        "usb-a670b892e7614fd43386"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-732ef69b45301cdad299",
+          "url": "/assets/catalog-library/usb-732ef69b45301cdad299.webp",
+          "type": "artwork",
+          "label": "JointCustodyBack.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a670b892e7614fd43386",
+          "url": "/assets/catalog-library/usb-a670b892e7614fd43386.webp",
+          "type": "artwork",
+          "label": "JointCustodyFront.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-july-82",
+      "slug": "design-july-82",
+      "skuPrefix": "GMF-DESIGN-JULY-82",
+      "name": "July 82",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "July 82 design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-3d242c2732236caa8b5c",
+        "usb-a7d679b2fa6a438a5394",
+        "usb-30e8ed78981428099473"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-30e8ed78981428099473",
+          "url": "/assets/catalog-library/usb-30e8ed78981428099473.webp",
+          "type": "artwork",
+          "label": "Jul 82 F - Jul 82 F.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-law-abiding",
+      "slug": "design-law-abiding",
+      "skuPrefix": "GMF-DESIGN-LAW-ABIDING",
+      "name": "Law Abiding",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Law Abiding design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-fbd71ea5296ae1a4b3f0"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-fbd71ea5296ae1a4b3f0",
+          "url": "/assets/catalog-library/usb-fbd71ea5296ae1a4b3f0.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - LawAbiding(Hero).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-lost-love",
+      "slug": "design-lost-love",
+      "skuPrefix": "GMF-DESIGN-LOST-LOVE",
+      "name": "Lost Love",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Lost Love design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-f20ccb804b9ab48b6212",
+        "usb-9af1eb5cd0fe3d7f8b8d",
+        "usb-a7334d045fc49376993c",
+        "usb-b584b6a2d182fca5b4bb",
+        "usb-554277534bc25f099225",
+        "usb-79e336408de1a39394e2"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-554277534bc25f099225",
+          "url": "/assets/catalog-library/usb-554277534bc25f099225.webp",
+          "type": "artwork",
+          "label": "Lost Love (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-79e336408de1a39394e2",
+          "url": "/assets/catalog-library/usb-79e336408de1a39394e2.webp",
+          "type": "artwork",
+          "label": "Lost Love.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-loyalty-over-royalty",
+      "slug": "design-loyalty-over-royalty",
+      "skuPrefix": "GMF-DESIGN-LOYALTY-OVER-ROYALTY",
+      "name": "Loyalty Over Royalty",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Loyalty Over Royalty design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-28ddcf97cb4db972152f"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-28ddcf97cb4db972152f",
+          "url": "/assets/catalog-library/usb-28ddcf97cb4db972152f.webp",
+          "type": "artwork",
+          "label": "LoyaltyOverRoyalty.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-money-laundry",
+      "slug": "design-money-laundry",
+      "skuPrefix": "GMF-DESIGN-MONEY-LAUNDRY",
+      "name": "Money Laundry",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Money Laundry design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-1609cdd6aa8c969f11c0",
+        "usb-ed1d574bfa80998e9fc1",
+        "usb-dc2db1032d831a6f0511",
+        "usb-ae27d009147a7c87c4a4",
+        "usb-04d5d7c19436cc5966a0",
+        "usb-7578bec95430973de91f",
+        "usb-2f80520d6678e143ea1f",
+        "usb-b944cf6a153e7e2c6f14",
+        "usb-a3422655f5fe0b4d9e43",
+        "usb-bdc83dcc44e7002dafe2",
+        "usb-0fe3a8bbfc15389a81db",
+        "usb-47a879737ab26bfec8ec",
+        "usb-32cab6ffd8730b4f0317"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-7578bec95430973de91f",
+          "url": "/assets/catalog-library/usb-7578bec95430973de91f.webp",
+          "type": "artwork",
+          "label": "Money Laundry Yellow - Get Rich.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-2f80520d6678e143ea1f",
+          "url": "/assets/catalog-library/usb-2f80520d6678e143ea1f.webp",
+          "type": "artwork",
+          "label": "Money Laundry Yellow - Money Laundry.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-b944cf6a153e7e2c6f14",
+          "url": "/assets/catalog-library/usb-b944cf6a153e7e2c6f14.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a3422655f5fe0b4d9e43",
+          "url": "/assets/catalog-library/usb-a3422655f5fe0b4d9e43.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-bdc83dcc44e7002dafe2",
+          "url": "/assets/catalog-library/usb-bdc83dcc44e7002dafe2.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (3).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-0fe3a8bbfc15389a81db",
+          "url": "/assets/catalog-library/usb-0fe3a8bbfc15389a81db.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (4).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-47a879737ab26bfec8ec",
+          "url": "/assets/catalog-library/usb-47a879737ab26bfec8ec.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (5).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-32cab6ffd8730b4f0317",
+          "url": "/assets/catalog-library/usb-32cab6ffd8730b4f0317.webp",
+          "type": "artwork",
+          "label": "GMF Money Laundry  (6).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-motivation",
+      "slug": "design-motivation",
+      "skuPrefix": "GMF-DESIGN-MOTIVATION",
+      "name": "Motivation",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Motivation design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-23c4688e551936cba0d6",
+        "usb-2c1bd3b1681c1ff90e66",
+        "usb-bd1f316fc88893b468cf"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-bd1f316fc88893b468cf",
+          "url": "/assets/catalog-library/usb-bd1f316fc88893b468cf.webp",
+          "type": "artwork",
+          "label": "Motivation Graphic - Motivation Graphic.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-no-fake-smiles-allowed",
+      "slug": "design-no-fake-smiles-allowed",
+      "skuPrefix": "GMF-DESIGN-NO-FAKE-SMILES-ALLOWED",
+      "name": "No Fake Smiles Allowed",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "No Fake Smiles Allowed design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-23d82a92c8547733d9e7",
+        "usb-553483820c8e73cde088",
+        "usb-3bc594b4490631040a51",
+        "usb-747dbe8375d22e4612ee",
+        "usb-33bc5267be9d44e8a397",
+        "usb-3ec02b9d71b50f34b574",
+        "usb-77cdb2cff7639adad20b",
+        "usb-13a6afd109540920fff8",
+        "usb-45eb1d93f14a63fa4994",
+        "usb-7ff466fe87d04a07d8f1",
+        "usb-040a3faa2d52837b9d0e",
+        "usb-a0454b20bd067570a5c4",
+        "usb-39a63d23453adff0098e",
+        "usb-22933cd20cbb736b58f1",
+        "usb-4d8b7e73f3bbc99bc0bc",
+        "usb-e598292aac70def1f8d7",
+        "usb-91f88a979c5130eeb056",
+        "usb-47d5787a068019f6092f",
+        "usb-af689680d4d0bbe57b67",
+        "usb-55eea74ecff4b09828c6",
+        "usb-9846b57a183c8a451fa6",
+        "usb-976df2eb2a4baca2912c",
+        "usb-b980019ae3655f078ff8",
+        "usb-b6f616c0d205e3a0b859",
+        "usb-830b3dbb685200414a01",
+        "usb-7296f84aaee23f90ea89",
+        "usb-d0bf2dd0ec40526c7850",
+        "usb-c23ce94457c9087a57f4",
+        "usb-3c1ad6333f3b3afc215b",
+        "usb-2b362eeea2ce2eca939c",
+        "usb-5fdc15d5e2e502bdcc11",
+        "usb-c6e7fac6d02193aca7a9",
+        "usb-7d39a9053f463b91f3a6"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-3ec02b9d71b50f34b574",
+          "url": "/assets/catalog-library/usb-3ec02b9d71b50f34b574.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-22933cd20cbb736b58f1",
+          "url": "/assets/catalog-library/usb-22933cd20cbb736b58f1.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - No Rules! 1.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-4d8b7e73f3bbc99bc0bc",
+          "url": "/assets/catalog-library/usb-4d8b7e73f3bbc99bc0bc.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - No Rules! 2.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-e598292aac70def1f8d7",
+          "url": "/assets/catalog-library/usb-e598292aac70def1f8d7.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - No Rules! 3.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-91f88a979c5130eeb056",
+          "url": "/assets/catalog-library/usb-91f88a979c5130eeb056.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - No Rules! 4 (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-47d5787a068019f6092f",
+          "url": "/assets/catalog-library/usb-47d5787a068019f6092f.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - No Rules!.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-af689680d4d0bbe57b67",
+          "url": "/assets/catalog-library/usb-af689680d4d0bbe57b67.webp",
+          "type": "artwork",
+          "label": "Fake Smiles 2 - T-Shirt.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-55eea74ecff4b09828c6",
+          "url": "/assets/catalog-library/usb-55eea74ecff4b09828c6.webp",
+          "type": "artwork",
+          "label": "No Fake Smiles Allowed (12).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-no-fake-smiles-cityscape",
+      "slug": "design-no-fake-smiles-cityscape",
+      "skuPrefix": "GMF-DESIGN-NO-FAKE-SMILES-CITYSCAPE",
+      "name": "No Fake Smiles Cityscape",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "No Fake Smiles Cityscape design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-db8784f94f1eb7533a8e",
+        "usb-a3a041b9e248f746cd95",
+        "usb-0fd6a043720463140959"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-db8784f94f1eb7533a8e",
+          "url": "/assets/catalog-library/usb-db8784f94f1eb7533a8e.webp",
+          "type": "artwork",
+          "label": "No Fake Smiles Cityscape (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a3a041b9e248f746cd95",
+          "url": "/assets/catalog-library/usb-a3a041b9e248f746cd95.webp",
+          "type": "artwork",
+          "label": "No Fake Smiles Cityscape (2).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-roman-numeral-logo",
+      "slug": "design-roman-numeral-logo",
+      "skuPrefix": "GMF-DESIGN-ROMAN-NUMERAL-LOGO",
+      "name": "Roman Numeral Logo",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Roman Numeral Logo design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-dac8768dc979fad93917",
+        "usb-09e0a3fc1bd7e0a6755e",
+        "usb-ec9f8ee5ab74a3779303",
+        "usb-24f721c64088e41ae142",
+        "usb-2a00c134a6cfa59906dc",
+        "usb-9dfde8f62b83171b08be",
+        "usb-92f55f6bd6984fd756fe",
+        "usb-c1ec9ffe0b5cad854c8c",
+        "usb-a83aa6ccfc3083cc017e",
+        "usb-735d7b3530fd8cf69512",
+        "usb-1907cc724eb7553d75e8"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-ec9f8ee5ab74a3779303",
+          "url": "/assets/catalog-library/usb-ec9f8ee5ab74a3779303.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (0).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-24f721c64088e41ae142",
+          "url": "/assets/catalog-library/usb-24f721c64088e41ae142.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-2a00c134a6cfa59906dc",
+          "url": "/assets/catalog-library/usb-2a00c134a6cfa59906dc.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-92f55f6bd6984fd756fe",
+          "url": "/assets/catalog-library/usb-92f55f6bd6984fd756fe.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (3).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-c1ec9ffe0b5cad854c8c",
+          "url": "/assets/catalog-library/usb-c1ec9ffe0b5cad854c8c.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (3.1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-a83aa6ccfc3083cc017e",
+          "url": "/assets/catalog-library/usb-a83aa6ccfc3083cc017e.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (5).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-735d7b3530fd8cf69512",
+          "url": "/assets/catalog-library/usb-735d7b3530fd8cf69512.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (6).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-1907cc724eb7553d75e8",
+          "url": "/assets/catalog-library/usb-1907cc724eb7553d75e8.webp",
+          "type": "artwork",
+          "label": "Roman Numeral Logo (7).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-skull-3039",
+      "slug": "design-skull-3039",
+      "skuPrefix": "GMF-DESIGN-SKULL-3039",
+      "name": "Skull 3039",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Skull 3039 design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-cb2fa9d7ecc12adf0081",
+        "usb-2c168b65ba039b856e33"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-cb2fa9d7ecc12adf0081",
+          "url": "/assets/catalog-library/usb-cb2fa9d7ecc12adf0081.webp",
+          "type": "artwork",
+          "label": "Untitled Project - Skull 3039 Back.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-2c168b65ba039b856e33",
+          "url": "/assets/catalog-library/usb-2c168b65ba039b856e33.webp",
+          "type": "artwork",
+          "label": "Untitled Project - Skull 3039.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-smile-over-the-pain",
+      "slug": "design-smile-over-the-pain",
+      "skuPrefix": "GMF-DESIGN-SMILE-OVER-THE-PAIN",
+      "name": "Smile Over the Pain",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Smile Over the Pain design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-7aca21287b9639be9c31",
+        "usb-b88af0e6ac2922c35445",
+        "usb-17bffcb59d0f9b2e82fe"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-7aca21287b9639be9c31",
+          "url": "/assets/catalog-library/usb-7aca21287b9639be9c31.webp",
+          "type": "artwork",
+          "label": "Smile Over The Pain  (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-b88af0e6ac2922c35445",
+          "url": "/assets/catalog-library/usb-b88af0e6ac2922c35445.webp",
+          "type": "artwork",
+          "label": "Smile Over The Pain  (2).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-17bffcb59d0f9b2e82fe",
+          "url": "/assets/catalog-library/usb-17bffcb59d0f9b2e82fe.webp",
+          "type": "artwork",
+          "label": "Smile Over The Pain - Smile Over The Pain 1.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-sorry-not-sorry",
+      "slug": "design-sorry-not-sorry",
+      "skuPrefix": "GMF-DESIGN-SORRY-NOT-SORRY",
+      "name": "Sorry Not Sorry",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Sorry Not Sorry design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-607dcb3661818f2f2426"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-607dcb3661818f2f2426",
+          "url": "/assets/catalog-library/usb-607dcb3661818f2f2426.webp",
+          "type": "artwork",
+          "label": "Untitled Project - SORRY NOT SORRY.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-st-muerte",
+      "slug": "design-st-muerte",
+      "skuPrefix": "GMF-DESIGN-ST-MUERTE",
+      "name": "St Muerte",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "St Muerte design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-84aea05a2dabff8825f1"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-84aea05a2dabff8825f1",
+          "url": "/assets/catalog-library/usb-84aea05a2dabff8825f1.webp",
+          "type": "artwork",
+          "label": "Roses - St Muerte (2).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-stand-out",
+      "slug": "design-stand-out",
+      "skuPrefix": "GMF-DESIGN-STAND-OUT",
+      "name": "Stand Out",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Stand Out design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-efd972eaef7749c575cf",
+        "usb-313819d5750fd48e6f63",
+        "usb-05eff531251b1aa9fa28",
+        "usb-519810e21fc092c31d50"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-519810e21fc092c31d50",
+          "url": "/assets/catalog-library/usb-519810e21fc092c31d50.webp",
+          "type": "artwork",
+          "label": "NMBD - Why Fit In When You Can Stand Out.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-torn-soul",
+      "slug": "design-torn-soul",
+      "skuPrefix": "GMF-DESIGN-TORN-SOUL",
+      "name": "Torn Soul",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Torn Soul design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-ff1e14d09eab18d3a248",
+        "usb-f1cce8d265d7fb993193",
+        "usb-86f74290eec6b9bf7671",
+        "usb-8c700731155d60ae8fbf",
+        "usb-a4054f7dd10a5a215581",
+        "usb-2130905ee552150d1368",
+        "usb-6859a97e61521efe2667",
+        "usb-c55f713f8051eb6191ff"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-ff1e14d09eab18d3a248",
+          "url": "/assets/catalog-library/usb-ff1e14d09eab18d3a248.webp",
+          "type": "artwork",
+          "label": "TornSoul - TornSoul(Back).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-f1cce8d265d7fb993193",
+          "url": "/assets/catalog-library/usb-f1cce8d265d7fb993193.webp",
+          "type": "artwork",
+          "label": "TornSoul - TornSoul(Front).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-86f74290eec6b9bf7671",
+          "url": "/assets/catalog-library/usb-86f74290eec6b9bf7671.webp",
+          "type": "artwork",
+          "label": "5 - TornSoul(Back).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-8c700731155d60ae8fbf",
+          "url": "/assets/catalog-library/usb-8c700731155d60ae8fbf.webp",
+          "type": "artwork",
+          "label": "5 - TornSoul(Front).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-two-side-streetwear",
+      "slug": "design-two-side-streetwear",
+      "skuPrefix": "GMF-DESIGN-TWO-SIDE-STREETWEAR",
+      "name": "Two Side Streetwear",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Two Side Streetwear design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-a67b8f9e875f8445c2ef"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-a67b8f9e875f8445c2ef",
+          "url": "/assets/catalog-library/usb-a67b8f9e875f8445c2ef.webp",
+          "type": "artwork",
+          "label": "Untitled Project - Two Side Streetwear.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-two-worlds",
+      "slug": "design-two-worlds",
+      "skuPrefix": "GMF-DESIGN-TWO-WORLDS",
+      "name": "Two Worlds",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Two Worlds design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-a2e7572ac60def3eb078",
+        "usb-242f44c23bdc0172f64e"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-a2e7572ac60def3eb078",
+          "url": "/assets/catalog-library/usb-a2e7572ac60def3eb078.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - TwoWorlds(Chest).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-242f44c23bdc0172f64e",
+          "url": "/assets/catalog-library/usb-242f44c23bdc0172f64e.webp",
+          "type": "artwork",
+          "label": "FakeSmiles - TwoWorlds(Hero).png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft."
+      }
+    },
+    {
+      "id": "design-zero-wins",
+      "slug": "design-zero-wins",
+      "skuPrefix": "GMF-DESIGN-ZERO-WINS",
+      "name": "Zero Wins",
+      "garment": "",
+      "collection": "design-library",
+      "status": "draft",
+      "description": "Zero Wins design artwork. Garment, price, sizing, and approved product photography have not been configured.",
+      "material": "",
+      "fit": "",
+      "gsm": null,
+      "care": [],
+      "sizeGuide": {},
+      "images": [],
+      "sourceAssetIds": [
+        "usb-fa16963eb6944b53c366",
+        "usb-0cec0c9573030f154e5e",
+        "usb-8322bbfbc6ace631efa4",
+        "usb-ab06ae337a5e9e69e1b4",
+        "usb-09bc135dbeca412b78f9",
+        "usb-9194706a772aaa09aee8",
+        "usb-9524a84ff3935b8edea0",
+        "usb-69a458baa94b4d0c7129",
+        "usb-d5461956f978b67d7ad3",
+        "usb-02727fe54938537c4f59",
+        "usb-b5f7b4493c93deaac607",
+        "usb-0c4ad007e671f1be1869",
+        "usb-93c7fd79a7a4833b3841",
+        "usb-118adc644b38e1f077af",
+        "usb-dc15fd1ca3e1c8ddc5a7",
+        "usb-d7cfa3ecfb93e338f733",
+        "usb-75051dc71e1899f5256e",
+        "usb-ce24a8308516069dcbd1",
+        "usb-cc82c0742a749c87662e"
+      ],
+      "variants": [],
+      "previews": [
+        {
+          "assetId": "usb-fa16963eb6944b53c366",
+          "url": "/assets/catalog-library/usb-fa16963eb6944b53c366.webp",
+          "type": "artwork",
+          "label": "Harmless - ZeroWins(Back).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-8322bbfbc6ace631efa4",
+          "url": "/assets/catalog-library/usb-8322bbfbc6ace631efa4.webp",
+          "type": "artwork",
+          "label": "Harmless - ZeroWinsUndefeated(Front) (1).png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-0c4ad007e671f1be1869",
+          "url": "/assets/catalog-library/usb-0c4ad007e671f1be1869.webp",
+          "type": "artwork",
+          "label": "Zero-Wins_Front.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-d7cfa3ecfb93e338f733",
+          "url": "/assets/catalog-library/usb-d7cfa3ecfb93e338f733.webp",
+          "type": "artwork",
+          "label": "ZeroWinsChest.png",
+          "approved": false
+        },
+        {
+          "assetId": "usb-ce24a8308516069dcbd1",
+          "url": "/assets/catalog-library/usb-ce24a8308516069dcbd1.webp",
+          "type": "artwork",
+          "label": "ZeroWinsTop.png",
+          "approved": false
+        }
+      ],
+      "provenance": {
+        "source": "Imported USB design library",
+        "note": "Artwork is not a garment photograph. Family grouping is editorial and remains draft. Front/back filenames conflict; confirm placement. Numbered files are print tiles, not variants."
+      }
     }
-  ],
-  "pricing": {
-    "tee": 3000,
-    "shorts": 3000,
-    "hat": 3000,
-    "currency": "USD"
-  }
+  ]
 }

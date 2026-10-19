@@ -1,0 +1,23 @@
+/* Shared catalog option controls; site colors continue to use theme variables. */
+#category-filters { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0; }
+#category-filters label { display: grid; gap: .4rem; min-width: 10rem; flex: 1; }
+#category-filters select { width: 100%; min-height: 44px; padding: .6rem; border: 1px solid var(--border-color, #555); border-radius: 4px; background: var(--color-bg, #141414); color: inherit; }
+.catalog-colors, .catalog-sizes { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0; }
+.color-swatch, .catalog-sizes .variant-option { min-height: 40px; padding: .5rem .65rem; border: 1px solid currentColor; border-radius: 4px; color: inherit; background: transparent; cursor: pointer; font: inherit; }
+.color-swatch { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; }
+.color-swatch::before { content: ''; width: 1rem; height: 1rem; flex: none; border: 1px solid #888; border-radius: 50%; background: var(--swatch-color, transparent); }
+.color-swatch[aria-pressed=true], .catalog-sizes [aria-pressed=true] { outline: 2px solid var(--accent, #d4af37); outline-offset: 2px; }
+.catalog-colors button:focus-visible, .catalog-sizes button:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.catalog-sizes .option-unavailable { text-decoration: line-through; opacity: .55; }
+.catalog-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-top: 1rem; }
+.catalog-actions button:disabled, #add-to-cart-btn:disabled { opacity: .55; cursor: not-allowed; }
+.catalog-feedback, .preview-note, #preview-label { font-size: .85rem; min-height: 1.2em; }
+.selection-label { font-size: .85rem; }
+.product-card .title { font-size: 1.15rem; }
+.product-card .product-image-link img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+.option-heading { font-size: 1rem; margin-top: 1.25rem; }
+#selected-product-image { width: 100%; object-fit: contain; max-height: 75vh; }
+.cart-notice { padding: 1rem; border: 1px solid var(--accent, #d4af37); }
+.checkout-line { display: flex; justify-content: space-between; gap: 1rem; margin: 1rem 0; }
+.cart-item input[type=number] { width: 5rem; margin: .5rem; padding: .4rem; }
+@media (max-width: 600px) { #category-filters label { min-width: 7rem; } .checkout-line { flex-direction: column; gap: .25rem; } }
