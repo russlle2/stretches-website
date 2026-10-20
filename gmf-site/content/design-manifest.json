@@ -480,7 +480,9 @@
       "images": [
         "/assets/uploads/1784359734736-B8499466-47D2-4877-82F4-1F143466C018.PNG"
       ],
-      "sourceAssetIds": [],
+      "sourceAssetIds": [
+        "source-1aa4e9d274f1248f4da2694b6c77b7af714b275a956060e0689f69bd25e39ff0"
+      ],
       "variants": [
         {
           "sku": "GMF-TEE-GAMEOVER-S",
