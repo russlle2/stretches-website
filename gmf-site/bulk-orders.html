@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulk Orders & Custom Apparel | GMF Productions</title>
+  <meta name="description" content="Build your custom apparel order with GMF Productions. Request a quote for tees, hoodies, hats and more, with sizes, colors and artwork for your business, team or event." />
+  <link rel="canonical" href="https://gmfproductions904.com/bulk-orders.html" />
+  <meta property="og:title" content="Your vision. Your crew. Your apparel. | GMF Productions" />
+  <meta property="og:description" content="Plan a bulk custom apparel order and request a personalized quote from GMF Productions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gmfproductions904.com/bulk-orders.html" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/bulk-orders.css" />
+  <script src="scripts/bulk-orders.js" defer></script>
+</head>
+<body class="bulk-page">
+  <a class="skip-link" href="#order-form">Skip to order form</a>
+  <div class="bulk-announcement">CUSTOM APPAREL / BUILT AROUND YOUR VISION</div>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">GMF <span>Productions</span></a>
+      <nav class="bulk-nav" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="bulk-orders.html" aria-current="page">Bulk Orders</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="bulk-hero" aria-labelledby="bulk-title">
+      <div>
+        <p class="bulk-eyebrow">GMF CUSTOM APPAREL · JACKSONVILLE, FL</p>
+        <h1 id="bulk-title">Your vision.<br>Your crew.<br><span>Your apparel.</span></h1>
+        <p class="bulk-lead">Outfit your business, team, event or next big idea. Bring the design. Build your order. Let’s make it yours.</p>
+        <a class="btn bulk-primary" href="#order-form">Build your bulk order</a>
+        <p class="bulk-caption">A personalized quote. No payment required to inquire.</p>
+      </div>
+      <figure class="bulk-look">
+        <img src="assets/mockups/gmf-904-chrome-tee.jpg" width="1024" height="1024" alt="GMF 904 graphic T-shirt mockup showing an example apparel design" fetchpriority="high" />
+        <figcaption><span>MAKE YOUR MARK.</span><small>GMF design mockup · inspiration for your project</small></figcaption>
+      </figure>
+    </section>
+    <ol class="bulk-process" aria-label="How custom orders work">
+      <li><span>01</span><div><strong>Build your request</strong><p>Choose garments, colors and quantities.</p></div></li>
+      <li><span>02</span><div><strong>Review the details</strong><p>We confirm artwork, availability and pricing.</p></div></li>
+      <li><span>03</span><div><strong>Approve your order</strong><p>Confirm your quote and timeline before production.</p></div></li>
+    </ol>
+    <section id="order-form" class="bulk-workspace" aria-labelledby="form-title">
+      <div class="bulk-form-column">
+        <div class="bulk-section-intro"><p class="bulk-eyebrow">LET’S BUILD SOMETHING</p><h2 id="form-title">Start your bulk order</h2><p>Required fields are marked *. This is a quote request; prices and production dates are confirmed after review.</p></div>
+        <noscript><p class="bulk-alert">Please enable JavaScript to build your order, or email your requirements to <a href="mailto:support@gmfproductions904.com">support@gmfproductions904.com</a>.</p></noscript>
+        <form id="bulk-order-form">
+          <fieldset class="bulk-panel">
+            <legend><span>01</span> Your garments</legend>
+            <p>Add one line for each garment and color. Enter quantities only for the sizes you need. Unsure of a color or size? Describe it in project notes.</p>
+            <div id="garment-lines"></div>
+            <button type="button" id="add-garment" class="btn bulk-secondary">+ Add another garment / color</button>
+            <p class="bulk-hint">Up to 20 lines and 10,000 pieces per request. For larger projects, <a href="mailto:support@gmfproductions904.com">contact us</a>.</p>
+          </fieldset>
+          <fieldset class="bulk-panel">
+            <legend><span>02</span> Make it yours</legend>
+            <div class="bulk-fields">
+              <div><label for="decoration">Decoration preference *</label><select id="decoration" name="decoration" required><option value="Not sure yet">Not sure yet — help me choose</option><option value="Printed">Printed</option><option value="Embroidered">Embroidered</option></select></div>
+              <div><label for="artwork-status">Artwork status *</label><select id="artwork-status" name="artworkStatus" required><option value="">Select one</option><option>Artwork ready</option><option>Need design help</option><option>Will send later</option></select></div>
+            </div>
+            <fieldset class="placement-options"><legend>Design placement * <small>Select all that apply</small></legend><div class="bulk-checks"><label><input type="checkbox" name="placements" value="Front" checked /> Front</label><label><input type="checkbox" name="placements" value="Back" /> Back</label><label><input type="checkbox" name="placements" value="Sleeve" /> Sleeve</label><label><input type="checkbox" name="placements" value="Other" /> Other / not sure</label></div></fieldset>
+            <label for="artwork-url">Artwork or inspiration link <span>(optional)</span></label>
+            <input id="artwork-url" name="artworkUrl" type="url" maxlength="2000" placeholder="https://…" aria-describedby="artwork-help" />
+            <p id="artwork-help" class="bulk-hint">Paste a shareable Drive, Dropbox or other link with viewing access. No artwork yet? You can send it later. Files are not uploaded here.</p>
+            <label for="project-notes">Project notes <span>(optional)</span></label>
+            <textarea id="project-notes" name="notes" rows="4" maxlength="5000" placeholder="Tell us about your design, preferred garment brand, print colors, budget, or different artwork for each garment."></textarea>
+            <p class="bulk-hint">Garments, sizes and decoration methods are requested preferences, subject to availability.</p>
+          </fieldset>
+          <fieldset class="bulk-panel">
+            <legend><span>03</span> Timing & delivery</legend>
+            <div class="bulk-fields">
+              <div><label for="event-date">Requested in-hand date <span>(optional)</span></label><input id="event-date" name="eventDate" type="date" /><p class="bulk-hint">Leave blank if your timing is flexible.</p></div>
+              <div><label for="delivery">Delivery preference *</label><select id="delivery" name="delivery" required><option value="">Select one</option><option>Shipping</option><option>Local pickup</option><option>Not sure yet</option></select></div>
+            </div>
+            <label for="location">City, state & ZIP / postal code <span>(optional)</span></label>
+            <input id="location" name="location" type="text" maxlength="200" placeholder="Jacksonville, FL 32207" />
+            <p class="bulk-hint">Helps us plan delivery. Shipping costs and pickup availability are confirmed with your quote.</p>
+          </fieldset>
+          <fieldset class="bulk-panel">
+            <legend><span>04</span> Your contact details</legend>
+            <div class="bulk-fields">
+              <div><label for="customer-name">Full name *</label><input id="customer-name" name="name" autocomplete="name" maxlength="120" required /></div>
+              <div><label for="customer-email">Email *</label><input id="customer-email" name="email" type="email" autocomplete="email" maxlength="254" required /></div>
+              <div><label for="customer-phone">Phone <span>(optional)</span></label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" /></div>
+              <div><label for="organization">Business, team or event <span>(optional)</span></label><input id="organization" name="organization" autocomplete="organization" maxlength="160" /></div>
+            </div>
+          </fieldset>
+          <div class="bulk-trap" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+          <div class="bulk-submit-panel">
+            <p>We’ll use your contact details to follow up about this request. Submitting does not place a paid order or reserve a production date.</p>
+            <button type="submit" id="submit-order" class="btn bulk-primary">Request my custom quote</button>
+            <p id="form-status" class="bulk-status" role="status" aria-live="polite" tabindex="-1"></p>
+          </div>
+        </form>
+        <section id="order-success" class="bulk-success" hidden tabindex="-1" aria-labelledby="success-title">
+          <p class="bulk-eyebrow">REQUEST RECEIVED</p><h2 id="success-title">Your project is in.</h2>
+          <p>We’ve saved your bulk apparel request. The GMF team can now review your details and follow up using the contact information you provided.</p>
+          <p>Reference: <strong id="order-reference"></strong></p>
+          <p id="success-details"></p>
+          <p>Keep your reference for any follow-up. Your order is confirmed only after the quote, artwork and production details are agreed.</p>
+          <div class="bulk-success-actions"><button class="btn bulk-primary" id="download-request" type="button">Download request summary</button><button class="btn bulk-secondary" id="new-request" type="button">Start another request</button></div>
+        </section>
+      </div>
+      <aside class="bulk-summary" aria-labelledby="summary-title">
+        <p class="bulk-eyebrow">YOUR PROJECT, AT A GLANCE</p><h2 id="summary-title">Order summary</h2>
+        <div class="bulk-total"><strong id="total-quantity">0</strong><span>total pieces</span></div>
+        <ul id="summary-lines"><li>Add your quantities to get started.</li></ul>
+        <dl><div><dt>Pricing</dt><dd>Personalized quote</dd></div><div><dt>Due today</dt><dd>No payment</dd></div></dl>
+        <p>Final pricing depends on garment choice, quantity, artwork and decoration. We’ll confirm the details with you.</p>
+        <div class="bulk-summary-contact"><strong>Have something specific in mind?</strong><a href="mailto:support@gmfproductions904.com">support@gmfproductions904.com</a></div>
+      </aside>
+    </section>
+    <section class="bulk-faq" aria-labelledby="faq-title"><p class="bulk-eyebrow">A FEW GOOD QUESTIONS</p><h2 id="faq-title">Before you send it</h2>
+      <details><summary>Can I mix garments, colors and sizes?</summary><p>Yes. Add a separate line for each garment and color, then enter the size quantities. Use the notes for any special requirements. Availability will be confirmed in your quote.</p></details>
+      <details><summary>What if I don’t have finished artwork?</summary><p>Select “Need design help” or “Will send later.” Include an inspiration link or describe your idea so the team can discuss the next steps.</p></details>
+      <details><summary>What is the minimum order or turnaround time?</summary><p>Minimums and production time depend on the garment and decoration. Submit your quantity and requested date so the team can confirm what’s possible.</p></details>
+      <details><summary>When do I pay?</summary><p>No payment is collected on this page. Pricing, artwork, payment arrangements and delivery details are confirmed before your order moves forward.</p></details>
+    </section>
+  </main>
+  <footer class="bulk-footer"><div class="container"><a class="brand" href="index.html">GMF Productions</a><p>Your vision. Our next project.</p><nav aria-label="Footer navigation"><a href="shop.html">Shop GMF merch</a><a href="bulk-orders.html">Bulk Orders</a><a href="contact.html">Contact</a></nav><small>© 2026 GETTIN’ MONEY FOREVER Productions LLC</small></div></footer>
+</body>
+</html>

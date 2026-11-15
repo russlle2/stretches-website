@@ -7,6 +7,9 @@
   <meta name="description" content="Browse the latest streetwear drops from GMF Productions. Heavyweight tees, hoodies, sweatpants and more. Limited quantities, premium quality." />
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/catalog.css" />
+  <style>
+    .header-inner, .nav-links { flex-wrap: wrap; gap: var(--space-4); }
+  </style>
 </head>
 <body data-page="shop">
   <div class="announcement-bar">Free U.S. shipping on orders over $100</div>
@@ -15,6 +18,7 @@
       <a href="index.html" class="brand">GMF Productions</a>
       <nav class="nav-links">
         <a href="shop.html" class="active">Shop</a>
+        <a href="bulk-orders.html">Bulk Orders</a>
         <a href="about.html">About</a>
         <a href="music.html">Music</a>
         <a href="booking.html">Booking</a>
@@ -26,6 +30,13 @@
   <main class="container">
     <h1>Shop the Drop</h1>
     <p id="page-intro">Official GMF Productions merch. Choose your color and size to see the current price and availability.</p>
+    <aside aria-labelledby="custom-apparel-heading" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:var(--space-5); margin:var(--space-6) 0; padding:var(--space-5); background:var(--color-surface); border:1px solid var(--color-border); border-left:3px solid var(--gmf-primary); border-radius:var(--radius-card);">
+      <div style="flex:1 1 280px;">
+        <h2 id="custom-apparel-heading" style="font-size:1.35rem; margin-bottom:var(--space-2);">Need custom apparel for your crew?</h2>
+        <p style="margin:0;">Plan a bulk order for your brand, team, business, or event. Tell us what you need and request a custom quote.</p>
+      </div>
+      <a href="bulk-orders.html" class="btn" style="background:var(--gmf-primary); color:var(--gmf-on-primary);">Start a Bulk Order &rarr;</a>
+    </aside>
     <div id="category-filters" class="category-filters"></div>
     <div id="product-grid" class="product-grid"></div>
   </main>
@@ -41,6 +52,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
+            <li><a href="bulk-orders.html">Bulk Orders</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="booking.html">Booking</a></li>

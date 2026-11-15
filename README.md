@@ -69,6 +69,25 @@ When `YOUTUBE_API_KEY` is set, the `/youtube-feed` function overrides video list
 └── netlify.toml
 ```
 
+## Bulk custom apparel requests
+
+`/bulk-orders.html` collects garment/color lines, quantities by size, design preferences,
+an optional artwork link, delivery details and customer contact information. It is a
+quote request, not a retail checkout: pricing and production dates are confirmed separately.
+
+The `bulk-order` Netlify function validates the request and writes it to the existing
+Supabase `public.contact_messages` inbox with `slug = 'bulk-apparel-order'`. Filter by
+that slug to review requests. Contact details use `visitor_name`, `visitor_email`, and
+`visitor_phone`; `message` contains the request reference and full readable breakdown.
+These are the live inbox columns (the older bootstrap schema above uses different
+contact column names). No new table or public database permission is required.
+The function uses the existing server-side Supabase environment variables.
+
+Customers see confirmation only after saving succeeds and can download their request
+summary. This flow does not send email notifications or confirmations. Artwork is
+provided as a shareable link; this page does not accept file uploads. Review and follow
+up from the existing inbox. Run `npm test` and `npm run build` before deploying.
+
 ## License
 
 &copy; GETTIN' MONEY FOREVER Productions LLC
